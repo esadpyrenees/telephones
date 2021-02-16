@@ -1,0 +1,21 @@
+Media-type: image
+
+----
+
+Alt: Capture d’écran de Carnage (2011) de Roman Polanski
+
+----
+
+Caption: Je suis une légende (pas le film avec Will Smith)
+
+----
+
+Yt-url: 
+
+----
+
+Data-media: img
+
+----
+
+Legende: Capture d’écran de Carnage (2011) de Roman Polanski
