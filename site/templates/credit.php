@@ -4,6 +4,10 @@
   <article>
     <h1 class="titre-article"><?= $page->title()->html() ?></h1>
 
+    <article>
+      <?= $page->text()->kt() ?>
+    </article>
+
   </article>
 </section>
 

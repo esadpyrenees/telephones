@@ -2,6 +2,14 @@ Title: Introduction
 
 ----
 
+Author: Anaïs Guilet & Corinne Melin
+
+----
+
+Tags: Corinne Melin, Anaïs Guilet
+
+----
+
 Text:
 
 Gardiens de nos nuits posés sur nos tables de chevet, blottis tout près de nous dans les poches de nos vêtements, guides efficaces de tous nos trajets, les téléphones portables dits intelligents ou connectés, sont devenus les compagnons de nos vies quotidiennes. En cela, ils modifient fondamentalement notre rapport à l’espace et au temps, et font évoluer nos pratiques cognitives et culturelles et par conséquent nos modes de penser et d’agir.
@@ -60,8 +68,11 @@ Le cinéma de films faits avec des téléphones-caméras rejoint, en de nombreux
 
 ----
 
-Author: Anaïs Guilet & Corinne Melin
+Gallery: 
 
 ----
 
-Tags: Corinne Melin, Anaïs Guilet
+Bibliography:
+
+- >
+  bibliographie-generale/andre-e-zabunyan-d

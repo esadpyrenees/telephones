@@ -56,7 +56,8 @@ columns:
         fields:
           gallery:
             label: Gallerie d'images
-            type: files
-          bibliographie:
-            label: Bibliographie
-            type: textarea
+            type: files  
+          bibliography:
+            type: pages
+            template: biblio
+            query: site.find("bibliographie-generale").children

@@ -1,15 +1,7 @@
 title: Crédits
 
-columns:
-  - width: 1/4
-    fields:
-      text:
-        label: Contexte
-        type: textarea
-        size: medium
-  - width: 3/4
-    fields:
-      participant:
-        label: Liste des participants
-        type: textarea
-        size: small
+fields:
+  text:
+    label: Contexte
+    type: markdown
+    size: medium

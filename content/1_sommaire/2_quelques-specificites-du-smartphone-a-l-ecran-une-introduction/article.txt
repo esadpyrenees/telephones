@@ -161,6 +161,14 @@ Gallery:
 
 ----
 
+Bibliography:
+
+- >
+  bibliographie-generale/andre-e-zabunyan-d
+- bibliographie-generale/barthes-r
+
+----
+
 Bibliographie:
 
 - André. E. & Zabunyan D. (2013). *L’Attrait du téléphone.* Crisnée : Yellow Now.

@@ -10,15 +10,11 @@
   <?= $page->text()->ft() ?>  
 </section>
 
-<?php if ($page->bibliographie()->isNotEmpty()): ?>
-  <section class="content-bibliographie">
-    <div>
-        <button class="button">Afficher la bibliographie</button>
-        <div class="bibliographie">
-            <?= $page->bibliographie()->kt() ?>
-        </div>
-    </div>
-  </section>
-<?php endif ?>
+<section id="biblio">
+  <h2>Bibliographie</h2>
+  <?php foreach($page->bibliography()->toPages() as $biblio) :?>
+    <?= $biblio->text()->kt() ?>
+  <?php endforeach ?>
+</section>
 
 <?php snippet('footer') ?>
