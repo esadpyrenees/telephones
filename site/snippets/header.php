@@ -26,7 +26,7 @@
             <div id="progressBarContainer">
                 <div id="progressBar"></div>
             </div>
-            <div id="navigation">
+            <nav id="navigation">
                 <ul class="menu">
                         <li id="menu-sommaire">
                             <a id="sommaire" href=""><?= $pages->first()->title() ?></a>
@@ -45,7 +45,7 @@
                             </li>
                         <?php endforeach ?>
                 </ul>
-            </div>
+            </nav>
 
             <div id="menu-icon">
                 <svg version="1.1" id="menu-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
@@ -56,8 +56,17 @@
                 </svg>
             </div>
 
+            <div id="close-icon">
+                <svg version="1.1" id="close-icon-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+                    <g>
+                        <path d="M0.111,45.048l20.023-20.021L0.111,5.006L5.114,0l20.024,20.021L45.161,0l5.004,5.009L30.146,25.029l20.019,20.019
+                        l-5.004,5.006L25.138,30.035L5.12,50.057L0.111,45.048z"></path>
+                    </g>
+                </svg>
+            </div>
+
             <a id="accueil" href="<?= $site->url() ?>"></a>
             <p id="timer">00:05:26</p>
             
-            <main class="main">
 		    <div id="fond-ecran"></div>
+            <main class="main">

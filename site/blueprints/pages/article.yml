@@ -55,7 +55,7 @@ columns:
         type: fields
         fields:
           gallery:
-            label: Gallerie d'images
+            label: Gallerie
             type: files  
           bibliography:
             type: pages

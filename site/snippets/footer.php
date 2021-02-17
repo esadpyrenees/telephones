@@ -1,8 +1,8 @@
             </main>
-          <footer class="footer">
+          <footer class="sommaire-bas">
             <h2><?= $pages->first()->title() ?></h2>
 
-            <div class="gros-bloc">
+            <div class="sommaire-credits">
               <?php foreach($pages->first()->children() as $article) :?>
                 <li class="titre-article-footer">
                   <a <?php e($article->isActive(), ' class="active"') ?> href="<?= $article->url() ?>"><?= html($article->title()) ?></a>

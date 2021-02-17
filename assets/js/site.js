@@ -1,8 +1,10 @@
 // -------------------------------------------------------- Scrollfonction --------------------------------------------------------
 
 $(function(){
-	var $notes = $('.note-icon'),
+	const $notes = $('.note-icon'),
 		$titres = $('.titre-article'),
+		$autrice = $('.titre-auteur'),
+		$mentions = $('.mentions-article')
 		$main = $('main'),
 		$fond = $('#fond-ecran'),
 		$scrollUp = "scroll-up",
@@ -10,20 +12,41 @@ $(function(){
 		$menu_icon = $('#menu-icon'),
 		$navigation = $('#navigation'),
 		$accueil = $('#accueil'),
-		$sommaire = $('#sommaire');
+		$sommaire = $('#sommaire'),
+		$sommaireBas = $('.sommaire-bas'),
+		$images_link = $('.image-texte'),
+		$media_cont = $('.media-contener'),
+		$close_icon = $('#close-icon'),
+		$media_close_icon = $(".media-close-icon"),
+		$media_size_icon = $(".media-size-icon");
+
 	let $lastScroll = 0;
 
-	$(window).scroll(function() {
-		var wheight = $(window).scrollTop();
-		var wTitle = $titres.offset();
+	const contentTitre = $titres.text();
+	const contentAuteur = $autrice.text();
 
-		if(wheight >= wTitle.top + 100) {
+	$(window).scroll(function() {
+		const wheight = $(window).scrollTop();
+		const wInnerHeight = $(window).height();
+		const $wTitle = $titres.offset();
+		const $wBottom = $main.height();
+
+		if(wheight >= $wTitle.top + 100) {
             $fond.addClass('read-on');
         } else {
             $fond.removeClass('read-on');
         }
 
-		var currentScroll = $(window).scrollTop();
+        if(wheight >= $wBottom - wInnerHeight) {
+        	$fond.toggleClass('read-on');
+        	// $main.addClass('dark-fond');
+        	// $sommaireBas.addClass('sommaire-bas-display');
+        } else {
+        	// $main.removeClass('dark-fond');
+        	// $sommaireBas.removeClass('sommaire-bas-display');
+        }
+
+		let currentScroll = $(window).scrollTop();
 		if (currentScroll == 0) {
 		$('body').removeClass('scroll-up');
 		return;
@@ -41,6 +64,22 @@ $(function(){
 		$lastScroll = currentScroll;
 	});
 
+	function InitPlyr() {
+		console.log("hello");
+        //PLAYER JS 
+	    const playersnew = Plyr.setup('.js-player', {
+	                controls:['play-large','progress', 'volume', 'fullscreen', 'poster']
+	    });
+
+	    $('.plyr__sr-only').empty();
+	    $('.plyr__control--overlaid').empty();
+
+	    const playTitle = `
+	        <span class="play">PLAY</span>
+	    `;
+	    $('.plyr__control--overlaid').append(playTitle);
+    }
+
 	$notes.on("click", function(e){
 		e.preventDefault();
 		$(this).next().toggleClass('visible');
@@ -48,11 +87,7 @@ $(function(){
 
 	$menu_icon.on("click", function(e){
 		e.preventDefault();
-		$(this).toggleClass('open');
-		$navigation.toggleClass('open');
-		$main.toggleClass('open');
-		$fond.toggleClass('open');
-		$accueil.toggleClass('open');
+		$('body').toggleClass('body-display-menu');
 	})
 
 	$sommaire.on("click", function(e){
@@ -72,7 +107,7 @@ $(function(){
 
 		$media_cont.empty();
 
-		if(media=="img") {
+		if(media=="image") {
 			console.log("c'est une image");
 			content = `
 				<img src="${media_source}">
@@ -116,23 +151,7 @@ $(function(){
 		e.preventDefault();
 		$('body').toggleClass('body-display-media');
 	})
-
-	function InitPlyr() {
-		console.log("hello");
-        //PLAYER JS 
-	    const playersnew = Plyr.setup('.js-player', {
-	                controls:['play-large','progress', 'volume', 'fullscreen', 'poster']
-	    });
-
-	    $('.plyr__sr-only').empty();
-	    $('.plyr__control--overlaid').empty();
-
-	    const playTitle = `
-	        <span class="play">PLAY</span>
-	    `;
-	    $('.plyr__control--overlaid').append(playTitle);
-    }
-});
+})
 
 // -------------------------------------------------------- Scrollbar --------------------------------------------------------
 
@@ -169,12 +188,4 @@ progressBarContainer.addEventListener("click", (e) => {
 
 $( ".button" ).click(function() {
 	$( ".bibliographie" ).slideToggle( "slow" );
-	if (this.innerHTML === "Afficher la bibliographie") {
-		this.innerHTML = "Cacher la Bibliographie";
-		$( ".button" ).addClass("active");
-
-	} else {
-		this.innerHTML = "Afficher la bibliographie";
-		$( ".button" ).removeClass("active");
-	}
   });
