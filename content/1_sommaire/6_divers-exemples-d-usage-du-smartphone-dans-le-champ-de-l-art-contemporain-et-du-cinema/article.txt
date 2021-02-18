@@ -2,6 +2,18 @@ Title: Divers exemples d’usage du smartphone dans le champ de l’art contempo
 
 ----
 
+Partie: partiedeux
+
+----
+
+Author: Fabien Zocco
+
+----
+
+Tags: Fabien Zocco
+
+----
+
 Text:
 
 Ma démarche artistique donne lieu à des situations que l’on pourrait imaginer issues d’un univers dystopique étrangement proche du monde dans lequel nous vivons. 
@@ -119,8 +131,8 @@ Fabien Zocco/Gwendal Sartre - « Attack the sun », 2019.
 
 ----
 
-Author: Fabien Zocco
+Gallery: 
 
 ----
 
-Tags: Fabien Zocco
+Bibliography: 

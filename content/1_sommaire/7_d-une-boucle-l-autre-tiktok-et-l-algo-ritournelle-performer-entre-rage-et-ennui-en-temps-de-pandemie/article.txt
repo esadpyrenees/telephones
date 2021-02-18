@@ -2,6 +2,18 @@ Title: D’une boucle l’autre, TikTok et l’algo-ritournelle :  performer ent
 
 ----
 
+Partie: partiedeux
+
+----
+
+Author: Laurence Allard
+
+----
+
+Tags: Laurence Allard
+
+----
+
 Text:
 
 Parmi la panoplie des applications pour smartphone qui se sont succédées depuis l’apparition de ce contenu typique de la culture mobile (Allard, 2010), nous proposons dans cet article de rédiger un point d’étape au sujet d’une application qui, entre les années 2014-2020, aura vu une popularité de ses usages s’accroître notamment durant la période de la pandémie de Covid-19 durant l’année 2020 et notoirement au moment de l’épisode de confinement du printemps 2020 en France ou du couvre-feu automnal. Dans le cadre de notre travail de recherche mené de longue date autour du numérique, nous déplierons l’hypothèse du smartphone comme « caméra-stylo » au sujet de ces « mobtextes » que constituent les boucles audio-vidéo produites et vues via l’application TikTok. Les propriétés formelles conditionnées par les fonctionnalités de l’application favorisent des usages mimétiques orchestrés également par l’algorithme et les critères d’éditorialisation comme nous le verrons. À la façon d’une ritournelle suivant la définition qu’en donnent Gilles Deleuze et Felix Guattari dans Milles Plateaux (1980), la boucle TikTok popularise des musiques et des gestes mais désormais aussi des slogans et des causes. La politisation des usages de cette application dans le contexte de la pandémie lui a également conféré le statut d’une scène où se performe l’agir protestataire contemporain de corps à chœurs comme l’éclairage par l’esthétique pragmatique nous le suggère. 
@@ -146,8 +158,8 @@ En conclusion, l’étude d’un corpus de boucles et de tags collectés durant 
 
 ----
 
-Author: Laurence Allard
+Gallery: 
 
 ----
 
-Tags: Laurence Allard
+Bibliography: 

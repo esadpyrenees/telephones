@@ -2,6 +2,18 @@ Title: Vous avez demandé (la police) Ethan Hunt, ne quittez pas : “Fallout”
 
 ----
 
+Partie: partiedeux
+
+----
+
+Author: Raymond Delambre
+
+----
+
+Tags: Raymond Delambre
+
+----
+
 Text:
 
 « L’histoire de ces cent ans importe plus que celle des dix siècles antérieurs. Comme explication du présent, l’histoire se réduirait presque à l’étude de la période contemporaine » : (Charles-) Victor Langlois, Charles Seignobos, Introduction aux études historiques, 1898. Probablement…
@@ -450,8 +462,16 @@ https://www.youtube.com/watch?v=Udyj2YlOxK4
 
 ----
 
-Author: Raymond Delambre
+Bioauthor:
+
+Bonjour je suis une loutre
+
+Son site Web :
 
 ----
 
-Tags: Raymond Delambre
+Gallery: 
+
+----
+
+Bibliography: 

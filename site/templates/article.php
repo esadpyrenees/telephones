@@ -1,9 +1,8 @@
 <?php snippet('header') ?>
 
-<section class="content-article">
   <div class="titrage">
     <h1 class="titre-article"><?= $page->title()->html() ?></h1>
-    <h1 class="titre-auteur"><?= $page->author()->html() ?></h1>
+    <div class="bloc-auteur"><h1 class="titre-auteur"><?= $page->author()->html() ?></h1></div>
   </div>
 
   <div class="mentions-article"><?= $page->title()->html() ?><br><br><?= $page->author()->html() ?></div>
@@ -26,20 +25,5 @@
   </div>
 
   <?= $page->text()->ft() ?>  
-</section>
 
-<div id="biblio" class="bibliographie-article">
-  <h2 class="button">Bibliographie</h2>
-  <div class="bibliographie">
-    <?php foreach($page->bibliography()->toPages() as $biblio) :?>
-      <?= $biblio->text()->kt() ?>
-    <?php endforeach ?>
-  </div>
-</div>
-
-<div class="auteur-bio">
-	<aside>Il faudra mettre ici le contenu de la bio</aside>
-	<aside>Son site Web : <a href="">lien vers son site à mettre</a></aside>
-</div>
-
-<?php snippet('footer') ?>
+<?php snippet('footer-article') ?>

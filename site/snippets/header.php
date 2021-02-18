@@ -7,22 +7,21 @@
         <meta property="og:title" content="<?= $site->title() ?> | <?= $page->title() ?>" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="<?= $site->description() ?> | <?= $page->description() ?>" />
-        <meta property="og:image" content="<?= url('assets/img/') ?>" />
+        <meta property="og:image" content="<?= url('assets/statics/') ?>" />
 
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="">
         <meta name="twitter:creator" content="">
         <meta name="twitter:title" content="<?= $site->title() ?> | <?= $page->title() ?>">
         <meta name="twitter:description" content="<?= $site->description() ?> | <?= $page->description() ?>">
-        <meta name="twitter:image" content="<?= url('assets/img/') ?>">
+        <meta name="twitter:image" content="<?= url('assets/statics/') ?>">
         
         <?php // lien vers plusieurs fichiers CSS ?>
-        <?= css(["assets/css/style.css"], ["assets/plyr/plyr.css"]) ?>
+        <?= css(["assets/css/main.css"], ["assets/css/plyr.css"]) ?>
             
     </head>
 
-    <body cz-shortcut-listen="true">
-        <div class="page">
+    <body>
             <div id="progressBarContainer">
                 <div id="progressBar"></div>
             </div>
@@ -69,4 +68,5 @@
             <p id="timer">00:05:26</p>
             
 		    <div id="fond-ecran"></div>
+            
             <main class="main">

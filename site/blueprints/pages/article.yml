@@ -16,6 +16,12 @@ columns:
   main:
     width: 2/3
     fields:
+      partie:
+        label: Partie où apparaît l'article
+        type: select
+        options:
+          partieune: Partie 1
+          partiedeux: Partie 2
       author:
         label: Auteur
         type: text
@@ -47,13 +53,29 @@ columns:
           - pagelink
           - file
           - footnote
-          - test
   sidebar:
     width: 1/3
     sections:
       meta:
         type: fields
         fields:
+          bioauthor:
+            label: Biographie de l'auteur.rice
+            type: markdown
+            size: medium
+            buttons:
+              - headlines
+                  - h1
+              - bold
+              - italic
+              - link
+              - email
+              - blockquote
+              - horizontal-rule
+              - strikethrough
+              - pagelink
+              - file
+              - footnote
           gallery:
             label: Gallerie
             type: files  

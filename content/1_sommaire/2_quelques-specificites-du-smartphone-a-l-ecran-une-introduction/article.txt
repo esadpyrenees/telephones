@@ -2,6 +2,10 @@ Title: Quelques spécificités du smartphone à l'écran: une introduction
 
 ----
 
+Partie: partieune
+
+----
+
 Author: Anaïs Guilet
 
 ----

@@ -1,4 +1,4 @@
-Media-type: image
+Media-type: img
 
 ----
 

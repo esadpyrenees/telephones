@@ -2,6 +2,18 @@ Title: Usages du smartphone et grand écran, l’expérience spectatorielle du �
 
 ----
 
+Partie: partieune
+
+----
+
+Author: Ghislaine Chabert
+
+----
+
+Tags: Ghislaine Chabert
+
+----
+
 Text:
 
 ## Introduction
@@ -115,8 +127,8 @@ Enfin, si l’on se réfère à Renée Bourassa (2014) ce sont bien les expérie
 
 ----
 
-Author: Ghislaine Chabert
+Gallery: 
 
 ----
 
-Tags: Ghislaine Chabert
+Bibliography: 

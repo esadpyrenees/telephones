@@ -22,8 +22,11 @@ $(function(){
 
 	let $lastScroll = 0;
 
-	const contentTitre = $titres.text();
-	const contentAuteur = $autrice.text();
+	// Inutile pour Kirby 
+	
+	// const contentTitre = $titres.text();
+	// const contentAuteur = $autrice.text();
+	// $mentions.append(`${contentTitre}<br><br>${contentAuteur}`);
 
 	$(window).scroll(function() {
 		const wheight = $(window).scrollTop();
@@ -82,6 +85,7 @@ $(function(){
 
 	$notes.on("click", function(e){
 		e.preventDefault();
+		$(this).toggleClass('active');
 		$(this).next().toggleClass('visible');
 	})
 
@@ -107,7 +111,7 @@ $(function(){
 
 		$media_cont.empty();
 
-		if(media=="image") {
+		if(media=="img") {
 			console.log("c'est une image");
 			content = `
 				<img src="${media_source}">
@@ -116,14 +120,6 @@ $(function(){
 
 		}
 		if(media=="vid-web") {
-			content = `
-				<div id="player" class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="${media_source}"></div>
-			`;
-			$media_cont.append(content);
-			InitPlyr();
-		}
-
-		if(media=="youtube") {
 			content = `
 				<div id="player" class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="${media_source}"></div>
 			`;

@@ -15,7 +15,7 @@ Kirby::plugin('phonecinema/medias', [
 
           if ($tag->file->media_type() == 'vid-web') {
             $media_label = 'Vidéo';
-          } elseif  ($tag->file->media_type() == 'image') {
+          } elseif  ($tag->file->media_type() == 'img') {
             $media_label = 'Image';
           } elseif ($tag->file->media_type() == 'video') {
             $media_label = 'Vidéo';
