@@ -123,6 +123,14 @@ $(function(){
 			InitPlyr();
 		}
 
+		if(media=="youtube") {
+			content = `
+				<div id="player" class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="${media_source}"></div>
+			`;
+			$media_cont.append(content);
+			InitPlyr();
+		}
+
 		const cloneLegende = media_legende.clone();
 		const cloneCloseMedia = $media_close_icon.clone();
 		const cloneSizeMedia = $media_size_icon.clone();

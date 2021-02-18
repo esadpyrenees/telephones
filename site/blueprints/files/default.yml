@@ -6,8 +6,8 @@ fields:
     required: true
     options:
       img: Image
-      vid-web: Vidéo
-      youtube: Youtube
+      video: Vidéo
+      vid-web: Youtube
   alt:
     type: text
     width: 1/2
@@ -18,4 +18,4 @@ fields:
     label: URL Youtube
     type: url
     when:
-      media_type: youtube
+      media_type: vid-web
