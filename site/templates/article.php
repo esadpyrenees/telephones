@@ -1,4 +1,7 @@
 <?php snippet('header') ?>
+            
+<div id="fond-ecran"></div>
+<main class="main">
 
   <div class="titrage">
     <h1 class="titre-article"><?= $page->title()->html() ?></h1>
@@ -26,4 +29,19 @@
 
   <?= $page->text()->ft() ?>  
 
-<?php snippet('footer-article') ?>
+  </main>
+
+  <div class="bibliographie-article">
+            <h1 class="button">Bibliographie</h1>
+            <div class="bibliographie">
+                <?php foreach($page->bibliography()->toPages() as $biblio) :?>
+                    <?= $biblio->text()->kt() ?>
+                <?php endforeach ?>
+            </div>
+            </div>
+
+	<div class="auteur-bio">
+		<aside><?= $page->bioauthor() ?></aside>
+	</div>
+
+<?php snippet('footer-sommaire') ?>

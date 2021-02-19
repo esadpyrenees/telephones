@@ -2,6 +2,32 @@ title: Crédits
 
 fields:
   text:
+    width: 3/4
     label: Contexte
     type: markdown
     size: medium
+    buttons:
+      - headlines
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+      - bold
+      - italic
+      - ul
+      - ol
+      - link
+      - email
+      - blockquote
+      - horizontal-rule
+      - strikethrough
+      - pagelink
+      - file
+      - footnote
+  logo:
+    width: 1/4
+    label: Logo
+    type: files
+    layout: cards

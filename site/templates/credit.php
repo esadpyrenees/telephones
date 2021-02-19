@@ -1,14 +1,19 @@
 <?php snippet('header') ?>
 
-<section class="content article">
-  <article>
-    <h1 class="titre-article"><?= $page->title()->html() ?></h1>
+<div class="credits">
+    <h1><?= $page->title()->html() ?></h1>
 
-    <article>
+    <p>
       <?= $page->text()->kt() ?>
-    </article>
+    </p>
 
-  </article>
-</section>
+    <div id="logos">
+      <?php foreach($page->logo()->toFiles() as $logos): ?>
+        <?= $logos ?>
+      <?php endforeach ?>
+		</div>
+
+
+</div>
 
 <?php snippet('footer') ?>

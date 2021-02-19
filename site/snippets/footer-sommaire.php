@@ -1,18 +1,3 @@
-        </main>
-
-            <div class="bibliographie-article">
-            <h1 class="button">Bibliographie</h1>
-            <div class="bibliographie">
-                <?php foreach($page->bibliography()->toPages() as $biblio) :?>
-                    <?= $biblio->text()->kt() ?>
-                <?php endforeach ?>
-            </div>
-            </div>
-
-            <div class="auteur-bio">
-                <aside><?= $page->bioauthor() ?></aside>
-            </div>
-
           <footer class="sommaire-bas">
             <h1><?= $pages->first()->title() ?></h1>
 

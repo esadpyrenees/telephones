@@ -1,12 +1,15 @@
 <?php snippet('header') ?>
 
-<section class="content article">
-    <h1 class="titre-article"><?= $page->title()->html() ?></h1>
-	<h1 class="titre-auteur"><?= $page->author()->html() ?></h1>
+<div class="accueil">
+    <div class="titre-accueil">
+        <h1 class="titre-article"><?= $page->title()->html() ?></h1>
+    </div>
+</div>
+
+<main class="main">
 
     <?= $page->text()->kirbytext() ?>
 
-    <p class="mentions-article"><?= $page->title()->html() ?><br><br><?= $page->author()->html() ?></p>
-</section>
+</main>
 
-<?php snippet('footer') ?>
+<?php snippet('footer-sommaire') ?>

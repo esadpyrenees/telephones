@@ -897,6 +897,7 @@ display: block!important;
 */
 .accueil {
   display: -webkit-flex;
+  height: 100vh;
 }
 
 .accueil .titre-accueil {
@@ -1141,7 +1142,7 @@ display: block!important;
 /* --------------------------------------------- Page Crédits --------------------------------------------- */
 
 .credits p,
-.credits aside,
+.credits blockquote p,
 #logos {
   width: 60%;
   text-align: center;
@@ -1155,7 +1156,7 @@ display: block!important;
   font-size: calc(0.675vw + 1rem);
 }
 
-.credits aside {
+.credits blockquote p {
   font-family: "Redaction-35";
   font-size: calc(0.375vw + 1rem);
   color: var(--color-main-blue);
@@ -1333,7 +1334,7 @@ display: block!important;
   .sommaire-credits,
   .auteur-bio aside,
   .credits p,
-  .credits aside,
+  .credits blockquote,
   #logos {
     width: 80%;
   }
