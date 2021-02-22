@@ -397,6 +397,8 @@ html,
 body { 
   margin: 0;
   height: 100%;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
 }
 
 html {
@@ -688,6 +690,10 @@ main blockquote p {
   font-size: calc(0.375vw + 1rem);
   width: 60%;
   margin: 40px auto;
+}
+
+.intro-accueil {
+  color: var(--color-grey-light);
 }
 
 #fond-ecran {
@@ -1004,6 +1010,7 @@ display: block!important;
 .body-display-menu #accueil,
 .body-display-menu .sommaire-bas,
 .body-display-menu .credits,
+.body-display-menu .bibliographie-generale,
 .body-display-menu .titre-accueil,
 .body-display-menu .bibliographie-article,
 .body-display-menu .auteur-bio {
@@ -1139,7 +1146,7 @@ display: block!important;
   }
 }
 
-/* --------------------------------------------- Page Crédits --------------------------------------------- */
+/* --------------------------------------------- Page Crédits & Bibliographie générale --------------------------------------------- */
 
 .credits p,
 .credits blockquote p,
@@ -1192,6 +1199,46 @@ display: block!important;
   width: auto;
   margin: auto;
 }
+
+/* --------------------------------------------- Page Bibliographie générale --------------------------------------------- */
+
+.bibliographie-generale {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  position: relative;
+  color: var(--color-grey-light);
+  min-height: 100%;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  z-index: 8;
+  align-items: center;
+}
+
+.bibliographie-generale div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  line-height: 1.5;
+  font-size: calc(0.5vw + 1rem);
+}
+
+.entree-reference {
+  grid-column: 1/2;
+  text-align: right;
+}
+
+.entree-reference em{
+  color: var(--color-main-blue);
+}
+
+.article-correspondant {
+  grid-column: 2/3;
+  text-align: left;
+}
+
 /* --------------------------------------------- Bibliographie & Footer --------------------------------------------- */
 
 .sommaire-bas,
@@ -1211,7 +1258,8 @@ display: block!important;
 
 .sommaire-bas h1,
 .bibliographie-article h1,
-.credits h1 {
+.credits h1,
+.bibliographie-generale h1 {
   margin: 0;
   margin-bottom: 40px;
   font-size: calc(2vw + 1rem);

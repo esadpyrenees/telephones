@@ -41,7 +41,7 @@
             </div>
 
 	<div class="auteur-bio">
-		<aside><?= $page->bioauthor() ?></aside>
+		<aside><?= $page->bioauthor()->kt() ?></aside>
 	</div>
 
 <?php snippet('footer-sommaire') ?>

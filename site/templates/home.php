@@ -8,7 +8,9 @@
 
 <main class="main">
 
-    <?= $page->text()->kirbytext() ?>
+    <div class="intro-accueil">
+        <?= $page->text()->kirbytext() ?>
+    </div>
 
 </main>
 

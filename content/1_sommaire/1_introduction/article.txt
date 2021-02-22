@@ -72,6 +72,10 @@ Le cinéma de films faits avec des téléphones-caméras rejoint, en de nombreux
 
 ----
 
+Bioauthor: 
+
+----
+
 Gallery:
 
 - 0.jpg
@@ -79,7 +83,4 @@ Gallery:
 
 ----
 
-Bibliography:
-
-- >
-  bibliographie-generale/andre-e-zabunyan-d
+Bibliography: 
