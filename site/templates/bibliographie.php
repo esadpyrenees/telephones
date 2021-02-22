@@ -5,13 +5,7 @@
     <h1><?= $page->title()->html() ?></h1>
 
     <section class="filtre">
-      <button class="">Anaïs Guilet</button>
-      <button class="">Corinne Melin</button>
-      <button class="">Laurence Allard</button>
-      <button class="">Fabien Zocco</button>
-      <button class="">Ghislaine Chabert</button>
-      <button class="">Raymond Delambre</button>
-      <button class="">Martine Beugnet</button>
+      <button class="">Filtrer par</button>
     </section>
 
     <div>
