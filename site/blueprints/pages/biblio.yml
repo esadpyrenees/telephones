@@ -1,7 +1,0 @@
-title: Entrée bibliographique
-
-fields:
-  text:
-    type: textarea
-    size: small
-    label: Contenu
