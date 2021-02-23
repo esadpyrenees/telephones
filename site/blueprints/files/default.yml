@@ -1,0 +1,21 @@
+title: Default file
+
+fields: 
+  media_type:
+    type: select
+    required: true
+    options:
+      img: Image
+      video: Vidéo
+      vid-web: Youtube
+  alt:
+    type: text
+    width: 1/2
+  caption:
+    type: textarea
+    width: 1/2
+  yt_url:
+    label: URL Youtube
+    type: text
+    when:
+      media_type: vid-web

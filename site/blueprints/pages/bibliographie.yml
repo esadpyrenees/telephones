@@ -1,0 +1,16 @@
+title: Bibliographie
+
+options:
+  changeSlug: false
+  changeTitle: false
+  duplicate: false
+  delete: false
+  status: false
+
+sections:
+  authors:
+    headline: Bibliographie
+    type: pages
+    templates: 
+      - biblio
+    status: all
