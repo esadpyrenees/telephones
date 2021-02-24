@@ -5,18 +5,23 @@
     <h1><?= $page->title()->html() ?></h1>
 
     <section class="filtre">
-      <button class="">Filtrer par</button>
+      <select class="">
+        <option value="">Filtrer par</option>
+        <option value="">Anaïs Guilet</option>
+        <option value="">Martine Beugnet</option>
+        <option value="">Ghislaine Chabert</option>
+      </select>
     </section>
 
     <div>
       <h2 class="entree-reference">Références</h2>
-      <h2 class="article-correspondant">Notice présente dans :</h2>
+      <h2 class="article-correspondant">Article(s)</h2>
     </div>
-      
+
       <?php foreach($page->children()->template('biblio') as $biblio) :
         $articles = page('sommaire')->children()->filter(function($child) use($biblio){
         return $child->bibliography()->toPages()->has($biblio);}) ?>
-        
+
         <div class='<?php foreach($articles as $article): ?><?= $article->author()->slug() ?><?php endforeach ?>'>
 
           <article class="entree-reference">
@@ -42,9 +47,9 @@
           <?php endif ?>
 
           </div>
-        
+
         <br>
-        
+
       <?php endforeach ?>
   </div>
 
