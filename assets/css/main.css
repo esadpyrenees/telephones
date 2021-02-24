@@ -536,7 +536,6 @@ sup:hover {
   top: -0.1em;
   content: url('../statics/red-circle-icon.svg');
   margin-left: 10px;
-  opacity: .3;
 }
 
 .timer {
