@@ -1353,7 +1353,8 @@ display: block!important;
   text-align: left;
 }
 
-.sommaire-credits p em {
+.sommaire-credits p em,
+.article-correspondant em {
   color: var(--color-grey-light);
 }
 
