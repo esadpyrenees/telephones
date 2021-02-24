@@ -20,11 +20,12 @@ $(function(){
 		$media_close_icon = $(".media-close-icon"),
 		$media_size_icon = $(".media-size-icon");
 
+		var cOK = 299;
 
 	let $lastScroll = 0;
 
-	// Inutile pour Kirby 
-	
+	// Inutile pour Kirby
+
 	// const contentTitre = $titres.text();
 	// const contentAuteur = $autrice.text();
 	// $mentions.append(`${contentTitre}<br><br>${contentAuteur}`);
@@ -70,7 +71,7 @@ $(function(){
 
 	function InitPlyr() {
 		console.log("hello");
-        //PLAYER JS 
+        //PLAYER JS
 	    const playersnew = Plyr.setup('.js-player', {
 	                controls:['play-large','progress', 'volume', 'fullscreen', 'poster']
 	    });
@@ -209,4 +210,3 @@ timerInstance.start();
 timerInstance.addEventListener('secondsUpdated', function (e) {
     $('#basicUsage').html(timerInstance.getTimeValues().toString());
 });
-
