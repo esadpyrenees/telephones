@@ -957,7 +957,7 @@ display: block!important;
   margin: 40px auto;
 }
 
-.intro-accueil {
+.intro-accueil a {
   font-family: "Redaction-35";
   font-size: calc(0.375vw + 1rem);
 }
@@ -1201,7 +1201,8 @@ display: block!important;
 }
 
 .credits a,
-.auteur-bio a {
+.auteur-bio a,
+.intro-accueil a {
   border-bottom: 2px dotted var(--color-main-red);
 }
 
