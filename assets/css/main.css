@@ -1364,6 +1364,10 @@ h2.article-correspondant {
   margin: 20px auto;
 }
 
+.auteur-bio p {
+  margin: 20px auto;
+}
+
 .sommaire-credits {
   width: 60%;
   display: grid;
