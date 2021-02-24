@@ -18,8 +18,8 @@ La première journée s’est déroulée à l’université Savoie Mont Blanc à
 
 Logo:
 
-- logo-llseti.png
-- logo-esad.png
+- logo_llseti.png
+- logo_esad.svg
 
 ----
 
