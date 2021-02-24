@@ -65,4 +65,5 @@
             </div>
 
             <a id="accueil" href="<?= $site->url() ?>"></a>
-            <p id="timer">00:05:26</p>
+            
+            <div id="basicUsage" class="timer">00:00:00</div>

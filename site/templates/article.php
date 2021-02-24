@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-
+            
 <div id="fond-ecran"></div>
 <main class="main">
 
@@ -27,13 +27,13 @@
   	</svg>
   </div>
 
-  <?= $page->text()->ft() ?>
+  <?= $page->text()->ft() ?>  
 
   </main>
-  
+
   <?php if ($page->bibliography()->isNotEmpty()): ?>
     <div class="bibliographie-article">
-      <h1 class="button">Bibliographie</h1>
+      <h1 class="button">Bibliographie +</h1>
       <div class="bibliographie">
           <?php foreach($page->bibliography()->toPages() as $biblio) :?>
               <?= $biblio->text()->kt() ?>

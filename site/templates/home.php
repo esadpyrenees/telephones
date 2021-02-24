@@ -6,8 +6,12 @@
     </div>
 </div>
 
+<main class="main">
+
     <div class="intro-accueil">
         <?= $page->text()->kirbytext() ?>
     </div>
+
+</main>
 
 <?php snippet('footer-sommaire') ?>

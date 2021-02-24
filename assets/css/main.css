@@ -514,7 +514,7 @@ sup:hover {
 /* --------------------------------------------- Interface --------------------------------------------- */
 
 #accueil, 
-#timer, 
+.timer, 
 #menu-icon,
 #close-icon {
   position: fixed;
@@ -536,9 +536,10 @@ sup:hover {
   top: -0.1em;
   content: url('../statics/red-circle-icon.svg');
   margin-left: 10px;
+  opacity: .3;
 }
 
-#timer {
+.timer {
   bottom: 20px;
   right: 25%;
   background-color: var(--color-grey-med);
@@ -694,6 +695,7 @@ main blockquote p {
 
 .intro-accueil {
   color: var(--color-grey-light);
+  margin-top: 100vh;
 }
 
 #fond-ecran {
@@ -952,7 +954,7 @@ display: block!important;
   display: block;
 }
 
-.body-display-media #timer {
+.body-display-media .timer {
   bottom: 20px;
 }
 
@@ -1042,12 +1044,12 @@ display: block!important;
   left: 20px;
 }
 
-.scroll-down #timer{
+.scroll-down .timer{
   /* cache le bouton au scroll down */
   transform: var(--offcanvas-timer);
 }
 
-.scroll-up #timer {
+.scroll-up .timer {
   /* affiche le bouton au scroll up */
   transform: var(--incanvas-timer);
 }
@@ -1230,7 +1232,7 @@ display: block!important;
   text-align: left;
 }
 
-.entree-reference em{
+.entree-reference em, .bibliographie-article em {
   color: var(--color-main-blue);
 }
 
@@ -1267,17 +1269,20 @@ display: block!important;
   color: var(--color-grey-light);
 }
 
-.bibliographie-article h1:after {
-  content: "+";
-  position: absolute;
-  font-size: 0.6em;
-  margin-left: 20px;
-  margin-top: 0.3em;
-  vertical-align: baseline;
-}
-
 .button {
   cursor: pointer;
+}
+
+.bibliographie-article {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  position: relative;
+  color: var(--color-grey-light);
+  min-height: 100%;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  z-index: 8;
 }
 
 .bibliographie {
@@ -1285,6 +1290,7 @@ display: block!important;
   font-size: calc(0.2vw + 1rem);
   width: 60%;
   margin: 0 auto;
+  margin-top: 10px;
 }
 
 .bibliographie p {
@@ -1377,6 +1383,7 @@ display: block!important;
   
   #accueil:after {
     margin: auto;
+    top: -0.3em;
   }
   
   .sommaire-credits,
@@ -1401,6 +1408,11 @@ display: block!important;
   }
   
   @media screen and (max-width: 580px) {
+
+    #accueil:after {
+      top: -0.3em;
+    }
+
   .sommaire-bas {
     padding-top: 20px;
   }

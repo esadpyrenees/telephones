@@ -20,6 +20,7 @@ $(function(){
 		$media_close_icon = $(".media-close-icon"),
 		$media_size_icon = $(".media-size-icon");
 
+
 	let $lastScroll = 0;
 
 	// Inutile pour Kirby 
@@ -192,4 +193,20 @@ progressBarContainer.addEventListener("click", (e) => {
 
 $( ".button" ).click(function() {
 	$( ".bibliographie" ).slideToggle( "slow" );
+	if (this.innerHTML === "Bibliographie +") {
+		this.innerHTML = "Bibliographie -";
+	  } else {
+		this.innerHTML = "Bibliographie +";
+	  }
   });
+
+// -------------------------------------------------------- Timer --------------------------------------------------------
+
+var timerInstance = new easytimer.Timer();
+
+timerInstance.start();
+
+timerInstance.addEventListener('secondsUpdated', function (e) {
+    $('#basicUsage').html(timerInstance.getTimeValues().toString());
+});
+
