@@ -30,7 +30,7 @@
   <?= $page->text()->ft() ?>
 
   </main>
-<!-- Un test pour Github -->
+  
   <?php if ($page->bibliography()->isNotEmpty()): ?>
     <div class="bibliographie-article">
       <h1 class="button">Bibliographie</h1>
