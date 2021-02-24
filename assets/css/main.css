@@ -1276,6 +1276,7 @@ select option {
 h2.entree-reference,
 h2.article-correspondant {
   font-size: calc(1.175vw + 1rem);
+  letter-spacing: .01em;
 }
 
 .entree-reference p,
