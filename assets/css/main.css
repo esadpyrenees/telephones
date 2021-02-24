@@ -2,7 +2,7 @@
 
 
 
-/** 
+/**
 * Indiquer au navigateur d'utiliser
 * UTF-8 comme jeu de caractères */
 @charset "utf-8";
@@ -393,8 +393,8 @@ h4 {
   -webkit-transition-duration: 0.3s;
 }
 
-html, 
-body { 
+html,
+body {
   margin: 0;
   height: 100%;
   overflow: -moz-scrollbars-none;
@@ -513,8 +513,8 @@ sup:hover {
 
 /* --------------------------------------------- Interface --------------------------------------------- */
 
-#accueil, 
-.timer, 
+#accueil,
+.timer,
 #menu-icon,
 #close-icon {
   position: fixed;
@@ -550,7 +550,7 @@ sup:hover {
 
 /* --------------------------------------------- Menu --------------------------------------------- */
 
-#menu-icon, 
+#menu-icon,
 #close-icon {
   height: 25px;
   width: 25px;
@@ -559,7 +559,7 @@ sup:hover {
   cursor: pointer;
 }
 
-#menu-icon svg, 
+#menu-icon svg,
 #close-icon svg,
 .media-close-icon svg,
 .media-size-icon svg {
@@ -592,7 +592,7 @@ a:hover {
 }
 
 .menu li {
-  padding: 0 20px; 
+  padding: 0 20px;
   line-height: 1.4;
 /*  background: linear-gradient(0.45turn,hotpink,pink);
 */
@@ -656,7 +656,7 @@ main {
   z-index: 10;
 }
 
-main p, 
+main p,
 main li {
   line-height: 1.5;
   font-size: calc(0.675vw + 1rem);
@@ -933,12 +933,34 @@ display: block!important;
   font-size: calc(3.7vw + 1rem);
   text-transform: uppercase;
   margin: auto;
-
 /*  -webkit-animation: defilement 16s linear infinite;
   -moz-animation: defilement 16s linear infinite;
   animation: defilement 16s linear infinite;*/
 /*  animation-direction: alternate;
 */}
+
+.intro-accueil {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  align-items: center;
+  align-content: center;
+  min-height: 100%;
+  padding: 40% 0;
+  color: pink;
+}
+
+.intro-accueil p {
+  width: 60%;
+  text-align: center;
+  line-height: 1.5;
+  font-size: calc(0.675vw + 1rem);
+  margin: 40px auto;
+}
+
+.intro-accueil {
+  font-family: "Redaction-35";
+  font-size: calc(0.375vw + 1rem);
+}
 
 /*
   Affichage des médias (image, vidéo)
@@ -981,7 +1003,7 @@ display: block!important;
   cursor: unset;
 }
 
-.body-display-media .media-contener img, 
+.body-display-media .media-contener img,
 .body-display-media .media-contener span,
 .body-display-media .media-contener .plyr {
   width: 50%!important;
@@ -1028,8 +1050,8 @@ display: block!important;
 }
 
 /*
-  Affichage des éléments timer 
-  et mentions de l'article 
+  Affichage des éléments timer
+  et mentions de l'article
   au scroll
 */
 
@@ -1071,7 +1093,7 @@ display: block!important;
   border-radius: 10px;
 }
 
-.plyr--video, 
+.plyr--video,
 .plyr__video-wrapper {
   background: none!important;
 }
@@ -1120,7 +1142,7 @@ display: block!important;
 /*
   Animations CSS
 */
-  
+
 @-webkit-keyframes clignote {
   0% {
     opacity: 0;
@@ -1356,7 +1378,7 @@ display: block!important;
   .bloc-auteur {
     align-items: center;
   }
-  
+
   .titre-accueil h1 {
     width: 70%;
   }
@@ -1366,26 +1388,26 @@ display: block!important;
     --menu-is-open-width: 70vw;
     --menu-translate-width: -70vw;
   }
-  
+
   main {
     width: 95%;
   }
-  
+
   #accueil {
     width: 25px;
     height: 25px;
     border-left: 1px solid var(--color-main-red);
   }
-  
+
   #accueil:before {
     content: "";
   }
-  
+
   #accueil:after {
     margin: auto;
     top: -0.3em;
   }
-  
+
   .sommaire-credits,
   .auteur-bio aside,
   .credits p,
@@ -1393,20 +1415,20 @@ display: block!important;
   #logos {
     width: 80%;
   }
-  
+
   #fond-ecran {
     width: 100%;
   }
-  
+
   .mentions-article {
     width: 30%;
   }
-  
+
   .dark-fond {
     background-color: transparent;
   }
   }
-  
+
   @media screen and (max-width: 580px) {
 
     #accueil:after {
@@ -1416,7 +1438,7 @@ display: block!important;
   .sommaire-bas {
     padding-top: 20px;
   }
-  
+
   .sommaire-credits,
   .auteur-bio aside,
   .credits p,
@@ -1424,27 +1446,27 @@ display: block!important;
   #logos {
     width: 92%;
   }
-  
+
   main blockquote p {
     width: 75%;
   }
-  
+
   .titre-chapitre {
     font-size: calc(2vw + 1rem);
     letter-spacing: .1em;
   }
-  
+
   .mentions-article {
     display: none;
   }
-  
+
   .media-contener {
     width: 95vw;
     left: 50%;
     transform: translateX(-50%);
   }
-  
-  .body-display-media .media-contener img, 
+
+  .body-display-media .media-contener img,
   .body-display-media .media-contener span,
   .body-display-media .media-contener .plyr {
     width: 80%!important;
