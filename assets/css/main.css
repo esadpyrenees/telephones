@@ -1260,7 +1260,7 @@ display: block!important;
 
 select option {
     background-color: var(--color-main-blue);
-    font-family: "Milimetre-regular", sans-serif;
+    font-family: "Milimetre-regular", "Arial", sans-serif;
 }
 
 .bibliographie-generale div{
@@ -1293,7 +1293,8 @@ h2.article-correspondant {
 }
 
 .entree-reference em, .bibliographie-article em {
-  color: var(--color-main-blue);
+  color: #8ed99e;
+  opacity: 100%;
 }
 
 /* --------------------------------------------- Bibliographie & Footer --------------------------------------------- */
