@@ -22,6 +22,8 @@ $(function(){
 
 		var cOK = 299;
 
+		var lol = 10;
+
 	let $lastScroll = 0;
 
 	// Inutile pour Kirby
