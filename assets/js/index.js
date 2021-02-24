@@ -20,6 +20,8 @@ $(function(){
 		$media_close_icon = $(".media-close-icon"),
 		$media_size_icon = $(".media-size-icon");
 
+		var cNon = 152;
+
 		var cOK = 299;
 
 		var lol = 10;
