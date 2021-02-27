@@ -15,10 +15,10 @@
         <meta name="twitter:title" content="<?= $site->title() ?> | <?= $page->title() ?>">
         <meta name="twitter:description" content="<?= $site->description() ?> | <?= $page->description() ?>">
         <meta name="twitter:image" content="<?= url('assets/statics/') ?>">
-        
+
         <?php // lien vers plusieurs fichiers CSS ?>
         <?= css(["assets/css/plyr.css", "assets/css/main.css"]) ?>
-            
+
     </head>
 
     <body>
@@ -65,5 +65,5 @@
             </div>
 
             <a id="accueil" href="<?= $site->url() ?>"></a>
-            
+
             <div id="basicUsage" class="timer">00:00:00</div>

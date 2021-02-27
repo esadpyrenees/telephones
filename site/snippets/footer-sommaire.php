@@ -1,4 +1,4 @@
-          <footer class="sommaire-bas">
+          <footer id="foot-scene" class="sommaire-bas">
             <h1><?= $pages->first()->title() ?></h1>
 
             <div class="sommaire-credits">
@@ -23,7 +23,7 @@
         <?= js("assets/js/easytimer.min.js") ?>
         <?= js("assets/js/jquery.js") ?>
         <?= js("assets/js/index.js") ?>
+        <?= js("assets/js/accueil.js") ?>
 
 	</body>
 </html>
-

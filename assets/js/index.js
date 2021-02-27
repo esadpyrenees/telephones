@@ -20,12 +20,6 @@ $(function(){
 		$media_close_icon = $(".media-close-icon"),
 		$media_size_icon = $(".media-size-icon");
 
-		var cNon = 152;
-
-		var cOK = 299;
-
-		var lol = 10;
-
 	let $lastScroll = 0;
 
 	// Inutile pour Kirby
@@ -34,44 +28,42 @@ $(function(){
 	// const contentAuteur = $autrice.text();
 	// $mentions.append(`${contentTitre}<br><br>${contentAuteur}`);
 
-	$(window).scroll(function() {
-		const wheight = $(window).scrollTop();
-		const wInnerHeight = $(window).height();
-		const $wTitle = $titres.offset();
-		const $wBottom = $main.height();
-
-		if(wheight >= $wTitle.top + 100) {
-            $fond.addClass('read-on');
-        } else {
-            $fond.removeClass('read-on');
-        }
-
-        if(wheight >= $wBottom - wInnerHeight) {
-        	$fond.toggleClass('read-on');
-        	// $main.addClass('dark-fond');
-        	// $sommaireBas.addClass('sommaire-bas-display');
-        } else {
-        	// $main.removeClass('dark-fond');
-        	// $sommaireBas.removeClass('sommaire-bas-display');
-        }
-
-		let currentScroll = $(window).scrollTop();
-		if (currentScroll == 0) {
-		$('body').removeClass('scroll-up');
-		return;
-		}
-
-		if (currentScroll > $lastScroll && !$('body').hasClass('scroll-down')) {
-		// down
-		$('body').removeClass('scroll-up');
-		$('body').addClass('scroll-down');
-		} else if (currentScroll < $lastScroll && $('body').hasClass('scroll-down')) {
-		// up
-		$('body').removeClass('scroll-down');
-		$('body').addClass('scroll-up');
-		}
-		$lastScroll = currentScroll;
-	});
+	// $(window).scroll(function() {
+	// 	const wheight = $(window).scrollTop();
+	// 	const wInnerHeight = $(window).height();
+	// 	const $wTitle = $titres.offset();
+	// 	const $wBottom = $main.height();
+	//
+	// 	if(wheight >= $wTitle.top + 100) {
+  //           $fond.addClass('read-on');
+  //       } else {
+  //           $fond.removeClass('read-on');
+  //       }
+	//
+  //       if(wheight >= $wBottom - wInnerHeight) {
+  //       	$fond.toggleClass('read-on');
+	//
+  //       } else {
+	//
+  //       }
+	//
+	// 	let currentScroll = $(window).scrollTop();
+	// 	if (currentScroll == 0) {
+	// 	$('body').removeClass('scroll-up');
+	// 	return;
+	// 	}
+	//
+	// 	if (currentScroll > $lastScroll && !$('body').hasClass('scroll-down')) {
+	// 	// down
+	// 	$('body').removeClass('scroll-up');
+	// 	$('body').addClass('scroll-down');
+	// 	} else if (currentScroll < $lastScroll && $('body').hasClass('scroll-down')) {
+	// 	// up
+	// 	$('body').removeClass('scroll-down');
+	// 	$('body').addClass('scroll-up');
+	// 	}
+	// 	$lastScroll = currentScroll;
+	// });
 
 	function InitPlyr() {
 		console.log("hello");
