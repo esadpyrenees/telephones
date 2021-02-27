@@ -471,6 +471,11 @@ h1, h2 {
   text-align: center;
 }
 
+h3 {
+  font-family: "Milimetre-extra-black";
+  margin: 60px 0;
+}
+
 main h2 {
   -webkit-text-fill-color: var(--color-grey-light);
   text-shadow: -1px -1px 0 var(--color-grey-body), 1px -1px 0 var(--color-grey-body), -1px 1px 0 var(--color-grey-body), 1px 1px 0 var(--color-grey-body);
