@@ -12,7 +12,7 @@ $(function(){
 	document.body.style.setProperty('--wc', `${titreAccueilCarreW}px`);
 	document.body.style.setProperty('--wv', `${titreAccueilVerticalW}px`);
 
-	$('body').addClass('accueil');
+	// $('body').addClass('accueil');
 
 	$(window).resize(function() {
 		titreAccueilW = titreAccueil.outerWidth() - 5 ;

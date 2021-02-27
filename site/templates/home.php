@@ -16,6 +16,6 @@
 
 <div class="intro-accueil">
   <?= $page->text()->kirbytext() ?>
-</div
+</div>
 
 <?php snippet('footer-sommaire') ?>
