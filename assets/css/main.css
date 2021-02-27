@@ -1373,6 +1373,10 @@ h2.article-correspondant {
   color: var(--color-grey-light);
 }
 
+.sommaire-bas h1 {
+  margin-bottom: 20px;
+}
+
 .button {
   cursor: pointer;
 }
