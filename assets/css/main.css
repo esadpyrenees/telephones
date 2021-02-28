@@ -1508,6 +1508,7 @@ main {
   top: -0.3em;
 }
 
+.intro-accueil p,
 .sommaire-credits,
 .auteur-bio aside,
 .credits p,
@@ -1550,6 +1551,7 @@ main {
   padding-top: 20px;
 }
 
+.intro-accueil p,
 .sommaire-credits,
 .auteur-bio aside,
 .credits p,
