@@ -24,7 +24,7 @@ $(function(){
 	});
 
 	const boxScene = document.querySelector("#scene");
-	const boxElement = document.querySelector('#foot-scene');
+	const boxElement = document.querySelector('.intro-accueil');
 
 	function createObserver() {
 		var observer;
