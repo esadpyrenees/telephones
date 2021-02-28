@@ -23,9 +23,12 @@ $(function(){
 		document.body.style.setProperty('--wv', `${titreAccueilVerticalW}px`);
 	});
 
-	const boxScene = document.querySelector("#scene");
 	const boxElement = document.querySelector('.intro-accueil');
 
+	if (boxElement) {
+			createObserver();
+	}
+	
 	function createObserver() {
 		var observer;
 	  const options = {
@@ -47,6 +50,4 @@ $(function(){
 		}
 	  });
 	}
-
-	createObserver();
 })

@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-            
+
 <div id="fond-ecran"></div>
 <main class="main">
 
@@ -27,7 +27,10 @@
   	</svg>
   </div>
 
-  <?= $page->text()->ft() ?>  
+  <article id="content" class="content">
+    <?= $page->text()->ft() ?>
+  </article>
+
 
   </main>
 

@@ -22,48 +22,33 @@ $(function(){
 
 	let $lastScroll = 0;
 
-	// Inutile pour Kirby
+	const boxElement = document.querySelector('#content');
 
-	// const contentTitre = $titres.text();
-	// const contentAuteur = $autrice.text();
-	// $mentions.append(`${contentTitre}<br><br>${contentAuteur}`);
+	if (boxElement) {
+			createObserver();
+	}
 
-	// $(window).scroll(function() {
-	// 	const wheight = $(window).scrollTop();
-	// 	const wInnerHeight = $(window).height();
-	// 	const $wTitle = $titres.offset();
-	// 	const $wBottom = $main.height();
-	//
-	// 	if(wheight >= $wTitle.top + 100) {
-  //           $fond.addClass('read-on');
-  //       } else {
-  //           $fond.removeClass('read-on');
-  //       }
-	//
-  //       if(wheight >= $wBottom - wInnerHeight) {
-  //       	$fond.toggleClass('read-on');
-	//
-  //       } else {
-	//
-  //       }
-	//
-	// 	let currentScroll = $(window).scrollTop();
-	// 	if (currentScroll == 0) {
-	// 	$('body').removeClass('scroll-up');
-	// 	return;
-	// 	}
-	//
-	// 	if (currentScroll > $lastScroll && !$('body').hasClass('scroll-down')) {
-	// 	// down
-	// 	$('body').removeClass('scroll-up');
-	// 	$('body').addClass('scroll-down');
-	// 	} else if (currentScroll < $lastScroll && $('body').hasClass('scroll-down')) {
-	// 	// up
-	// 	$('body').removeClass('scroll-down');
-	// 	$('body').addClass('scroll-up');
-	// 	}
-	// 	$lastScroll = currentScroll;
-	// });
+	function createObserver() {
+		var observer;
+		const options = {
+			root: null,
+			rootMargin: "0px",
+			threshold: [0.01,0.95]
+		};
+
+		observer = new window.IntersectionObserver(handleIntersect , options);
+		observer.observe(boxElement);
+	}
+
+	function handleIntersect(entries) {
+		entries.forEach(function(entry) {
+			if (entry.intersectionRatio>=0.01) {
+				$fond.addClass('read-on');
+		} else if (!entry.isIntersecting){
+				$fond.removeClass('read-on');
+		}
+		});
+	}
 
 	function InitPlyr() {
 		console.log("hello");
