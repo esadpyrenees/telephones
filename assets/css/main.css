@@ -935,7 +935,7 @@ display: block!important;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  filter: blur(5px) brightness(5) saturate(150%);
+  filter: blur(5px) brightness(3) saturate(150%);
   opacity: 0.7;
   z-index: -1;
 }
@@ -1255,6 +1255,10 @@ display: block!important;
 .credits a:hover,
 .auteur-bio a:hover {
   border-bottom-style: solid;
+}
+
+hr {
+  color: tomato;
 }
 
 #logos {
