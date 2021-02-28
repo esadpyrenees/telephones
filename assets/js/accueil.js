@@ -31,7 +31,7 @@ $(function(){
 	  const options = {
 	    root: null,
 	    rootMargin: "0px",
-	    threshold: 0.25
+	    threshold: 0.15
 	  };
 
 	  observer = new IntersectionObserver(handleIntersect , options);
@@ -40,7 +40,7 @@ $(function(){
 
 	function handleIntersect(entries) {
 	  entries.forEach(function(entry) {
-	    if (entry.intersectionRatio>=0.25) {
+	    if (entry.intersectionRatio>=0.15) {
 	    	accueil.addClass('hide');
 		} else {
 			accueil.removeClass('hide');
