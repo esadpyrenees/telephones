@@ -27,7 +27,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 html,
@@ -96,6 +96,7 @@ body {
   font-family: var(--text-family);  
   font-size: 2rem;
   overflow-x: hidden;
+  letter-spacing: 0.015em;
 }
 
 a {
@@ -186,9 +187,11 @@ sup:hover {
   bottom: 20px;
   right: 25%;
   background-color: var(--color-grey-med);
-  font-size: 0.8em;
+  font-size: 0.75em;
   letter-spacing: 0.1em;
   border-radius: 10px;
+  font-variant-numeric: tabular-nums;
+  padding: .1em .25em 0;
 }
 
 /* --------------------------------------------- Menu --------------------------------------------- */
@@ -236,8 +239,8 @@ a:hover {
 }
 
 .menu li {
-  padding: 0 20px;
-  line-height: 1.4;
+  padding: .25em 20px;
+  line-height: 1;
 /*  background: linear-gradient(0.45turn,hotpink,pink);
 */
   background-color: pink;
@@ -324,6 +327,13 @@ main li:before {
 
 main a {
   border-bottom: 3.5px dotted var(--color-main-red);
+}
+
+main a:not(.image-texte)::after{
+  /* content:" ↙" */
+}
+main a[rel=external]::after{
+  content:" ↗"
 }
 
 main a:hover {
@@ -1038,6 +1048,7 @@ h2.article-correspondant {
 
 .bibliographie-article a, .entree-reference a {
   border-bottom: 2px dotted var(--color-main-red);
+  word-break: break-all;
 }
 
 .bibliographie-article a:hover, .entree-reference a:hover {

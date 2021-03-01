@@ -70,6 +70,9 @@ $(function(){
 		e.preventDefault();
 		$(this).toggleClass('active');
 		$(this).next().toggleClass('visible');
+		if(typeof(resizeScrollBar) == "function" ){
+			resizeScrollBar();
+		}
 	})
 
 	$menu_icon.on("click", function(e){
@@ -142,28 +145,42 @@ $(function(){
 
 // -------------------------------------------------------- Scrollbar --------------------------------------------------------
 
+
 const progressBarContainer = document.querySelector("#progressBarContainer");
 const progressBar = document.querySelector("#progressBar");
-let totalPageHeight = document.body.scrollHeight - window.innerHeight;
-let debounceResize;
+let totalPageHeight = 0;
+let progressBarContainer_size = 0;
+let debounceResize = null;
 
-window.addEventListener("scroll", () => {
-  let newProgressHeight = window.pageYOffset / totalPageHeight;
-  progressBar.style.transform = `scale(1,${newProgressHeight})`;
-}, {
-  capture: true,
-  passive: true
+window.addEventListener("load", function(){
+	
+	resizeScrollBar();
+
+	window.addEventListener("scroll", () => {
+		let newProgressHeight = window.pageYOffset / totalPageHeight;
+		progressBar.style.transform = `scale(1,${newProgressHeight})`;
+	}, {
+		capture: true,
+		passive: true
+	});
+
+	window.addEventListener("resize", () => {
+		clearTimeout(debounceResize);
+		debounceResize = setTimeout(() => {
+			resizeScrollBar();
+		}, 250);
+	});
+
 });
 
-window.addEventListener("resize", () => {
-  clearTimeout(debounceResize);
-  debounceResize = setTimeout(() => {
-    totalPageHeight = document.body.scrollHeight - window.innerHeight;
-  }, 250);
-});
+function resizeScrollBar(){
+	console.log('resized');
+	progressBarContainer_size = progressBarContainer.getBoundingClientRect();
+	totalPageHeight = document.body.scrollHeight - window.innerHeight;
+}
 
 progressBarContainer.addEventListener("click", (e) => {
-  let newPageScroll = e.clientY / progressBarContainer.offsetHeight * totalPageHeight;
+  let newPageScroll = (e.clientY - progressBarContainer_size.top) / progressBarContainer.offsetHeight * totalPageHeight;
   window.scrollTo({
     top: newPageScroll,
     behavior: 'smooth'
@@ -174,6 +191,9 @@ progressBarContainer.addEventListener("click", (e) => {
 // -------------------------------------------------------- Afficher/Cacher la bibliographie --------------------------------------------------------
 
 $( ".button" ).click(function() {
+	if(typeof(resizeScrollBar) == "function" ){
+		resizeScrollBar();
+	}
 	$( ".bibliographie" ).slideToggle( "slow" );
 	if (this.innerHTML === "Bibliographie +") {
 		this.innerHTML = "Bibliographie -";
@@ -197,24 +217,21 @@ timerInstance.addEventListener('secondsUpdated', function (e) {
 
 
 // init Isotope
-var $grid = $('.biblio-content').isotope({
-	itemSelector: '.element-item',
-	layoutMode: 'fitRows'
-  });
-  // filter functions
-  var filterFns = {
-	// show if name ends with -ium
-	ium: function() {
-		var name = $(this).find('.name').text();
-		return name.match( /ium$/ );
-	  }
-  };
+var $biblio = $('.biblio-content');
+
+if($biblio.length){
+	// isotope init
+	var $grid = $biblio.isotope({
+		itemSelector: '.element-item',
+		layoutMode: 'fitRows'
+	});
+		
   // bind filter on select change
   $('.filters-select').on( 'change', function() {
-	// get filter value from option value
-	var filterValue = this.value;
-	// use filterFn if matches value
-	filterValue = filterFns[ filterValue ] || filterValue;
-	$grid.isotope({ filter: filterValue });
+		// get filter value from option value
+		var filterValue = this.value;
+		// use filterFn if matches value
+		filterValue = filterFns[ filterValue ] || filterValue;
+		$grid.isotope({ filter: filterValue });
   });
-  
+}
