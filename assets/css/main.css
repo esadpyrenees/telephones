@@ -53,7 +53,12 @@ html {
   z-index: 10;
   background: rgba(255, 255, 255, 0.05);
   border : 2px solid #ebebeb;
-  border-radius: 40px;
+  border-radius: 5px;
+  top: 15%;
+  right: 20px;
+  bottom: 0;
+  width: 9px;
+  height: 75%;
 }
 
 #progressBar {
@@ -63,22 +68,12 @@ html {
   transform-origin: top center;
   transform: scale(1, 0);
   opacity: 1;
-  border-radius: 40px;
-}
-
-#progressBarContainer {
-  top: 15%;
-  right: 18px;
-  bottom: 0;
-  width: 9px;
-  height: 75%;
-}
-
-#progressBar {
+  border-radius: 5px;
   top: 0;
   right: 0;
   bottom: 0;
-  width: 7px;
+  left: -2px;
+  width: 9px;
   height: 100%;
 }
 
