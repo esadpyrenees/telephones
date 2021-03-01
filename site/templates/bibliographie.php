@@ -7,7 +7,7 @@
     <section class="filtre">
       <select class="filters-select">
         <option value="*">Tout</option>        
-        <?php foreach(page('sommaire')->children()->listed() as $article) :?>
+        <?php foreach(page('sommaire')->children()->listed()->sortBy('title', 'asc') as $article) :?>
           <option value="<?= $article->author()->slug() ?>"><?= $article->title() ?></option>
         <?php endforeach ?>
       </select>
@@ -19,7 +19,7 @@
     </div>
 
     <div class="biblio-content">
-      <?php foreach($page->children()->template('biblio') as $biblio) :
+      <?php foreach($page->children()->template('biblio')->sortBy('title', 'asc') as $biblio) :
         $articles = page('sommaire')->children()->filter(function($child) use($biblio){
         return $child->bibliography()->toPages()->has($biblio);}) ?>
 
