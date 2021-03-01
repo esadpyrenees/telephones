@@ -158,8 +158,15 @@ En conclusion, l’étude d’un corpus de boucles et de tags collectés durant 
 
 ----
 
+Bioauthor: 
+
+----
+
 Gallery: 
 
 ----
 
-Bibliography: 
+Bibliography:
+
+- >
+  bibliographie-generale/andre-e-zabunyan-d

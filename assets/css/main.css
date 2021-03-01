@@ -1284,7 +1284,7 @@ hr {
 
 .filtre {
   position: sticky;
-  top: 20px;
+  top: 60px;
   width: 80%;
   margin-bottom: 40px;
 }
@@ -1306,6 +1306,10 @@ select option {
     font-family: "Milimetre-regular", "Arial", sans-serif;
 }
 
+.element-item {
+  width: 100% !important;
+}
+
 .bibliographie-generale div{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1315,6 +1319,7 @@ select option {
   width: 80%;
   margin: 10px;
 }
+
 
 h2.entree-reference,
 h2.article-correspondant {

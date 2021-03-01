@@ -191,3 +191,30 @@ timerInstance.start();
 timerInstance.addEventListener('secondsUpdated', function (e) {
     $('#basicUsage').html(timerInstance.getTimeValues().toString());
 });
+
+
+// -------------------------------------------------------- Filtre bibliographie --------------------------------------------------------
+
+
+// init Isotope
+var $grid = $('.biblio-content').isotope({
+	itemSelector: '.element-item',
+	layoutMode: 'fitRows'
+  });
+  // filter functions
+  var filterFns = {
+	// show if name ends with -ium
+	ium: function() {
+		var name = $(this).find('.name').text();
+		return name.match( /ium$/ );
+	  }
+  };
+  // bind filter on select change
+  $('.filters-select').on( 'change', function() {
+	// get filter value from option value
+	var filterValue = this.value;
+	// use filterFn if matches value
+	filterValue = filterFns[ filterValue ] || filterValue;
+	$grid.isotope({ filter: filterValue });
+  });
+  
