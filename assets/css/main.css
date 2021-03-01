@@ -695,6 +695,7 @@ main blockquote p {
   font-size: calc(0.375vw + 1rem);
   width: 60%;
   margin: 40px auto;
+  text-indent: 0;
 }
 
 #fond-ecran {
@@ -1514,6 +1515,7 @@ main {
 .intro-accueil p,
 .sommaire-credits,
 .auteur-bio aside,
+.bibliographie,
 .credits p,
 .credits blockquote,
 #logos {
@@ -1557,19 +1559,26 @@ main {
 .intro-accueil p,
 .sommaire-credits,
 .auteur-bio aside,
+.bibliographie,
 .credits p,
 .credits aside,
 #logos {
   width: 92%;
 }
 
+main li,
+main blockquote p,
+main p {
+  font-size: calc(0.2vw + 1rem);
+}
+
 main blockquote p {
   width: 75%;
 }
 
-.titre-chapitre {
-  font-size: calc(2vw + 1rem);
-  letter-spacing: .1em;
+main h2 {
+  font-size: calc(1vw + 1em);
+  letter-spacing: .0975em;
 }
 
 .mentions-article {
