@@ -215,7 +215,6 @@ timerInstance.addEventListener('secondsUpdated', function (e) {
 
 // -------------------------------------------------------- Filtre bibliographie --------------------------------------------------------
 
-
 // init Isotope
 var $biblio = $('.biblio-content');
 
@@ -231,7 +230,6 @@ if($biblio.length){
 		// get filter value from option value
 		var filterValue = this.value;
 		// use filterFn if matches value
-		filterValue = filterFns[ filterValue ] || filterValue;
 		$grid.isotope({ filter: filterValue });
   });
 }
