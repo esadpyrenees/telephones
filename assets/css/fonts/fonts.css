@@ -55,19 +55,22 @@
     font-display: swap;
 }
 
+
+
+
 @font-face {
-    font-family: 'Milimetre-extra-black';
+    font-family: 'Millimetre';
     src: url('Millimetre-Extrablack_web.eot');
     src: url('Millimetre-Extrablack_web.eot?#iefix') format('embedded-opentype'),
         url('Millimetre-Extrablack_web.woff2') format('woff2'),
         url('Millimetre-Extrablack_web.woff') format('woff');
-    font-weight: normal;
+    font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Milimetre-regular';
+    font-family: 'Millimetre';
     src: url('Millimetre-Regular_web.eot');
     src: url('Millimetre-Regular_web.eot?#iefix') format('embedded-opentype'),
         url('Millimetre-Regular_web.woff2') format('woff2'),
@@ -78,12 +81,12 @@
 }
 
 @font-face {
-    font-family: 'Milimetre-light';
+    font-family: 'Millimetre';
     src: url('Millimetre-Light_web.eot');
     src: url('Millimetre-Light_web.eot?#iefix') format('embedded-opentype'),
         url('Millimetre-Light_web.woff2') format('woff2'),
         url('Millimetre-Light_web.woff') format('woff');
-    font-weight: normal;
+    font-weight: 200;
     font-style: normal;
     font-display: swap;
 }

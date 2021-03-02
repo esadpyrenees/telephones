@@ -17,7 +17,7 @@
         <meta name="twitter:image" content="<?= url('assets/statics/') ?>">
 
         <?php // lien vers plusieurs fichiers CSS ?>
-        <?= css(["assets/css/plyr.css", "assets/css/main.css"]) ?>
+        <?= css(["assets/css/plyr.css", "assets/css/reset.css", "assets/css/main.css"]) ?>
 
     </head>
 

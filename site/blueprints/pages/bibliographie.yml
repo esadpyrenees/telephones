@@ -11,6 +11,8 @@ sections:
   authors:
     headline: Bibliographie
     type: pages
+    info: "{{page.text}}"
     templates: 
       - biblio
     status: all
+    sortBy: title asc
