@@ -24,5 +24,6 @@
         <?= js("assets/js/jquery.js") ?>
         <?= js("assets/js/index.js") ?>
         <?= js("assets/js/accueil.js") ?>
+        <script>console.log("JB was here!")</script>
 	</body>
 </html>
