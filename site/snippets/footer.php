@@ -4,5 +4,6 @@
         <?= js("assets/js/plyr.js") ?>
         <?= js("assets/js/easytimer.min.js") ?>
         <?= js("assets/js/index.js") ?>
-	</body>
+        <script>console.log("JB was here")</script>
+        </body>
 </html>
