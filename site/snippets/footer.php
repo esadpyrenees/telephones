@@ -5,5 +5,6 @@
         <?= js("assets/js/easytimer.min.js") ?>
         <?= js("assets/js/index.js") ?>
         <script>console.log("JB was here")</script>
+        <script>console.log("Et je cours, et je me raccroche à la vie")</script>
         </body>
 </html>
