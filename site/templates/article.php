@@ -34,21 +34,34 @@
 
   </main>
 
-  <?php if ($page->bibliography()->isNotEmpty()): ?>
-    <div class="bibliographie-article">
-      <h1 class="button">Bibliographie +</h1>
-      <div class="bibliographie">
-          <?php foreach($page->bibliography()->toPages() as $biblio) :?>
-              <?= $biblio->text()->kt() ?>
-          <?php endforeach ?>
-      </div>
+<?php if ($page->bibliography()->isNotEmpty()): ?>
+  <div class="bibliographie-article">
+    <h1>Bibliographie</h1>
+    <btn id="BiblioBtn">Afficher</btn>
+    
+    <div class="bibliographie">
+        <?php foreach($page->bibliography()->toPages() as $biblio) :?>
+          <div class="biblio-content">
+
+              <div class="left-column-biblio">
+                <span class="auteurRef"><?= $biblio->auteurRef() ?></span><br>
+                <span class="datePublication">(<?= $biblio->datePublication() ?>)</span>
+              </div>
+
+              <div class="right-column-biblio">
+                <span class="titreOuvrage"> <em><?= $biblio->titreOuvrage() ?></em></span><br>
+                <span class="referenceContent"><?= $biblio->referenceContent()->kt() ?></span>
+              </div>
+
+          </div>      
+        <?php endforeach ?>
     </div>
-  <?php endif ?>
-
-
+  </div>
+<?php endif ?>
 
 	<div class="auteur-bio">
-		<aside><?= $page->bioauthor()->kt() ?></aside>
+    <h1>Auteur.e.s</h1>
+      <aside><?= $page->bioauthor()->kt() ?></aside>
 	</div>
 
 <?php snippet('footer-sommaire') ?>

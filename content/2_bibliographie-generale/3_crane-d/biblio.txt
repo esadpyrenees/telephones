@@ -2,4 +2,20 @@ Title: Crane D.
 
 ----
 
-Text: Crane D. (2002). “Projections and Intersections: Paranoid Textuality inSorry, Wrong Number”. *Camera Obscura*, 17, 3 (51), 71–113. doi: https://doi.org/10.1215/02705346-17-3_51-71.
+Text: 
+
+----
+
+Auteurref: Crane D.
+
+----
+
+Datepublication: 2002
+
+----
+
+Titreouvrage: “Projections and Intersections: Paranoid Textuality inSorry, Wrong Number”
+
+----
+
+Referencecontent: Camera Obscura, 17, 3 (51), 71–113. Disponible ici: https://doi.org/10.1215/02705346-17-3_51-71.

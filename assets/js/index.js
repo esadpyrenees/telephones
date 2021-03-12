@@ -190,15 +190,15 @@ progressBarContainer.addEventListener("click", (e) => {
 
 // -------------------------------------------------------- Afficher/Cacher la bibliographie --------------------------------------------------------
 
-$( ".button" ).click(function() {
+$( "#BiblioBtn" ).click(function() {
 	if(typeof(resizeScrollBar) == "function" ){
 		resizeScrollBar();
 	}
 	$( ".bibliographie" ).slideToggle( "slow" );
-	if (this.innerHTML === "Bibliographie +") {
-		this.innerHTML = "Bibliographie -";
+	if (this.innerHTML === "Afficher") {
+		this.innerHTML = "Cacher";
 	  } else {
-		this.innerHTML = "Bibliographie +";
+		this.innerHTML = "Afficher";
 	  }
   });
 
