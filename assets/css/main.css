@@ -881,7 +881,7 @@ display: block!important;
 }
 
 .credits em {
-  color: #8ed99e;
+  color: var(--color-grey-light);
   opacity: 100%;
 }
 
