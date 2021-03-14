@@ -99,6 +99,12 @@ a {
   color: inherit;
 }
 
+a[href^="http"]::after {
+    content: " ↗";
+    color: var(--color-main-red);
+    font-size: 0.8em;
+}
+
 h1, h2 {
   font-family: var(--text-family);
   font-weight: 900;
@@ -321,20 +327,9 @@ main li:before {
   font-size: 1em;
 }
 
-main a {
-  border-bottom: 3.5px dotted var(--color-main-red);
-}
-
-main a:not(.image-texte)::after{
-  /* content:" ↙" */
-}
-main a[rel=external]::after{
-  content:" ↗"
-}
-
-main a:hover {
+/*main a:hover {
   border-bottom-style: solid;
-}
+}*/
 
 main blockquote p {
   font-family: "Redaction-35";
@@ -454,6 +449,10 @@ main blockquote p {
   padding: 0 20px;
   margin-right: 5px;
   cursor: pointer;
+}
+
+.image-texte::after{
+   content:""; 
 }
 
 .image-texte:before {
