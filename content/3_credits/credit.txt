@@ -4,11 +4,11 @@ Title: Crédits
 
 Text:
 
-*Quand le téléphone connecté se fait des films* est un ouvrage Web issu des réflexions engendrées dans le cadre du cycle « Téléphones connectés et cinéma », composé de deux journées d’étude organisées par Anaïs Guilet (Université Savoie Mont Blanc, laboratoire LLSETI) et Corinne Melin (ESADP Pau).
+*Quand le téléphone connecté se fait des films* est un ouvrage Web issu des réflexions engendrées dans le cadre du cycle « Téléphones connectés et cinéma », composé de deux journées d’étude organisées par Anaïs Guilet (Université Savoie Mont Blanc, laboratoire LLSETI) et Corinne Melin (ESAD Pau).
 
 La première journée s’est déroulée à l’université Savoie Mont Blanc à Chambéry le 21 mars 2019. La deuxième, qui devait avoir lieu le 18 mars 2019 à Pau, a été annulée du fait de la crise sanitaire, mais certaines des contributions initialement prévues sont présentes dans ce volume. Il s’agissait lors de ces deux journées d’explorer les usages du téléphone portable connecté dans le cinéma et les pratiques de filmage contemporains.
 
-> Cette publication est soutenue et financée par (link: http://www.llseti.univ-smb.fr/ text: le Laboratoire LLSETI de l’Université Savoie Mont Blanc) et (link: https://esad-pyrenees.fr/ text: l’Ecole Supérieure d’Art et de Design des Pyrénées)
+> Cette publication est soutenue et financée par (link: http://www.llseti.univ-smb.fr/ text: le Laboratoire LLSETI de l’Université Savoie Mont Blanc rel:external) et (link: https://esad-pyrenees.fr/ text: l’Ecole Supérieure d’Art et de Design des Pyrénées rel:external)
 
 > Le site a été réalisé par César Hélion-Joly et Christophe Léon, sous la supervision de Julien Bidoret. Nous les remercions vivement pour leur investissement et leur travail.
 

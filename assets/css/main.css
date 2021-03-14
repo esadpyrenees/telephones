@@ -261,8 +261,8 @@ a:hover {
 }
 
 #navigation-sommaire li {
-  font-family: var(--text-family);  
-  font-size: calc(1vw + 1rem);
+  font-family: "Redaction-35-italic";  
+  font-size: calc(0.675vw + 1rem);
   line-height: 1.2;
   border-width: 2px;
   margin-top: 20px;
@@ -270,8 +270,9 @@ a:hover {
 
 .autrices {
   display: block;
-  font-family: "Redaction-35-italic";
   text-align: right;
+  font-family: var(--text-family);
+  font-weight: 400;
 }
 
 #navigation {
@@ -306,6 +307,7 @@ main li {
 
 main p {
   text-indent: 2em;
+  max-width: 65ch;
 }
 
 main li {
@@ -320,19 +322,33 @@ main li:before {
   font-size: 1em;
 }
 
-main a {
+main a.image-texte {
   border-bottom: 3.5px dotted var(--color-main-red);
 }
 
-main a:not(.image-texte)::after{
-  /* content:" ↙" */
-}
-main a[rel=external]::after{
-  content:" ↗"
+main a:not(.image-texte)::after,
+.intro-accueil a:not(.image-texte)::after{
+  content:" ↙";
+  font-weight: 400;
+  color: var(--color-main-red);
+  font-family: var(--text-family);
+  font-size: 0.8em;
 }
 
-main a:hover {
-  border-bottom-style: solid;
+main a[rel=external]::after,
+.bibliographie a[rel=external]::after,
+.auteur-bio a[rel=external]::after,
+.credits a[rel=external]::after
+{
+  content:" ↗";
+  font-weight: 400;
+  color: var(--color-main-red);
+  font-family: var(--text-family);
+  font-size: 0.8em;
+}
+
+.image-texte:hover {
+  border-bottom: 3px solid var(--color-main-red);
 }
 
 main blockquote p {
@@ -341,6 +357,7 @@ main blockquote p {
   width: 60%;
   margin: 40px auto;
   text-indent: 0;
+  max-width: 65ch;
 }
 
 #fond-ecran {
@@ -643,11 +660,6 @@ display: block!important;
   margin: 40px auto;
 }
 
-.intro-accueil a {
-  font-family: "Redaction-35";
-  font-size: calc(0.375vw + 1rem);
-}
-
 /*
   Affichage des médias (image, vidéo)
   en pleine page
@@ -870,30 +882,26 @@ display: block!important;
 .credits p {
   line-height: 1.5;
   font-size: calc(0.675vw + 1rem);
+  color: pink;
+  margin-bottom: 30px;
 }
 
 .credits blockquote p {
   font-family: "Redaction-35";
   font-size: calc(0.375vw + 1rem);
-  color: var(--color-main-blue);
   margin-top: 40px;
   margin-bottom: 0;
+  max-width: 65ch;
 }
 
 .credits em {
-  color: #8ed99e;
-  opacity: 100%;
-}
-
-.credits a,
-.auteur-bio a,
-.intro-accueil a {
-  border-bottom: 2px dotted var(--color-main-red);
+  color: var(--color-grey-light);
 }
 
 .credits a:hover,
-.auteur-bio a:hover {
-  border-bottom-style: solid;
+.auteur-bio a:hover,
+.intro-accueil a:hover {
+  border-bottom: 2px solid var(--color-main-red);
 }
 
 hr {
@@ -1038,12 +1046,11 @@ h2.article-correspondant {
 }
 
 .bibliographie-article a, .entree-reference a {
-  border-bottom: 2px dotted var(--color-main-red);
   word-break: break-all;
 }
 
 .bibliographie-article a:hover, .entree-reference a:hover {
-  border-bottom-style: solid;
+  border-bottom: 2px solid var(--color-main-red);
 }
 
 #BiblioBtn {
@@ -1125,7 +1132,7 @@ h2.article-correspondant {
 
 .sommaire-credits h2 {
   font-family: var(--text-family);
-  font-size: calc(.7vw + 1rem);
+  font-size: calc(0.675vw + 1rem);
   font-weight: 400;
   grid-column: 1/3;
   text-align: center;
@@ -1136,6 +1143,10 @@ h2.article-correspondant {
 .sommaire-credits a {
   text-align: left;
   font-family: "Redaction-35-italic";
+}
+
+.sommaire-credits a em:hover {
+  color: var(--color-main-red);
 }
 
 .sommaire-credits p {
