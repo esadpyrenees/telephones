@@ -99,7 +99,11 @@ a {
   color: inherit;
 }
 
-a[href^="http"]::after {
+main a[href^="http"]::after,
+.credits a[href^="http"]::after,
+.bibliographie-generale a[href^="http"]::after,
+.bibliographie-article a[href^="http"]::after,
+.auteur-bio a[href^="http"]::after {
     content: " ↗";
     color: var(--color-main-red);
     font-size: 0.8em;
