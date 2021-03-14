@@ -99,6 +99,23 @@ a {
   color: inherit;
 }
 
+main a[href^="http"]::after,
+.credits a[href^="http"]::after,
+.bibliographie-generale a[href^="http"]::after,
+.bibliographie-article a[href^="http"]::after,
+.auteur-bio a[href^="http"]::after {
+    content: " ↗";
+    color: var(--color-main-red);
+    font-size: 0.8em;
+    font-family: var(--text-family);
+    font-weight: 400;
+    word-break: break-all;
+}
+
+a:hover {
+  color: var(--color-main-red);
+}
+
 h1, h2 {
   font-family: var(--text-family);
   font-weight: 900;
@@ -227,10 +244,6 @@ sup:hover {
 .menu li a {
   display: block;
   width: 100%;
-}
-
-a:hover {
-  color: var(--color-main-red);
 }
 
 .menu li {
@@ -470,6 +483,10 @@ main blockquote p {
   padding: 0 20px;
   margin-right: 5px;
   cursor: pointer;
+}
+
+.image-texte::after{
+   content:""; 
 }
 
 .image-texte:before {
@@ -1004,7 +1021,7 @@ h2.article-correspondant {
   display: -webkit-flex;
   -webkit-flex-direction: column;
   position: relative;
-  color: var(--color-main-blue);
+  color: pink;
   min-height: 100%;
   width: 100%;
   padding-top: 50px;
