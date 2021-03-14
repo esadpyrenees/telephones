@@ -915,12 +915,6 @@ display: block!important;
   color: var(--color-grey-light);
 }
 
-.credits a:hover,
-.auteur-bio a:hover,
-.intro-accueil a:hover {
-  border-bottom: 2px solid var(--color-main-red);
-}
-
 hr {
  width: 0px;
  opacity: 0;
