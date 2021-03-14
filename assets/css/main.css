@@ -1060,10 +1060,6 @@ h2.article-correspondant {
   word-break: break-all;
 }
 
-.bibliographie-article a:hover, .entree-reference a:hover {
-  border-bottom: 2px solid var(--color-main-red);
-}
-
 #BiblioBtn {
   text-align: center;
   cursor: pointer;
