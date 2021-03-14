@@ -261,7 +261,7 @@ a:hover {
 }
 
 #navigation-sommaire li {
-  font-family: var(--text-family);  
+  font-family: "Redaction-35-italic";  
   font-size: calc(1vw + 1rem);
   line-height: 1.2;
   border-width: 2px;
@@ -270,8 +270,9 @@ a:hover {
 
 .autrices {
   display: block;
-  font-family: "Redaction-35-italic";
   text-align: right;
+  font-family: var(--text-family);
+  font-weight: 400;
 }
 
 #navigation {
