@@ -103,6 +103,11 @@ a[href^="http"]::after {
     content: " ↗";
     color: var(--color-main-red);
     font-size: 0.8em;
+    word-break: break-all;
+}
+
+a:hover {
+  color: var(--color-main-red);
 }
 
 h1, h2 {
@@ -233,10 +238,6 @@ sup:hover {
 .menu li a {
   display: block;
   width: 100%;
-}
-
-a:hover {
-  color: var(--color-main-red);
 }
 
 .menu li {
@@ -884,17 +885,6 @@ display: block!important;
   color: var(--color-grey-light);
 }
 
-.credits a,
-.auteur-bio a,
-.intro-accueil a {
-  border-bottom: 2px dotted var(--color-main-red);
-}
-
-.credits a:hover,
-.auteur-bio a:hover {
-  border-bottom-style: solid;
-}
-
 hr {
  width: 0px;
  opacity: 0;
@@ -1034,15 +1024,6 @@ h2.article-correspondant {
 
 .button {
   cursor: pointer;
-}
-
-.bibliographie-article a, .entree-reference a {
-  border-bottom: 2px dotted var(--color-main-red);
-  word-break: break-all;
-}
-
-.bibliographie-article a:hover, .entree-reference a:hover {
-  border-bottom-style: solid;
 }
 
 #BiblioBtn {
