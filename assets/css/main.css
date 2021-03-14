@@ -99,19 +99,6 @@ a {
   color: inherit;
 }
 
-main a[href^="http"]::after,
-.credits a[href^="http"]::after,
-.bibliographie-generale a[href^="http"]::after,
-.bibliographie-article a[href^="http"]::after,
-.auteur-bio a[href^="http"]::after {
-    content: " ↗";
-    color: var(--color-main-red);
-    font-size: 0.8em;
-    font-family: var(--text-family);
-    font-weight: 400;
-    word-break: break-all;
-}
-
 a:hover {
   color: var(--color-main-red);
 }
