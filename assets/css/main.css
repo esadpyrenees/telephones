@@ -945,7 +945,7 @@ hr {
   position: sticky;
   top: 13px;
   width: 60%;
-  margin-bottom: 40px;
+  margin: 0 auto;
 }
 
 .filtre select {
