@@ -946,6 +946,7 @@ hr {
   top: 13px;
   width: 60%;
   margin: 0 auto;
+  z-index: 999;
 }
 
 .filtre select {
