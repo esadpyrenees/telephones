@@ -955,6 +955,7 @@ hr {
   border: 1px solid;
   border-image: initial;
   background-color: var(--color-main-blue);
+  padding-top: .15em;
   appearance: menulist-button;
   -webkit-appearance: menulist-button;
   -moz-appearance: menulist-button;
@@ -1054,7 +1055,13 @@ h2.article-correspondant {
 #BiblioBtn {
   text-align: center;
   cursor: pointer;
-  font-size: calc(0.4vw + 1rem);
+  font-size: calc(0.2vw + 1rem);
+  border-radius: 5px;
+  background-color: var(--color-main-blue);
+  color: var(--color-grey-body);
+  width: 60%;
+  margin: 0 auto;
+  padding-top: .15em;
 }
 
 .bibliographie {
