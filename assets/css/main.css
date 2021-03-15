@@ -964,7 +964,7 @@ hr {
 
 select option {
     background-color: var(--color-main-blue);
-    font-family: "Milimetre-regular", "Arial", sans-serif;
+    font-family: var(--text-family);
 }
 
 .biblio-generale-content {
