@@ -241,6 +241,7 @@ sup:hover {
   background-color: pink;
   font-size: calc(2vw + 1rem);
   letter-spacing: .01em;
+  text-align: center;
   border-bottom: 4px solid var(--color-grey-body);
   border-top-left-radius: 0.2em;
   border-bottom-left-radius: 0.4em;
@@ -250,7 +251,7 @@ sup:hover {
   content: "+";
   position: absolute;
   font-size: 0.6em;
-  top: 0.5em;
+  top: 0.7em;
   right: 20px;
 }
 
@@ -262,15 +263,18 @@ sup:hover {
 
 #navigation-sommaire li {
   font-family: "Redaction-35-italic";  
-  font-size: calc(0.675vw + 1rem);
+  font-size: calc(0.2vw + 1rem);
   line-height: 1.2;
-  border-width: 2px;
   margin-top: 20px;
+  border-bottom: none;
+}
+
+#navigation-sommaire h2 {
+  font-size: calc(0.675vw + 1rem);
 }
 
 .autrices {
   display: block;
-  text-align: right;
   font-family: var(--text-family);
   font-weight: 400;
 }
@@ -952,6 +956,7 @@ hr {
   border: 1px solid;
   border-image: initial;
   background-color: var(--color-main-blue);
+  padding-top: .15em;
   appearance: menulist-button;
   -webkit-appearance: menulist-button;
   -moz-appearance: menulist-button;
@@ -1061,7 +1066,13 @@ select option {
 #BiblioBtn {
   text-align: center;
   cursor: pointer;
-  font-size: calc(0.4vw + 1rem);
+  font-size: calc(0.2vw + 1rem);
+  border-radius: 5px;
+  background-color: var(--color-main-blue);
+  color: var(--color-grey-body);
+  width: 60%;
+  margin: 0 auto;
+  padding-top: .15em;
 }
 
 .bibliographie {
@@ -1137,7 +1148,6 @@ select option {
 .sommaire-credits h2 {
   font-family: var(--text-family);
   font-size: calc(0.675vw + 1rem);
-  font-weight: 400;
   grid-column: 1/3;
   text-align: center;
   color: var(--color-grey-light);

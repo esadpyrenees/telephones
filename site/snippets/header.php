@@ -30,7 +30,14 @@
                         <li id="menu-sommaire">
                             <a id="sommaire" href=""><?= $pages->first()->title() ?></a>
                             <ul id="navigation-sommaire">
-                                <?php foreach($pages->first()->children() as $article) :?>
+                                <li><h2>I – Le téléphone connecté : acteur du cinéma contemporain</h2></li>
+                                <?php foreach($pages->first()->children()->filterBy('partie', 'partieune') as $article) :?>
+                                    <li>
+                                        <a href="<?= $article->url() ?>"><?= html($article->title()) ?><br><span class="autrices"><?= html($article->author()) ?></span></a>
+                                    </li>
+                                <?php endforeach ?>
+                                <li><h2>II – La caméra-stylo-connectée</h2></li>
+                                <?php foreach($pages->first()->children()->filterBy('partie', 'partiedeux') as $article) :?>
                                     <li>
                                         <a href="<?= $article->url() ?>"><?= html($article->title()) ?><br><span class="autrices"><?= html($article->author()) ?></span></a>
                                     </li>
