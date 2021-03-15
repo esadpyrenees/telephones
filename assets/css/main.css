@@ -1001,6 +1001,7 @@ select option {
   padding: 0px 5px;
   background: pink;
   box-decoration-break: clone;
+  border-radius: 5px;
 }
 
 .article-correspondant a:hover {
