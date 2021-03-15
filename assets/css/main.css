@@ -943,10 +943,9 @@ hr {
 
 .filtre {
   position: sticky;
-  top: 60px;
-  width: 80%;
-  margin: 0 auto 40px auto;
-  z-index: 999;
+  top: 13px;
+  width: 60%;
+  margin-bottom: 40px;
 }
 
 .filtre select {
