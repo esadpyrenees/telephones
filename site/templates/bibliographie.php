@@ -13,47 +13,39 @@
       </select>
     </section>
 
-    <div>
-      <h2 class="entree-reference">Références</h2>
-      <h2 class="article-correspondant">Article(s)</h2>
-    </div>
-
-    <div class="biblio-content">
+    <div class="biblio-generale-content">
       <?php foreach($page->children()->template('biblio')->sortBy('title', 'asc') as $biblio) :
         $articles = page('sommaire')->children()->filter(function($child) use($biblio){
         return $child->bibliography()->toPages()->has($biblio);}) ?>
 
-        <div class='element-item <?php foreach($articles as $article): ?><?= $article->author()->slug() ?> <?php endforeach ?>'>
-
-          <article class="entree-reference">
-            <?= $biblio->text()->kt() ?>
-          </article>
-
-          <?php if($articles->count() > 1) :?>
-            <article class="article-correspondant">
+      <div class='element-item <?php foreach($articles as $article): ?><?= $article->author()->slug() ?> <?php endforeach ?>'>
+  
+        <div class="left-column-biblio">
+          <span class="auteurRef"><?= $biblio->auteurRef() ?></span><br>
+          <span class="datePublication">(<?= $biblio->datePublication() ?>)</span>
+        </div>
+        
+        <div class="right-column-biblio">
+          <span class="titreOuvrage"> <em><?= $biblio->titreOuvrage() ?></em></span><br>
+          <span class="referenceContent"><?= $biblio->referenceContent()->kt() ?></span>
+          <article class="article-correspondant">
+            <?php if($articles->count() > 1) :?>
               <?php foreach($articles as $article): ?>
-                <li><em><a href="<?= $article->url() ?>"><?= $article->title() ?></a></em></li>
+                <span>
+                  <a href="<?= $article->url() ?>"><?= $article->title() ?></a>
+                </span>
               <?php endforeach ?>
-            </article>
-
-          <?php elseif($articles->count() == 1) :?>
-            <article class="article-correspondant">
-              <em><a href="<?= $articles->first()->url() ?>"><?= $articles->first()->title() ?></a></em>
-            </article>
-
-          <?php else: ?>
-            <article class="article-correspondant">
-              <p>Pas d’article</p>
-            </article>
-          <?php endif ?>
-
-          </div>
-
-        <br>
-
+            <?php elseif($articles->count() == 1) :?>
+              <span>
+                <a href="<?= $articles->first()->url() ?>"><?= $articles->first()->title() ?></a>
+              </span>
+            <?php else: ?>
+              <span>Pas d’article</span>
+            <?php endif ?>
+          </article>
+        </div>
+      </div>
       <?php endforeach ?>
     </div>
-
-  </div>
-
+              
 <?php snippet('footer') ?>

@@ -216,7 +216,7 @@ timerInstance.addEventListener('secondsUpdated', function (e) {
 // -------------------------------------------------------- Filtre bibliographie --------------------------------------------------------
 
 // init Isotope
-var $biblio = $('.biblio-content');
+var $biblio = $('.biblio-generale-content');
 
 if($biblio.length){
 	// isotope init

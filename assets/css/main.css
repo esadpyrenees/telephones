@@ -338,7 +338,8 @@ main a:not(.image-texte)::after,
 main a[rel=external]::after,
 .bibliographie a[rel=external]::after,
 .auteur-bio a[rel=external]::after,
-.credits a[rel=external]::after
+.credits a[rel=external]::after,
+.bibliographie-generale a[rel=external]::after
 {
   content:" ↗";
   font-weight: 400;
@@ -448,6 +449,7 @@ main blockquote p {
   border-radius: 10px;
   color: var(--color-main-blue);
   background-color: var(--color-grey-body);
+  box-decoration-break: clone;
 }
 
 .note:hover {
@@ -928,20 +930,19 @@ hr {
   display: -webkit-flex;
   -webkit-flex-direction: column;
   position: relative;
-  color: var(--color-grey-light);
   min-height: 100%;
   width: 100%;
   padding-top: 50px;
   padding-bottom: 80px;
   z-index: 8;
-  align-items: center;
 }
 
 .filtre {
   position: sticky;
   top: 60px;
   width: 80%;
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
+  z-index: 999;
 }
 
 .filtre select {
@@ -961,39 +962,49 @@ select option {
     font-family: "Milimetre-regular", "Arial", sans-serif;
 }
 
-.element-item {
-  width: 100% !important;
+.biblio-generale-content {
+  font-size: calc(0.2vw + 1rem);
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 10px;
+  min-height: 100%;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 
-.bibliographie-generale div{
+.element-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-row-gap: 10px;
   grid-column-gap: 20px;
-  width: 80%;
-  margin: 10px;
+  margin-bottom: 20px;
 }
 
-
-h2.entree-reference,
-h2.article-correspondant {
-  font-size: calc(1.175vw + 1rem);
-  letter-spacing: .01em;
+.element-item .auteurRef,
+.element-item .titreOuvrage,
+.element-item .datePublication,
+.element-item .referenceContent {
+  line-height: 1.4em;
 }
 
-.entree-reference p,
-.article-correspondant em {
-  display: block;
-  font-size: calc(0.2vw + 1rem);
+.article-correspondant span {
+  font-size: calc(.1vw + .8rem);
+  margin: 0 5px 0 0;
 }
 
-.entree-reference {
-  text-align: left;
+.article-correspondant a {
+  color: var(--color-grey-body);
+  padding: 0px 5px;
+  background: pink;
+  box-decoration-break: clone;
 }
 
-.article-correspondant {
-  text-align: right;
+.article-correspondant a:hover {
+  color: pink;
+  background: transparent;
+}
+
+.gutter-sizer {
+  height: 20px;
 }
 
 /* --------------------------------------------- Bibliographie & Footer --------------------------------------------- */
@@ -1091,8 +1102,7 @@ h2.article-correspondant {
   color: var(--color-main-blue);
 }
 
-.sommaire-credits a em,
-.article-correspondant em {
+.sommaire-credits a em {
   color: var(--color-grey-light);
 }
 
@@ -1149,8 +1159,7 @@ h2.article-correspondant {
   color: var(--color-main-blue);
 }
 
-.sommaire-credits a em,
-.article-correspondant em {
+.sommaire-credits a em {
   color: var(--color-grey-light);
 }
 
