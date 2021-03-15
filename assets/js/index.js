@@ -4,7 +4,7 @@ $(function(){
 	const $notes = $('.note-icon'),
 		$titres = $('.titre-article'),
 		$autrice = $('.titre-auteur'),
-		$mentions = $('.mentions-article')
+		$mentions = $('.mentions-article'),
 		$main = $('main'),
 		$fond = $('#fond-ecran'),
 		$scrollUp = "scroll-up",
@@ -25,7 +25,7 @@ $(function(){
 	const boxElement = document.querySelector('#content');
 
 	if (boxElement) {
-			createObserver();
+		createObserver();
 	}
 
 	function createObserver() {
@@ -66,6 +66,25 @@ $(function(){
 	    $('.plyr__control--overlaid').append(playTitle);
     }
 
+    $(window).scroll(function() {
+		let currentScroll = $(window).scrollTop();
+		if (currentScroll == 0) {
+		$('body').removeClass('scroll-up');
+		return;
+		}
+
+		if (currentScroll > $lastScroll && !$('body').hasClass('scroll-down')) {
+		// down
+		$('body').removeClass('scroll-up');
+		$('body').addClass('scroll-down');
+		} else if (currentScroll < $lastScroll && $('body').hasClass('scroll-down')) {
+		// up
+		$('body').removeClass('scroll-down');
+		$('body').addClass('scroll-up');
+		}
+		$lastScroll = currentScroll;
+	});
+
 	$notes.on("click", function(e){
 		e.preventDefault();
 		$(this).toggleClass('active');
@@ -87,8 +106,7 @@ $(function(){
 
 	$images_link.on("click", function(e){
 		e.preventDefault();
-		// var $toDisplayImg = $(this).next();
-		// $toDisplayImg.toggleClass('image-display');
+
 		console.log($(this).data("media"));
 		const media = $(this).data("media");
 		const media_source = $(this).data("url");
@@ -105,6 +123,7 @@ $(function(){
 			$media_cont.append(content);
 
 		}
+
 		if(media=="vid-web") {
 			content = `
 				<div id="player" class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="${media_source}"></div>
