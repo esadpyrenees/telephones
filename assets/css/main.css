@@ -113,6 +113,7 @@ h3 {
   font-family: var(--text-family);
   font-weight: 900;
   margin: 60px 0;
+  font-size: calc(2vw + 1rem);
 }
 
 main h2 {
