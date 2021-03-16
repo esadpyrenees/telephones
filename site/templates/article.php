@@ -40,7 +40,7 @@
     <btn id="BiblioBtn">Afficher</btn>
     
     <div class="bibliographie">
-        <?php foreach($page->bibliography()->toPages() as $biblio) :?>
+        <?php foreach($page->bibliography()->toPages()->sortBy('title', 'asc') as $biblio) :?>
           <div class="biblio-content">
 
               <div class="left-column-biblio">
