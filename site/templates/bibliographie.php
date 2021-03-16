@@ -21,13 +21,21 @@
       <div class='element-item <?php foreach($articles as $article): ?><?= $article->author()->slug() ?> <?php endforeach ?>'>
   
         <div class="left-column-biblio">
-          <span class="auteurRef"><?= $biblio->auteurRef() ?></span><br>
-          <span class="datePublication">(<?= $biblio->datePublication() ?>)</span>
+          <?php if ($biblio->auteurRef()->isNotEmpty()): ?>
+            <span class="auteurRef"><?= $biblio->auteurRef() ?></span><br>
+          <?php endif ?>
+          <?php if ($biblio->datePublication()->isNotEmpty()): ?>
+            <span class="datePublication">(<?= $biblio->datePublication() ?>)</span>
+          <?php endif ?>
         </div>
         
         <div class="right-column-biblio">
-          <span class="titreOuvrage"> <em><?= $biblio->titreOuvrage() ?></em></span><br>
+        <?php if ($biblio->titreOuvrage()->isNotEmpty()): ?>
+          <span class="titreOuvrage"><em><?= $biblio->titreOuvrage() ?></em></span><br>
+        <?php endif ?>
+        <?php if ($biblio->referenceContent()->isNotEmpty()): ?>
           <span class="referenceContent"><?= $biblio->referenceContent()->kt() ?></span>
+        <?php endif ?>
           <article class="article-correspondant">
             <?php if($articles->count() > 1) :?>
               <?php foreach($articles as $article): ?>

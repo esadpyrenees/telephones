@@ -44,13 +44,21 @@
           <div class="biblio-content">
 
               <div class="left-column-biblio">
+              <?php if ($biblio->auteurRef()->isNotEmpty()): ?>
                 <span class="auteurRef"><?= $biblio->auteurRef() ?></span><br>
+              <?php endif ?>
+              <?php if ($biblio->datePublication()->isNotEmpty()): ?>
                 <span class="datePublication">(<?= $biblio->datePublication() ?>)</span>
+              <?php endif ?>
               </div>
 
               <div class="right-column-biblio">
-                <span class="titreOuvrage"> <em><?= $biblio->titreOuvrage() ?></em></span><br>
-                <span class="referenceContent"><?= $biblio->referenceContent()->kt() ?></span>
+                <?php if ($biblio->titreOuvrage()->isNotEmpty()): ?>
+                  <span class="titreOuvrage"><em><?= $biblio->titreOuvrage() ?></em></span><br>
+                <?php endif ?>
+                <?php if ($biblio->referenceContent()->isNotEmpty()): ?>
+                  <span class="referenceContent"><?= $biblio->referenceContent()->kt() ?></span>
+                <?php endif ?>
               </div>
 
           </div>      
