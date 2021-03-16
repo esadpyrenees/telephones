@@ -21,7 +21,7 @@
 
     </head>
 
-    <body>
+    <body class="<?= $article->author() ?>">
             <div id="progressBarContainer">
                 <div id="progressBar"></div>
             </div>
