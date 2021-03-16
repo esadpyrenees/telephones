@@ -117,7 +117,7 @@ h3 {
 }
 
 main h2 {
-  -webkit-text-fill-color: var(--color-grey-light);
+  color: var(--color-grey-light);
   text-shadow: -1px -1px 0 var(--color-grey-body), 1px -1px 0 var(--color-grey-body), -1px 1px 0 var(--color-grey-body), 1px 1px 0 var(--color-grey-body);
   font-size: calc(4vw + 1em);
   letter-spacing: .03em;
