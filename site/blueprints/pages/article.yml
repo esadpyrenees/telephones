@@ -83,3 +83,4 @@ columns:
             type: pages
             template: biblio
             query: site.find("bibliographie-generale").children
+            sortBy: title asc
