@@ -21,7 +21,7 @@
 
     </head>
 
-    <body class="<?= $page->author() ?>">
+    <body class="<?php if($page->author() == "Raymond Delambre") :?><?= $page->author()->slug() ?><?php endif ?>">
             <div id="progressBarContainer">
                 <div id="progressBar"></div>
             </div>
