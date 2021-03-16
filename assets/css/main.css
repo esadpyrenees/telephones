@@ -788,18 +788,18 @@ display: block!important;
 }
 
 /* --------------------------------------------- Delambre --------------------------------------------- */
-body.delambre #fond-ecran {
+body.raymond-delambre #fond-ecran {
   display: none;
 }
 
-body.delambre .content > p {
+body.raymond-delambre .content > p {
   text-indent: 0;
   text-align: center;
   margin: 50px 0;
   transition-duration: 1s;
 }
 
-body.delambre .content > h2 {
+body.raymond-delambre .content > h2 {
   color: inherit;
   transition-duration: 1s;
 }
