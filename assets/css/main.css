@@ -787,6 +787,23 @@ display: block!important;
   transform: var(--incanvas-timer);
 }
 
+/* --------------------------------------------- Delambre --------------------------------------------- */
+body.delambre #fond-ecran {
+  display: none;
+}
+
+body.delambre .content > p {
+  text-indent: 0;
+  text-align: center;
+  margin: 50px 0;
+  transition-duration: 1s;
+}
+
+body.delambre .content > h2 {
+  color: inherit;
+  transition-duration: 1s;
+}
+
 /*
     Vidéos Plyr.js
 */
