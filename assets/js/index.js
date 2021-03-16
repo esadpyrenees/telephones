@@ -240,8 +240,7 @@ var $biblio = $('.biblio-generale-content');
 if($biblio.length){
 	// isotope init
 	var $grid = $biblio.isotope({
-		itemSelector: '.element-item',
-		layoutMode: 'fitRows'
+		itemSelector: '.element-item'
 	});
 		
   // bind filter on select change

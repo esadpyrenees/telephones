@@ -658,7 +658,7 @@ display: block!important;
   align-items: center;
   align-content: center;
   min-height: 100%;
-  padding: 40% 0;
+  padding: 30% 0;
   color: pink;
 }
 
@@ -740,10 +740,13 @@ display: block!important;
 .body-display-menu main,
 .body-display-menu #fond-ecran,
 .body-display-menu #accueil,
+.body-display-menu .intro-accueil,
 .body-display-menu .sommaire-bas,
 .body-display-menu .credits,
 .body-display-menu .bibliographie-generale,
 .body-display-menu .bibliographie-article,
+.body-display-menu .scene-ouverture,
+.body-display-menu #scene,
 .body-display-menu .auteur-bio {
   transform: translateX(var(--menu-translate-width));
 }
@@ -1238,6 +1241,7 @@ main {
 .sommaire-credits,
 .auteur-bio aside,
 .bibliographie,
+.biblio-generale-content,
 .credits p,
 .credits blockquote,
 #logos {
@@ -1255,6 +1259,11 @@ main {
 .dark-fond {
   background-color: transparent;
 }
+
+.credits {
+  align-items: center;
+}
+
 }
 
 @media screen and (max-width: 580px) {
@@ -1282,6 +1291,7 @@ main {
 .sommaire-credits,
 .auteur-bio aside,
 .bibliographie,
+.biblio-generale-content,
 .credits p,
 .credits aside,
 #logos {
@@ -1322,4 +1332,9 @@ main h2 {
 #progressBarContainer {
   display: none;
 }
+
+.element-item {
+  grid-template-columns: 1fr 2fr;
+}
+
 }
