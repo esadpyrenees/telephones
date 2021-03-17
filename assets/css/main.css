@@ -344,8 +344,7 @@ main a[rel=external]::after,
 .bibliographie a[rel=external]::after,
 .auteur-bio a[rel=external]::after,
 .credits a[rel=external]::after,
-.bibliographie-generale a[rel=external]::after,
-.media-contener a::after
+.bibliographie-generale a[rel=external]::after
 {
   content:" ↗";
   font-weight: 400;
