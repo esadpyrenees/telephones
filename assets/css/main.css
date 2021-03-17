@@ -1085,10 +1085,6 @@ select option {
   cursor: pointer;
 }
 
-.bibliographie-article a, .entree-reference a {
-  word-break: break-all;
-}
-
 #BiblioBtn {
   text-align: center;
   cursor: pointer;
