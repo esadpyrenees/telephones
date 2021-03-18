@@ -1,12 +1,12 @@
 $(function(){
-	const contentDelambre = $('.raymond-delambre');
+	const contentDelambre = document.querySelector('.raymond-delambre');;
 
 	if (contentDelambre) {
 		createObserver();
 	}
 	
 	function createObserver() {
-	  const container = document.querySelector('#content')
+	  const container = document.querySelector('#content');
 	  const boxElement = container.querySelectorAll('p');
 	  const boxElementTitre = container.querySelectorAll('h2');
 
