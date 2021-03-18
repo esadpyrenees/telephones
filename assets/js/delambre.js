@@ -1,5 +1,5 @@
 $(function(){
-	const contentDelambre = $('.content-delambre');
+	const contentDelambre = $('.raymond-delambre');
 
 	if (contentDelambre) {
 		createObserver();
