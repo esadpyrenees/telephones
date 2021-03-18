@@ -130,6 +130,16 @@ $(function(){
 			InitPlyr();
 		}
 
+		if(media=="vid-file") {
+			content = `
+				<video id="player" class="js-player" playsinline controls data-poster="">
+		        	<source src="${media_source}" type="video/mp4" />
+		      	</video>
+			`;
+			$media_cont.append(content);
+			InitPlyr();
+		}
+
 		const cloneLegende = media_legende.clone();
 		const cloneCloseMedia = $media_close_icon.clone();
 		const cloneSizeMedia = $media_size_icon.clone();
