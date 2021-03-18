@@ -51,7 +51,6 @@ $(function(){
 	}
 
 	function InitPlyr() {
-		console.log("hello");
         //PLAYER JS
 	    const playersnew = Plyr.setup('.js-player', {
 	                controls:['play-large','progress', 'volume', 'fullscreen', 'poster']
@@ -116,7 +115,6 @@ $(function(){
 		$media_cont.empty();
 
 		if(media=="img") {
-			console.log("c'est une image");
 			content = `
 				<img src="${media_source}">
 			`;
@@ -193,7 +191,6 @@ window.addEventListener("load", function(){
 });
 
 function resizeScrollBar(){
-	console.log('resized');
 	progressBarContainer_size = progressBarContainer.getBoundingClientRect();
 	totalPageHeight = document.body.scrollHeight - window.innerHeight;
 }

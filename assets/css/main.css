@@ -495,7 +495,8 @@ main blockquote p {
   content: "IMAGE";
 }
 
-.image-texte[data-media='vid-web']:before {
+.image-texte[data-media='vid-web']:before, 
+.image-texte[data-media='vid-file']:before {
   content: "VIDEO";
 }
 
