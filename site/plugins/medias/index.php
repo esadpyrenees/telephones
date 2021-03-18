@@ -17,7 +17,7 @@ Kirby::plugin('phonecinema/medias', [
             $media_label = 'Vidéo';
           } elseif  ($tag->file->media_type() == 'img') {
             $media_label = 'Image';
-          } elseif ($tag->file->media_type() == 'video') {
+          } elseif ($tag->file->media_type() == 'vid-file') {
             $media_label = 'Vidéo';
           } else {
             $media_label = 'WTF';

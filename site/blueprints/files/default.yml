@@ -6,7 +6,7 @@ fields:
     required: true
     options:
       img: Image
-      video: Vidéo
+      vid-file: Vidéo
       vid-web: Youtube
   alt:
     type: text
