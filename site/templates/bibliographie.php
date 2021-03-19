@@ -8,7 +8,7 @@
       <select class="filters-select">
         <option value="*">Tout</option>
         <?php foreach(page('sommaire')->children()->listed() as $article) :?>
-          <option value=".<?= $article->author()->slug() ?>"><?= $article->title() ?></option>
+          <option value=".<?= $article->author()->slug() ?>"><?= $article->author() ?> - <?= $article->title() ?></option>
         <?php endforeach ?>
       </select>
     </section>
