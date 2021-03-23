@@ -228,17 +228,17 @@ $( "#BiblioBtn" ).click(function() {
 	  }
   });
 
-  $( "#FilmoBtn" ).click(function() {
+$( "#FilmoBtn" ).click(function() {
 	if(typeof(resizeScrollBar) == "function" ){
 		resizeScrollBar();
 	}
 	$( ".filmographie" ).slideToggle( "slow" );
 	if (this.innerHTML === "Afficher") {
 		this.innerHTML = "Cacher";
-	  } else {
+		} else {
 		this.innerHTML = "Afficher";
-	  }
-  });
+		}
+});
 
 // -------------------------------------------------------- Timer --------------------------------------------------------
 

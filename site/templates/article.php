@@ -100,8 +100,6 @@
   </div>
 <?php endif ?>
 
-
-
 	<div class="auteur-bio">
     <h1>Auteur.e.s</h1>
       <aside><?= $page->bioauthor()->kt() ?></aside>
