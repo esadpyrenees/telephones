@@ -343,6 +343,7 @@ main a:not(.image-texte)::after,
 main a[rel=external]::after,
 main .image-legende a::after,
 .bibliographie a[rel=external]::after,
+.filmographie a[rel=external]::after,
 .auteur-bio a[rel=external]::after,
 .credits a[rel=external]::after,
 .bibliographie-generale a[rel=external]::after {
@@ -1086,7 +1087,8 @@ select option {
   cursor: pointer;
 }
 
-#BiblioBtn {
+#BiblioBtn,
+#FilmoBtn {
   text-align: center;
   cursor: pointer;
   font-size: calc(0.2vw + 1rem);
@@ -1098,7 +1100,8 @@ select option {
   padding-top: .15em;
 }
 
-.bibliographie {
+.bibliographie,
+.filmographie {
   display: none;
   font-size: calc(0.2vw + 1rem);
   width: 60%;
@@ -1260,6 +1263,7 @@ main {
 .sommaire-credits,
 .auteur-bio aside,
 .bibliographie,
+.filmographie,
 .biblio-generale-content,
 .credits p,
 .credits blockquote,
@@ -1310,6 +1314,7 @@ main {
 .sommaire-credits,
 .auteur-bio aside,
 .bibliographie,
+.filmographie,
 .biblio-generale-content,
 .credits p,
 .credits aside,

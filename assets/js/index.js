@@ -228,6 +228,18 @@ $( "#BiblioBtn" ).click(function() {
 	  }
   });
 
+  $( "#FilmoBtn" ).click(function() {
+	if(typeof(resizeScrollBar) == "function" ){
+		resizeScrollBar();
+	}
+	$( ".filmographie" ).slideToggle( "slow" );
+	if (this.innerHTML === "Afficher") {
+		this.innerHTML = "Cacher";
+	  } else {
+		this.innerHTML = "Afficher";
+	  }
+  });
+
 // -------------------------------------------------------- Timer --------------------------------------------------------
 
 var timerInstance = new easytimer.Timer();

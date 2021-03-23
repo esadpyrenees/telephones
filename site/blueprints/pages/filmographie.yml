@@ -1,0 +1,13 @@
+title: Filmographie
+
+unlisted: true
+
+sections:
+  authors:
+    headline: Filmographie
+    type: pages
+    info: "{{page.text}}"
+    templates: 
+      - filmo
+    status: all
+    sortBy: title asc

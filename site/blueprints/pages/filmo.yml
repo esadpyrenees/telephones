@@ -1,0 +1,19 @@
+title: Entrée filmographique
+
+fields:
+  auteurRef:
+    width: 1/2
+    type: text
+    size: small
+    label: Auteur.e.s
+  datePublication:
+    width: 1/2
+    type: number
+    label: Date de publication
+  titreOuvrage:
+    type: text
+    label: Titre de la documentation
+  referenceContent:
+    type: markdown
+    size: small
+    label: Contenu

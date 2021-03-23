@@ -70,8 +70,9 @@
 <?php if ($page->filmography()->isNotEmpty()): ?>
   <div class="bibliographie-article">
     <h1>Filmographie</h1>
+    <btn id="FilmoBtn">Afficher</btn>
     
-    <div class="bibliographie">
+    <div class="filmographie">
         <?php foreach($page->filmography()->toPages()->sortBy('title', 'asc') as $filmo) :?>
           <div class="biblio-content">
 
@@ -99,37 +100,6 @@
   </div>
 <?php endif ?>
 
-<?php if ($page->entretien()->isNotEmpty()): ?>
-  <div class="bibliographie-article">
-    <h1>Entretiens et Notices</h1>
-    
-    <div class="bibliographie">
-        <?php foreach($page->entretien()->toPages()->sortBy('title', 'asc') as $entretien) :?>
-          <div class="biblio-content">
-
-              <div class="left-column-biblio">
-              <?php if ($entretien->auteurRef()->isNotEmpty()): ?>
-                <span class="auteurRef"><?= $entretien->auteurRef() ?></span><br>
-              <?php endif ?>
-              <?php if ($entretien->datePublication()->isNotEmpty()): ?>
-                <span class="datePublication">(<?= $entretien->datePublication() ?>)</span>
-              <?php endif ?>
-              </div>
-
-              <div class="right-column-biblio">
-                <?php if ($entretien->titreOuvrage()->isNotEmpty()): ?>
-                  <span class="titreOuvrage"><em><?= $entretien->titreOuvrage() ?></em></span><br>
-                <?php endif ?>
-                <?php if ($entretien->referenceContent()->isNotEmpty()): ?>
-                  <span class="referenceContent"><?= $entretien->referenceContent()->kt() ?></span>
-                <?php endif ?>
-              </div>
-
-          </div>      
-        <?php endforeach ?>
-    </div>
-  </div>
-<?php endif ?>
 
 
 	<div class="auteur-bio">
