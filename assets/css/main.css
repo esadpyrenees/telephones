@@ -341,6 +341,7 @@ main a:not(.image-texte)::after,
 }
 
 main a[rel=external]::after,
+main .image-legende a::after,
 .bibliographie a[rel=external]::after,
 .auteur-bio a[rel=external]::after,
 .credits a[rel=external]::after,
