@@ -1,11 +1,6 @@
-title: Entretiens & Notices
+title: Entretiens
 
-options:
-  changeSlug: false
-  changeTitle: false
-  duplicate: false
-  delete: false
-  status: false
+unlisted: true
 
 sections:
   authors:
