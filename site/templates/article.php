@@ -100,13 +100,13 @@
   </div>
 <?php endif ?>
 
-<?php if ($page->entretiens()->isNotEmpty()): ?>
+<?php if ($page->ent()->isNotEmpty()): ?>
   <div class="bibliographie-article">
     <h1>Entretiens & Notices</h1>
     <btn id="EntBtn">Afficher</btn>
     
     <div class="entretiens">
-        <?php foreach($page->entretiens()->toPages()->sortBy('title', 'asc') as $entretien) :?>
+        <?php foreach($page->ent()->toPages()->sortBy('title', 'asc') as $entretien) :?>
           <div class="biblio-content">
 
               <div class="left-column-biblio">
