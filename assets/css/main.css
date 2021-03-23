@@ -344,6 +344,7 @@ main a[rel=external]::after,
 main .image-legende a::after,
 .bibliographie a[rel=external]::after,
 .filmographie a[rel=external]::after,
+.entretiens a[rel=external]::after,
 .auteur-bio a[rel=external]::after,
 .credits a[rel=external]::after,
 .bibliographie-generale a[rel=external]::after {
@@ -1088,7 +1089,8 @@ select option {
 }
 
 #BiblioBtn,
-#FilmoBtn {
+#FilmoBtn,
+#EntBtn {
   text-align: center;
   cursor: pointer;
   font-size: calc(0.2vw + 1rem);
@@ -1101,6 +1103,7 @@ select option {
 }
 
 .bibliographie,
+.entretiens,
 .filmographie {
   display: none;
   font-size: calc(0.2vw + 1rem);
@@ -1264,6 +1267,7 @@ main {
 .auteur-bio aside,
 .bibliographie,
 .filmographie,
+.entretiens,
 .biblio-generale-content,
 .credits p,
 .credits blockquote,
@@ -1315,6 +1319,7 @@ main {
 .auteur-bio aside,
 .bibliographie,
 .filmographie,
+.entretiens,
 .biblio-generale-content,
 .credits p,
 .credits aside,

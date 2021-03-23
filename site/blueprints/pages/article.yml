@@ -89,3 +89,8 @@ columns:
             template: filmo
             query: site.find("filmographie").children
             sortBy: title asc
+          entretien:
+            type: pages
+            template: entretien
+            query: site.find("entretiens").children
+            sortBy: title asc

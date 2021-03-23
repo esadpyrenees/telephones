@@ -1,0 +1,19 @@
+title: Entrée entretien
+
+fields:
+  auteurRef:
+    width: 1/2
+    type: text
+    size: small
+    label: Interviewé
+  datePublication:
+    width: 1/2
+    type: number
+    label: Date
+  titreOuvrage:
+    type: text
+    label: Titre
+  referenceContent:
+    type: markdown
+    size: small
+    label: Contenu

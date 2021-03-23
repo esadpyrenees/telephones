@@ -100,6 +100,39 @@
   </div>
 <?php endif ?>
 
+<?php if ($page->entretiens()->isNotEmpty()): ?>
+  <div class="bibliographie-article">
+    <h1>Entretiens & Notices</h1>
+    <btn id="EntBtn">Afficher</btn>
+    
+    <div class="entretiens">
+        <?php foreach($page->entretiens()->toPages()->sortBy('title', 'asc') as $entretien) :?>
+          <div class="biblio-content">
+
+              <div class="left-column-biblio">
+              <?php if ($entretien->auteurRef()->isNotEmpty()): ?>
+                <span class="auteurRef"><?= $entretien->auteurRef() ?></span><br>
+              <?php endif ?>
+              <?php if ($entretien->datePublication()->isNotEmpty()): ?>
+                <span class="datePublication">(<?= $entretien->datePublication() ?>)</span>
+              <?php endif ?>
+              </div>
+
+              <div class="right-column-biblio">
+                <?php if ($entretien->titreOuvrage()->isNotEmpty()): ?>
+                  <span class="titreOuvrage"><em><?= $entretien->titreOuvrage() ?></em></span><br>
+                <?php endif ?>
+                <?php if ($entretien->referenceContent()->isNotEmpty()): ?>
+                  <span class="referenceContent"><?= $entretien->referenceContent()->kt() ?></span>
+                <?php endif ?>
+              </div>
+
+          </div>      
+        <?php endforeach ?>
+    </div>
+  </div>
+<?php endif ?>
+
 	<div class="auteur-bio">
     <h1>Auteur.e.s</h1>
       <aside><?= $page->bioauthor()->kt() ?></aside>

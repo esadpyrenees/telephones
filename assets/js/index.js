@@ -214,7 +214,7 @@ progressBarContainer.addEventListener("click", (e) => {
 });
 
 
-// -------------------------------------------------------- Afficher/Cacher la bibliographie --------------------------------------------------------
+// -------------------------------------------------------- Afficher/Cacher la bibliographie/Filmographie/Entretiens --------------------------------------------------------
 
 $( "#BiblioBtn" ).click(function() {
 	if(typeof(resizeScrollBar) == "function" ){
@@ -233,6 +233,18 @@ $( "#FilmoBtn" ).click(function() {
 		resizeScrollBar();
 	}
 	$( ".filmographie" ).slideToggle( "slow" );
+	if (this.innerHTML === "Afficher") {
+		this.innerHTML = "Cacher";
+		} else {
+		this.innerHTML = "Afficher";
+		}
+});
+
+$( "#EntBtn" ).click(function() {
+	if(typeof(resizeScrollBar) == "function" ){
+		resizeScrollBar();
+	}
+	$( ".entretiens" ).slideToggle( "slow" );
 	if (this.innerHTML === "Afficher") {
 		this.innerHTML = "Cacher";
 		} else {

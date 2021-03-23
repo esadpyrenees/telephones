@@ -1,0 +1,18 @@
+title: Entretiens & Notices
+
+options:
+  changeSlug: false
+  changeTitle: false
+  duplicate: false
+  delete: false
+  status: false
+
+sections:
+  authors:
+    headline: Entretiens
+    type: pages
+    info: "{{page.text}}"
+    templates: 
+      - entretien
+    status: all
+    sortBy: title asc
