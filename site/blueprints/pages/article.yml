@@ -92,5 +92,5 @@ columns:
           ent:
             type: pages
             template: entretien
-            query: site.find("entretiens").children
+            query: site.find("entretiens-notices").children
             sortBy: title asc
