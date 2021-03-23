@@ -67,6 +67,71 @@
   </div>
 <?php endif ?>
 
+<?php if ($page->filmography()->isNotEmpty()): ?>
+  <div class="bibliographie-article">
+    <h1>Filmographie</h1>
+    
+    <div class="bibliographie">
+        <?php foreach($page->filmography()->toPages()->sortBy('title', 'asc') as $filmo) :?>
+          <div class="biblio-content">
+
+              <div class="left-column-biblio">
+              <?php if ($filmo->auteurRef()->isNotEmpty()): ?>
+                <span class="auteurRef"><?= $filmo->auteurRef() ?></span><br>
+              <?php endif ?>
+              <?php if ($filmo->datePublication()->isNotEmpty()): ?>
+                <span class="datePublication">(<?= $filmo->datePublication() ?>)</span>
+              <?php endif ?>
+              </div>
+
+              <div class="right-column-biblio">
+                <?php if ($filmo->titreOuvrage()->isNotEmpty()): ?>
+                  <span class="titreOuvrage"><em><?= $filmo->titreOuvrage() ?></em></span><br>
+                <?php endif ?>
+                <?php if ($filmo->referenceContent()->isNotEmpty()): ?>
+                  <span class="referenceContent"><?= $filmo->referenceContent()->kt() ?></span>
+                <?php endif ?>
+              </div>
+
+          </div>      
+        <?php endforeach ?>
+    </div>
+  </div>
+<?php endif ?>
+
+<?php if ($page->entretien()->isNotEmpty()): ?>
+  <div class="bibliographie-article">
+    <h1>Entretiens et Notices</h1>
+    
+    <div class="bibliographie">
+        <?php foreach($page->entretien()->toPages()->sortBy('title', 'asc') as $entretien) :?>
+          <div class="biblio-content">
+
+              <div class="left-column-biblio">
+              <?php if ($entretien->auteurRef()->isNotEmpty()): ?>
+                <span class="auteurRef"><?= $entretien->auteurRef() ?></span><br>
+              <?php endif ?>
+              <?php if ($entretien->datePublication()->isNotEmpty()): ?>
+                <span class="datePublication">(<?= $entretien->datePublication() ?>)</span>
+              <?php endif ?>
+              </div>
+
+              <div class="right-column-biblio">
+                <?php if ($entretien->titreOuvrage()->isNotEmpty()): ?>
+                  <span class="titreOuvrage"><em><?= $entretien->titreOuvrage() ?></em></span><br>
+                <?php endif ?>
+                <?php if ($entretien->referenceContent()->isNotEmpty()): ?>
+                  <span class="referenceContent"><?= $entretien->referenceContent()->kt() ?></span>
+                <?php endif ?>
+              </div>
+
+          </div>      
+        <?php endforeach ?>
+    </div>
+  </div>
+<?php endif ?>
+
+
 	<div class="auteur-bio">
     <h1>Auteur.e.s</h1>
       <aside><?= $page->bioauthor()->kt() ?></aside>
