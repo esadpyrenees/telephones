@@ -84,11 +84,8 @@ columns:
             template: biblio
             query: site.find("bibliographie-generale").children
             sortBy: title asc
-      filmography:
-        type: pages
-        template: biblio
-        sortBy: title asc
-      entretien:
-        type: pages
-        template: biblio
-        sortBy: title asc
+          filmography:
+            type: pages
+            template: filmo
+            query: site.find("filmographie").children
+            sortBy: title asc
