@@ -932,7 +932,8 @@ body.raymond-delambre .content > h2 {
   max-width: 65ch;
 }
 
-.credits em {
+.credits em,
+.raymond-delambre em {
   color: var(--color-grey-light);
 }
 
