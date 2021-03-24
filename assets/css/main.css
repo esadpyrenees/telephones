@@ -748,6 +748,7 @@ display: block!important;
 .body-display-menu .intro-accueil,
 .body-display-menu .sommaire-bas,
 .body-display-menu .credits,
+.body-display-menu .error,
 .body-display-menu .bibliographie-generale,
 .body-display-menu .bibliographie-article,
 .body-display-menu .scene-ouverture,
@@ -908,6 +909,7 @@ body.raymond-delambre .content > h2 {
 /* --------------------------------------------- Page Crédits & Bibliographie générale --------------------------------------------- */
 
 .credits p,
+.error p,
 .credits blockquote p,
 #logos {
   width: 60%;
@@ -917,7 +919,8 @@ body.raymond-delambre .content > h2 {
   margin-right: auto;
 }
 
-.credits p {
+.credits p,
+.error p {
   line-height: 1.5;
   font-size: calc(0.675vw + 1rem);
   color: pink;
@@ -1045,7 +1048,8 @@ select option {
 
 /* --------------------------------------------- Bibliographie & Footer --------------------------------------------- */
 
-.credits {
+.credits,
+.error {
   display: -webkit-flex;
   -webkit-flex-direction: column;
   position: relative;
@@ -1074,6 +1078,7 @@ select option {
 .bibliographie-article h1,
 .auteur-bio h1,
 .credits h1,
+.error h1,
 .bibliographie-generale h1 {
   margin: 0;
   margin-bottom: 40px;
@@ -1272,6 +1277,7 @@ main {
 .entretiens,
 .biblio-generale-content,
 .credits p,
+.error p,
 .credits blockquote,
 #logos {
   width: 80%;
@@ -1289,7 +1295,8 @@ main {
   background-color: transparent;
 }
 
-.credits {
+.credits,
+.error {
   align-items: center;
 }
 
@@ -1324,6 +1331,7 @@ main {
 .entretiens,
 .biblio-generale-content,
 .credits p,
+.error p,
 .credits aside,
 #logos {
   width: 92%;
