@@ -134,7 +134,7 @@ li {
   list-style: none;
 }
 
-sup {
+span.note-icon {
   position: relative;
   vertical-align: middle;
   top: -0.1em;
@@ -145,9 +145,10 @@ sup {
   cursor: pointer;
   margin: 0 2px;
   padding: 0 0.4em;
+  font-size: 75%;
 }
 
-sup:hover {
+span.note-icon:hover {
   opacity: .5;
 }
 
