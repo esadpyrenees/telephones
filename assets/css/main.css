@@ -127,7 +127,6 @@ main h2 {
 em {
   font-family: "Redaction-35-italic";
   opacity: 75%;
-  color: var(--color-grey-med);
 }
 
 li {
@@ -465,8 +464,8 @@ main blockquote p {
 }
 
 .note em {
-  color: tomato;
-  opacity: 100%;
+  color: var(--color-grey-light);
+  opacity: 75%;
 }
 
 .visible {
