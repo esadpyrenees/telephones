@@ -84,6 +84,8 @@ Gallery:
 
 - 0.jpg
 - 1.jpg
+- intro_tangerine.jpg
+- intro_shopper.jpg
 
 ----
 

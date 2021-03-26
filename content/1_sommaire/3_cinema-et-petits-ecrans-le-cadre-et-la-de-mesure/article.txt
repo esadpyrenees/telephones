@@ -85,7 +85,14 @@ Bioauthor: Martine Beugnet est professeure en études visuelles à l'Université
 
 ----
 
-Gallery: 
+Gallery:
+
+- fig1_-wenders.jpg
+- fig2_artaud.png
+- fig3_artaud.png
+- fig4_assayas.png
+- fig5_assayas.png
+- fig6_assayas.png
 
 ----
 

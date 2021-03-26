@@ -182,10 +182,10 @@ Gallery:
 
 - ill1-carnage.jpg
 - ill2-departed.png
-- ill4-non-stop.png
-- ill6-sex-drive.png
-- ill5-the-fault-in-our-star.png
 - ill3-departed.png
+- ill4-non-stop.png
+- ill5-the-fault-in-our-star.png
+- ill6-sex-drive.png
 - ill7-disconnect.png
 - ill8-trust.png
 - ill9-departed.png

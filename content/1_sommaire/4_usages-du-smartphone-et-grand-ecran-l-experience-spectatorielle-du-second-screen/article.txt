@@ -120,7 +120,15 @@ Bioauthor: Ghislaine Chabert est maîtresse de conférences HDR en Sciences de l
 
 ----
 
-Gallery: 
+Gallery:
+
+- chabert-1.png
+- chabert-2.png
+- chabert-3.png
+- chabert-4.png
+- chabert-5.png
+- chabert-6.png
+- chabert-7.png
 
 ----
 
