@@ -17,8 +17,8 @@
   --offcanvas-timer: translate3d(0, 200%, 0);
   --incanvas-timer: translate3d(0, 0, 0);
 
-  --menu-is-open-width: 600px;
-  --menu-translate-width: -600px;
+  --menu-is-open-width: 650px;
+  --menu-translate-width: -650px;
 
   --text-family: "Millimetre";
   --alt-family: "Redaction";
@@ -232,9 +232,10 @@ span.note-icon:hover {
 .menu li a {
   display: block;
   width: 100%;
+  padding: 5px 0;
 }
 
-.menu li {
+.menu > li {
   padding: .25em 20px;
   line-height: 1;
 /*  background: linear-gradient(0.45turn,hotpink,pink);
@@ -251,8 +252,7 @@ span.note-icon:hover {
 #sommaire:hover::after {
   content: "+";
   position: absolute;
-  font-size: 0.6em;
-  top: 0.7em;
+  font-size: calc(2vw + 1rem);
   right: 20px;
 }
 
@@ -443,7 +443,7 @@ main blockquote p {
   line-height: 1.4;
   padding: .5em;
   border-radius: 10px;
-  box-shadow: 0 -4px var(--color-main-blue) inset,0 4px #8ed99e inset,-4px 0 #8ed99e inset,4px 0 var(--color-main-blue) inset;
+  box-shadow: 0 -2px var(--color-main-blue) inset,0 2px #8ed99e inset,-2px 0 #8ed99e inset,2px 0 var(--color-main-blue) inset;
 }
 
 .note {
@@ -522,13 +522,19 @@ main blockquote p {
   width: 300px;
   cursor: pointer;
   z-index: 700;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-grey-body);
+  border-radius: 10px;
 }
 
 .media-contener img {
-  width: 100%;
+  max-height: 300px;
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
   opacity: 0.95;
+  margin: 10px auto;
 }
 
 .image-legende {
@@ -716,9 +722,9 @@ display: block!important;
 }
 
 .body-display-media .media-contener img,
-.body-display-media .media-contener span,
 .body-display-media .media-contener .plyr {
-  width: 50%!important;
+  max-height: 70%!important;
+  max-width: 70%!important;
 }
 
 .body-display-media .media-contener img,
@@ -1081,7 +1087,7 @@ select option {
 .bibliographie-generale h1 {
   margin: 0;
   margin-bottom: 40px;
-  font-size: calc(2vw + 1rem);
+  font-size: calc(1.5vw + 2rem);
   letter-spacing: .01em;
   color: var(--color-grey-light);
 }
@@ -1277,7 +1283,7 @@ main {
 .biblio-generale-content,
 .credits p,
 .error p,
-.credits blockquote,
+.credits blockquote p,
 #logos {
   width: 80%;
 }
@@ -1362,9 +1368,9 @@ main h2 {
 }
 
 .body-display-media .media-contener img,
-.body-display-media .media-contener span,
 .body-display-media .media-contener .plyr {
-  width: 80%!important;
+  max-height: 80%!important;
+  max-width: 80%!important;
 }
 
 #progressBarContainer {
