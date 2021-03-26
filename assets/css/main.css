@@ -315,6 +315,10 @@ main p {
   max-width: 65ch;
 }
 
+main p + p {
+  margin-top: 20px;
+}
+
 main li {
   margin: 2rem 0;
   margin-left: 2em;
@@ -948,7 +952,7 @@ body.raymond-delambre .content > h2 {
 hr {
  width: 0px;
  opacity: 0;
- margin: 20px 0;
+ margin: 10px 0;
 }
 
 #logos {
@@ -981,7 +985,7 @@ hr {
 .filtre {
   position: sticky;
   top: 14px;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   z-index: 999;
 }
@@ -1109,7 +1113,7 @@ select option {
   border-radius: 5px;
   background-color: var(--color-main-blue);
   color: var(--color-grey-body);
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   padding-top: .15em;
 }
@@ -1154,9 +1158,9 @@ select option {
   color: var(--color-main-blue);
 }
 
-.sommaire-credits a em {
+/* .sommaire-credits a em {
   color: var(--color-grey-light);
-}
+} */
 
 .auteur-bio aside {
   grid-column-gap: 20px;
@@ -1168,9 +1172,8 @@ select option {
   text-align: center;
 }
 
-.auteur-bio aside #biographie {
-  text-align: left;
-  color: var(--color-grey-light);
+.auteur-bio aside p + p{
+  margin-top: 20px;
 }
 
 .sommaire-credits {
@@ -1188,7 +1191,7 @@ select option {
 
 .sommaire-credits h2 {
   font-family: var(--text-family);
-  font-size: calc(0.675vw + 1rem);
+  font-size: calc(0.6vw + 1.1em);
   grid-column: 1/3;
   text-align: center;
   color: var(--color-grey-light);
@@ -1208,10 +1211,6 @@ select option {
   text-align: right;
   font-family: var(--text-family);
   color: var(--color-main-blue);
-}
-
-.sommaire-credits a em {
-  color: var(--color-grey-light);
 }
 
 .sommaire-credits a:nth-child(17),
@@ -1340,6 +1339,18 @@ main {
 .credits aside,
 #logos {
   width: 92%;
+}
+
+.credits,
+.error,
+.bibliographie-article,
+.auteur-bio,
+.sommaire-bas {
+  padding: 50px 6% 80px 6%;
+}
+
+main {
+  padding: 0 6%;
 }
 
 main li,

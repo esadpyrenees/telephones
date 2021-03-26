@@ -44,9 +44,9 @@ $(function(){
 	function handleIntersect(entries) {
 	  entries.forEach(function(entry) {
 	    if (entry.intersectionRatio>=0.15) {
-	    	accueil.addClass('hide');
+	    	// accueil.addClass('hide');
 		} else {
-			accueil.removeClass('hide');
+			// accueil.removeClass('hide');
 		}
 	  });
 	}
