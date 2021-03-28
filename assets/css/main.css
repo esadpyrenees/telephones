@@ -604,17 +604,16 @@ display: block!important;
 }
 
 .scene-ouverture {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   z-index: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .scene-ouverture video {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
   filter: blur(5px) brightness(3) saturate(150%);
   opacity: 0.7;
   z-index: -1;
@@ -630,6 +629,7 @@ display: block!important;
   bottom: 0;
   right: 0;
   outline: 50px solid var(--color-grey-body);
+  overflow: hidden;
 }
 
 .bordure {
@@ -1247,6 +1247,11 @@ select option {
 .droite {
   width: calc( (100% - var(--wc)) / 2)!important;
 }
+
+#progressBarContainer {
+  display: none;
+}
+
 }
 @media screen and (max-width: 768px) {
 :root {
@@ -1382,10 +1387,6 @@ main h2 {
 .body-display-media .media-contener .plyr {
   max-height: 80%!important;
   max-width: 80%!important;
-}
-
-#progressBarContainer {
-  display: none;
 }
 
 .element-item {
