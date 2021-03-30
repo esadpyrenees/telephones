@@ -1,5 +1,5 @@
 <?php if(option('sylvainjule.footnotes.links')): ?>
-<sup class="note-icon"></a><?php echo $order ?></sup>
+<span class="note-icon"></a><?php echo $order ?></span>
 <?php else: ?>
-<sup class="note-icon"><?php echo $order ?></sup>
+<span class="note-icon"><?php echo $order ?></span>
 <?php endif; ?>

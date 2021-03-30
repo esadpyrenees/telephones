@@ -84,8 +84,8 @@ Gallery:
 
 - 0.jpg
 - 1.jpg
-- intro_shopper.jpg
 - intro_tangerine.jpg
+- intro_shopper.jpg
 
 ----
 
@@ -95,7 +95,6 @@ Bibliography:
   bibliographie-generale/andre-e-zabunyan-d-2013-l-attrait-du-telephone-crisnee-yellow-now
 - >
   bibliographie-generale/astruc-a-1948-naissance-d-une-nouvelle-avant-garde-la-camera-stylo-l-ecran-francais-n0-144-30-mars-1948
-- bibliographie-generale/crane-d
 - >
   bibliographie-generale/chion-m-2009-cinema-et-telephone-cours-donne-a-l-universite-sorbonne-nouvelle-paris-3-mai-2009
 - >

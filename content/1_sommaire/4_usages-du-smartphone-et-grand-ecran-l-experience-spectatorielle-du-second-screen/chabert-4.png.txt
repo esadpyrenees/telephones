@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Media-type: img
 
 ----
@@ -11,3 +12,6 @@ Caption: Textualités, source : https://textualites.wordpress.com/2016/03/15/esp
 ----
 
 Yt-url: 
+=======
+Caption: 
+>>>>>>> a5fd060b6c858d6e2cf67665d80f0e182edace89

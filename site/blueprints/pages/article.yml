@@ -80,16 +80,19 @@ columns:
             label: Gallerie
             type: files  
           bibliography:
+            label: Bibliographie
             type: pages
             template: biblio
             query: site.find("bibliographie-generale").children
             sortBy: title asc
           filmography:
+            label: Filmographie
             type: pages
             template: filmo
             query: site.find("filmographie").children
             sortBy: title asc
           ent:
+            label: Entretiens
             type: pages
             template: entretien
             query: site.find("entretiens-notices").children
