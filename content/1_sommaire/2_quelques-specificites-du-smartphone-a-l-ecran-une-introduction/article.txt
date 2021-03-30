@@ -16,7 +16,7 @@ Tags: Anaïs Guilet
 
 Text:
 
-Ce chapitre se situe dans la droite ligne de l’introduction de ce dossier et propose un parcours aussi peu exhaustif qu’il est préliminaire d’une réflexion qui s’opérera dans l’ensemble des textes présentés ici. Fort des analyses proposées dans les études précédemment citées sur (link: sommaire/introduction text: les représentations du téléphone au cinéma), il s’agira pour nous de relever ce qui fonde la singularité de ce téléphone dit smart en comparaison du téléphone filaire. Nous proposons ainsi de distinguer six traits saillants pour l’étude des spécificités de ce téléphone contemporain, tel que nous les analyserons à travers le prisme de leur impact narratif et diégétique :
+Ce chapitre se situe dans la droite ligne de l’introduction de ce dossier et propose un parcours aussi peu exhaustif qu’il est préliminaire d’une réflexion qui s’opérera dans l’ensemble des textes présentés ici. Fort des analyses proposées dans les études précédemment citées sur (link: sommaire/introduction text: les représentations du téléphone au cinéma), il s’agira pour nous de relever ce qui fonde la singularité de ce téléphone dit smart en comparaison du téléphone filaire. Nous proposons ainsi de distinguer six traits saillants pour l’étude des spécificités de ce téléphone contemporain, tel que nous les analyserons à travers le prisme de leur impact narratif et diégétique :
 
 - Commençant par un trait de l’ordre d’une évidence mais que nos usages quotidiens tendent parfois à faire oublier [^ Aujourd’hui le *smartphone* est le moyen d’accès privilégié à internet pour les Français, loin devant l’ordinateur (68% de la population utilise un téléphone pour naviguer sur internet). L’utilisation des applications de communication interpersonnelle  (type Whatsapp, Viber, Messenger…) gagne également du terrain : 62% des Français envoient des messages et 51% téléphonent via des applications. cf : (link: https://www.arcep.fr/uploads/tx_gspublication/infographie-barometre-num-2019.pdf text: voir ici rel: external) et le baromètre du numérique 2019 : (link: https://www.arcep.fr/uploads/tx_gspublication/rapport-barometre-num-2019.pdf text: voir ici rel: external)], nous aborderons la fonction de communication vocale qui incombe au téléphone connecté et qui ne le démarque pas des téléphones filaires.
 - Ce qui le distingue par contre est que ces appels peuvent avoir lieu dans un contexte de mobilité. Le smartphone permet  d’appeler ou d’être appelé partout (ou presque), tout le temps. 
@@ -25,7 +25,7 @@ Ce chapitre se situe dans la droite ligne de l’introduction de ce dossier et p
 - Le smartphone est également un outil de captation photographique et vidéo, en cela il produit et diffuse des images à l’instar du cinéma.
 - Sa dernière caractéristique réside dans sa capacité à stocker et diffuser des données, en effet le téléphone est aussi doté d’une mémoire qui regorge de données, journaux d’appels, agenda, annuaire de contacts, notes personnelles, géolocalisation, en cela il est devenu une sorte d’assistant personnel et mémoriel, on ne peut plus révélateur (et délateur) de notre intimité. 
 
-## 1-La communication vocale. 
+## 1-La communication vocale 
 
 Le téléphone quand bien même dit smart demeure un téléphone, c'est-à-dire, pour renouer avec l’étymologie, un moyen pour faire transiter une information sonore (*phonie*) à distance (*télé*). Le téléphone est le média qui transporte nos voix d’un lieu à un autre, en cela il crée un lien vers une altérité irrémédiablement éloignée, un corps résolument interfacé. Même si le smartphone permet la visiophonie, le corps d’autrui, s’il peut être vu et/ou entendu, reste absent, consigné dans un lieu autre. Il faut alors rappeler la naissance presque contemporaine du cinéma et du téléphone qui n’aura fait qu’entremêler leurs destinées. En effet, les deux inventions ne sont pas simplement simultanées, elles sont aussi, sous certains aspects, similaires : au téléphone comme dans les films, la voix qui transite à travers un dispositif électro-acoustique a le pouvoir de nous rapprocher symboliquement de ceux qui sont éloignés.  Avec le téléphone comme avec le cinéma, présence et visibilité ne coïncident plus. Tous deux sont également attachés à une certaine forme d’ubiquité : l’une provoquée par la technologie, l’autre par l’immersion fictionnelle. Ainsi, le téléphone et le cinéma nous autorisent à être à deux endroits en même temps. Nous sommes à la fois ici, dans la salle de cinéma ou par exemple dans la rue à parler au téléphone, et, par projection, nous sommes aussi ailleurs avec autrui, dans le lieu où se déroule la diégèse du film ou dans celui où se trouve notre interlocuteur au téléphone. Comme le note Emmanuelle André et Dork Zabunyan, le téléphone au cinéma est pris, 
 
@@ -56,7 +56,7 @@ Le film opère dès ses premières minutes une mise en perspective technologique
 
 *Cellular* a ainsi recours au téléphone filaire pour mieux montrer par contraste la domination technologique, sinon narrative, du téléphone mobile. 
 
-## 3-L’écriture.
+## 3-L’écriture
 
 Le téléphone portable est une machine à entendre et parler mais aussi depuis 1994 et le développement de la messagerie texte grand public inauguré par la commercialisation du Nokia 2010, il est une machine à écrire et lire ce qui rompt avec les pratiques téléphoniques du filaire marqué par l’oralité. Comme le remarque Lise Renaud dans « Téléphone mobile et écriture : figures de la ré-novation »,
 
@@ -174,7 +174,7 @@ En effet, les techniques ont toujours conditionné notre rapport phénoménologi
 
 ----
 
-Bioauthor: (link: http://cyborglitteraire.com/ text: Anaïs Guilet rel: external) est maîtresse de conférences en Littératures comparées à l’Université Savoie Mont Blanc. Elle est rattachée au laboratoire de recherche LLSETI où elle codirige l’équipe 3 de l’axe 2 consacré au « Corps en question ». Elle est membre associée du laboratoire FIGURA, à l’UQAM. Spécialisée dans les humanités numériques, ses recherches portent sur les esthétiques et poétiques numériques et transmédiatiques, sur la place du livre dans la culture contemporaine ainsi que sur les représentations du corps en contexte numérique.
+Bioauthor: Anaïs Guilet est maîtresse de conférences en Littératures comparées à l’Université Savoie Mont Blanc. Elle est rattachée au laboratoire de recherche LLSETI où elle codirige l’équipe 3 de l’axe 2 consacré au « Corps en question ». Elle est membre associée du laboratoire FIGURA, à l’UQAM. Spécialisée dans les humanités numériques, ses recherches portent sur les esthétiques et poétiques numériques et transmédiatiques, sur la place du livre dans la culture contemporaine ainsi que sur les représentations du corps en contexte numérique.
 
 ----
 
@@ -247,7 +247,7 @@ Bibliographie:
 
 - André. E. & Zabunyan D. (2013). *L’Attrait du téléphone.* Crisnée : Yellow Now.
 - Barthes, R. (1995). *Roland Barthes contre les idées reçues* (Le Figaro, 27 juillet 1974), Œuvres complètes 1974-1980, tome III. Paris : Éditions du Seuil.
-- Coëffé, T. (2018). *Les chiffres clés des réseaux sociaux en avril 2018*, Le Blog du modérateur, Repéré à https://www.blogdumoderateur.com/chiffres-cles-reseaux-sociaux-avril-2018/.  
+- Coëffé, T. (2018). *Les chiffres clés des réseaux sociaux en avril 2018*, Le Blog du modérateur, Repéré à https://www.blogdumoderateur.com/chiffres-cles-reseaux-sociaux-avril-2018/.  
 - Crane D. (2002). *Projections and Intersections: Paranoid Textuality in Sorry, Wrong Number.* Camera Obscura, 17, 3 (51), 71–113. doi: https://doi.org/10.1215/02705346-17-3_51-71.
 - Fontcuberta, J. (2017). *Préface. Dans S. Limare, Y. Leroux & J. Lachance (dir.), Selfies d’ado*. Laval : Presses de l’université Laval.
 - Gunning, T. (1991). *Heard Over the Phone: The Lonely Villa and the de Lorde Tradition of the Terrors of Technology*. Screen, 32 (2), 184-196. doi : https://doi.org/10.1093/screen/32.2.184.   
@@ -256,13 +256,13 @@ Bibliographie:
 - Mellier, D. (2002). *Les Écrans meurtriers. Essais sur les scènes spéculaires du thriller*, Liège : éditions du Céfal.
 - Michel, U. (2011). *Un objet star de cinéma : le téléphone*, slate.fr, mis à jour le 25 août 2011 
 - Ouellet, J. (2014). *Me, Myself and Why: Searching for the Science of Self. New York* : Penguin books.
-- Putsay, S. J. (2007). *Cell Phones and Cinema ; Filmic Representations of Mobile Phone Technology and New Agency* (Mémoire de maitrise inédit), Ohio University. Repéré à http://rave.ohiolink.edu/etdc/view?acc_num=ohiou1180537475. 
+- Putsay, S. J. (2007). *Cell Phones and Cinema ; Filmic Representations of Mobile Phone Technology and New Agency* (Mémoire de maitrise inédit), Ohio University. Repéré à http://rave.ohiolink.edu/etdc/view?acc_num=ohiou1180537475. 
 - Renaud, L. (2012). *Téléphone mobile et écriture : figures de la ré-novation*. Communication et langages, vol. 174, déc.
 - Sloterdijk, P. (2000). *La Domestication de l’être*. Paris : Mille et une nuits.
-- Teyssot, G. (2010). *Fenêtres et écrans : entre intimité et extimité »*. Appareil. Repéré à http://appareil.revues.org/1005.  
+- Teyssot, G. (2010). *Fenêtres et écrans : entre intimité et extimité »*. Appareil. Repéré à http://appareil.revues.org/1005.  
 - Tisseron, S. (2011). *Intimité et extimité*. Communications. n° 88. doi : https://doi.org/10.3917/commu.088.0083.  
 - Vial, S. (2013).* L’Être et l’écran. Comment le numérique change la perception*. Paris : PUF.
-- L’Arcep, le CGE et l'Agence du Numérique. (2017). *Baromètre du numérique 2017*. Repéré à https://www.arcep.fr/uploads/tx_gspublication/barometre_du_numerique-2017-271117.pdf .
+- L’Arcep, le CGE et l'Agence du Numérique. (2017). *Baromètre du numérique 2017*. Repéré à https://www.arcep.fr/uploads/tx_gspublication/barometre_du_numerique-2017-271117.pdf .
 
 ----
 
@@ -270,7 +270,7 @@ Blibliographie:
 
 - André. E. & Zabunyan D. (2013). L’Attrait du téléphone. Crisnée : Yellow Now.
 - Barthes, R. (1995). Roland Barthes contre les idées reçues (Le Figaro, 27 juillet 1974), Œuvres complètes 1974-1980, tome III. Paris : Éditions du Seuil.
-- Coëffé, T. (2018). Les chiffres clés des réseaux sociaux en avril 2018, Le Blog du modérateur, Repéré à https://www.blogdumoderateur.com/chiffres-cles-reseaux-sociaux-avril-2018/.  
+- Coëffé, T. (2018). Les chiffres clés des réseaux sociaux en avril 2018, Le Blog du modérateur, Repéré à https://www.blogdumoderateur.com/chiffres-cles-reseaux-sociaux-avril-2018/.  
 - Crane D. (2002). Projections and Intersections: Paranoid Textuality in Sorry, Wrong Number. Camera Obscura, 17, 3 (51), 71–113. doi: https://doi.org/10.1215/02705346-17-3_51-71.
 - Fontcuberta, J. (2017). Préface. Dans S. Limare, Y. Leroux & J. Lachance (dir.), Selfies d’ado. Laval : Presses de l’université Laval.
 - Gunning, T. (1991). Heard Over the Phone: The Lonely Villa and the de Lorde Tradition of the Terrors of Technology. Screen, 32 (2), 184-196. doi : https://doi.org/10.1093/screen/32.2.184.   
@@ -279,10 +279,10 @@ Blibliographie:
 - Mellier, D. (2002). Les Écrans meurtriers. Essais sur les scènes spéculaires du thriller, Liège : éditions du Céfal.
 - Michel, U. (2011). Un objet star de cinéma : le téléphone, slate.fr, mis à jour le 25 août 2011 
 - Ouellet, J. (2014). Me, Myself and Why: Searching for the Science of Self. New York : Penguin books.
-- Putsay, S. J. (2007). Cell Phones and Cinema ; Filmic Representations of Mobile Phone Technology and New Agency (Mémoire de maitrise inédit), Ohio University. Repéré à http://rave.ohiolink.edu/etdc/view?acc_num=ohiou1180537475. 
+- Putsay, S. J. (2007). Cell Phones and Cinema ; Filmic Representations of Mobile Phone Technology and New Agency (Mémoire de maitrise inédit), Ohio University. Repéré à http://rave.ohiolink.edu/etdc/view?acc_num=ohiou1180537475. 
 - Renaud, L. (2012). Téléphone mobile et écriture : figures de la ré-novation . Communication et langages, vol. 174, déc.
 - Sloterdijk, P. (2000). La Domestication de l’être. Paris : Mille et une nuits.
-- Teyssot, G. (2010). Fenêtres et écrans : entre intimité et extimité ». Appareil. Repéré à http://appareil.revues.org/1005.  
+- Teyssot, G. (2010). Fenêtres et écrans : entre intimité et extimité ». Appareil. Repéré à http://appareil.revues.org/1005.  
 - Tisseron, S. (2011). Intimité et extimité. Communications. n° 88. doi : https://doi.org/10.3917/commu.088.0083.  
 - Vial, S. (2013). L’Être et l’écran. Comment le numérique change la perception. Paris : PUF.
-- L’Arcep, le CGE et l'Agence du Numérique. (2017). Baromètre du numérique 2017. Repéré à https://www.arcep.fr/uploads/tx_gspublication/barometre_du_numerique-2017-271117.pdf .
+- L’Arcep, le CGE et l'Agence du Numérique. (2017). Baromètre du numérique 2017. Repéré à https://www.arcep.fr/uploads/tx_gspublication/barometre_du_numerique-2017-271117.pdf .

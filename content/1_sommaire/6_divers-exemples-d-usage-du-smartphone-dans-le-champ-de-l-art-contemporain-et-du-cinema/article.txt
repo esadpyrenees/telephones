@@ -27,7 +27,7 @@ Pour beaucoup de ces projets, l’écran, sous toutes ses formes, revêt une imp
 Entre 2016 et 2019 j’ai ainsi co-réalisé avec Gwendal Sartre le projet filmique « *Attack the Sun* », où le téléphone portable tient un rôle éminent, tant visuel, diégétique que technique. Cependant l’objet smartphone, avant ou en parallèle du développement d’« *Attack the Sun* », constitue déjà l’élément central de différentes autres productions développées au fil de ma démarche, à commencer par l’installation générative / sculpture robotique intitulée l’Entreprise de déconstruction théotechnique (2016). 
 
 
-## L’Entreprise de déconstruction théotechnique.
+## L’Entreprise de déconstruction théotechnique
 
 « (link: https://www.fabienzocco.net/leddt.html text: L’Entreprise de déconstruction théotechnique rel: external) » met en scène huit smartphones couplés à huit bras robots, ainsi qu’un programme informatique spécifique sur ordinateur. Ce programme compose en continu des phrases abstraites générées à partir de l’ensemble des mots contenus dans la Bible (Ancien et Nouveau Testament). Ces phrases sont ensuite prononcées par des voix de synthèse émanant des smartphones, eux-mêmes mis en mouvement par les bras robots. Ayant déjà confronté lors d’un travail antérieur un texte littéraire avec un dispositif d’écriture numérique (« Searching for Ulysses », 2014), j’ai voulu cette fois remonter au livre avec un grand L, et ainsi travailler à partir de la Bible. J’étais aussi intéressé par l’idée de confier ce texte prétendument d’inspiration non-humaine (divine en l’occurrence) à des artefacts machiniques qui allaient littéralement le disséquer. Comme si l’humain se trouvait exclu de l’usage du texte et de la langue, qui jusqu’ici relevaient de ses attributs fondamentaux. La pièce me semble traduire cet état de fait, le spectateur ne saisissant au final que des bribes de phrases qu’il lit/entends au travers de ces 8 smartphones devenus « porte voix » et « porte texte ». Les sortes de créatures vaguement zoomorphes esquissées par ces téléphones couplés aux bras robots en mouvement semblent ainsi garder le texte pour elles, et ignorer le spectateur qui leur fait face. L’installation, bien qu'utilisant du texte comme matériau de base, ne propose pas vraiment au final une expérience de lecture, mais instaure plutôt une situation de liquidation du texte, assez déstabilisante. Les fragments écrits générés par la machine circulent dès lors entre les écrans des smartphones, eux-mêmes donc « manipulés » par les bras robots.
 
@@ -50,7 +50,7 @@ Comme le note le critique d’art Pierre Tillet :
 
 (media: fb_entreprise-3.jpg)
 
-## SPIDER AND I.
+## SPIDER AND I
 
 Le smartphone constitue également un élément essentiel du dispositif sur lequel repose le projet de sculpture augmentée intitulé « (link: https://www.fabienzocco.net/spiderandI.html text: *Spider and I* rel: external) » (2020). Cette pièce présente un hexapode (robot à 6 pattes évoquant une grosse araignée mécanique) évoluant au sol. Son comportement montre des phases de calme ou à l’inverse présente des attitudes de défiance voir d’agressivité manifeste. Ces alternances et variations sont directement indexées sur mon état émotionnel. Je suis ainsi, au cours des périodes d’exposition de l’œuvre, en permanence équipé d’un bracelet connecté, associé à mon smartphone, qui relève mes données biométriques (rythme cardiaque, sudation..) afin de traduire ledit état émotionnel. L’analyse en temps réel de ces données est ensuite relayé via internet vers le robot.
 
@@ -64,7 +64,7 @@ Ces outils de mesure invasifs sont donc ici détournés afin de nourrir et d’i
 
 (media: spider-2.jpg)
 
-## ATTACK THE SUN. 
+## ATTACK THE SUN 
 
 (media: thumb-1.jpg)
 
