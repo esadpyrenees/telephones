@@ -1,0 +1,13 @@
+Media-type: img
+
+----
+
+Alt: Image du film Détour de Michel Gondry
+
+----
+
+Caption: *Détour* de Michel Gondry réalisé en 2017
+
+----
+
+Yt-url: 

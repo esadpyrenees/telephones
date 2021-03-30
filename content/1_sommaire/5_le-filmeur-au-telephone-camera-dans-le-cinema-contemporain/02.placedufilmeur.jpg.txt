@@ -1,0 +1,13 @@
+Media-type: img
+
+----
+
+Alt: Photo de cadreur dans la rue qui utilise un téléphone comme caméra
+
+----
+
+Caption: Utilisation de la caméra-téléphone dans la rue, un matériel plus portatif
+
+----
+
+Yt-url: 

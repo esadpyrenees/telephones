@@ -1,0 +1,13 @@
+Media-type: img
+
+----
+
+Alt: Capture d’écran de Trust (2010) de David Schwimmer.
+
+----
+
+Caption: Capture d’écran de *Trust* (2010) de David Schwimmer.
+
+----
+
+Yt-url: 

@@ -1,0 +1,13 @@
+Media-type: vid-web
+
+----
+
+Alt: Bande d'annonce du film Détour de Michel Gondry
+
+----
+
+Caption: Bande d'annonce du film *Détour* de Michel Gondry
+
+----
+
+Yt-url: PbOz9l9cYic

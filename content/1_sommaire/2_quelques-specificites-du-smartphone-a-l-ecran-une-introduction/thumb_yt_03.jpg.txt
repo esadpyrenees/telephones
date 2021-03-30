@@ -1,0 +1,13 @@
+Media-type: vid-web
+
+----
+
+Alt: Bande annonce de Clip (2013) de Mija Milos.
+
+----
+
+Caption: Bande annonce de *Clip* (2013) de Mija Milos.
+
+----
+
+Yt-url: W_Od-Y5L4Bk

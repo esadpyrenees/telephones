@@ -1,0 +1,13 @@
+Media-type: img
+
+----
+
+Alt: Capture d’écran de The Departed (2006) de Martin Scorcese
+
+----
+
+Caption: Capture d’écran de *The Departed* (2006) de Martin Scorcese
+
+----
+
+Yt-url: 

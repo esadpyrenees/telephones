@@ -1,0 +1,13 @@
+Media-type: img
+
+----
+
+Alt: Image du film Personnal Shopper d'Olivier Assayas sorti en 2016
+
+----
+
+Caption: Image du film *Personnal Shopper* d'Olivier Assayas sorti en 2016
+
+----
+
+Yt-url: 

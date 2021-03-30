@@ -1,0 +1,13 @@
+Media-type: img
+
+----
+
+Alt: Image du boulevard highlands Santa Monica
+
+----
+
+Caption: Vue du boulevard Highlands Santa Monica
+
+----
+
+Yt-url: 

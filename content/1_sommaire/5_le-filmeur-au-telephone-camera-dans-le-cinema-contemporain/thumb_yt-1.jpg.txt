@@ -1,0 +1,13 @@
+Media-type: vid-web
+
+----
+
+Alt: Bande d'annonce du film Tangerine de Sean Baker, sorti en 2015
+
+----
+
+Caption: Bande d'annonce du film *Tangerine* de Sean Baker, sorti en 2015
+
+----
+
+Yt-url: fUxRxgtYt0M

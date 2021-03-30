@@ -1,0 +1,13 @@
+Media-type: img
+
+----
+
+Alt: Photo de deux filles filmées pr une caméra-téléphone
+
+----
+
+Caption: Utilisation de la caméra-téléphone dans l'espace public
+
+----
+
+Yt-url: 

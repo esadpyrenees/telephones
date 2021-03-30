@@ -1,0 +1,13 @@
+Media-type: img
+
+----
+
+Alt: Capture d’écran de The Fault in our Star (2014) de Josh Boone.
+
+----
+
+Caption: Capture d’écran de *The Fault in our Star* (2014) de Josh Boone.
+
+----
+
+Yt-url: 

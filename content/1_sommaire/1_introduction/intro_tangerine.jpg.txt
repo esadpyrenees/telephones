@@ -1,0 +1,13 @@
+Media-type: img
+
+----
+
+Alt: Photographie du tournage du film Tangerine de Sean Baker
+
+----
+
+Caption: Photographie du tournage du film *Tangerine* de Sean Baker
+
+----
+
+Yt-url: 

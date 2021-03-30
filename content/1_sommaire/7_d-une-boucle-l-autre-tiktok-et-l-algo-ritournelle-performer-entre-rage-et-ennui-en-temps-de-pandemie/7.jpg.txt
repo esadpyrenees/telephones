@@ -1,0 +1,13 @@
+Media-type: img
+
+----
+
+Alt: 
+
+----
+
+Caption: Exemple de tags associés aux confinement et couvre-feu
+
+----
+
+Yt-url: 
