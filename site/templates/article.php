@@ -36,7 +36,7 @@
 
 <?php if ($page->bibliography()->isNotEmpty()): ?>
   <div class="bibliographie-article">
-    <h1>Bibliographie</h1>
+    <h2>Bibliographie</h2>
     <btn id="BiblioBtn">Afficher</btn>
     
     <div class="bibliographie">
@@ -69,7 +69,7 @@
 
 <?php if ($page->filmography()->isNotEmpty()): ?>
   <div class="bibliographie-article">
-    <h1>Filmographie</h1>
+    <h2>Filmographie</h2>
     <btn id="FilmoBtn">Afficher</btn>
     
     <div class="filmographie">
@@ -102,7 +102,7 @@
 
 <?php if ($page->ent()->isNotEmpty()): ?>
   <div class="bibliographie-article">
-    <h1>Entretiens & Notices</h1>
+    <h2>Entretiens & Notices</h2>
     <btn id="EntBtn">Afficher</btn>
     
     <div class="entretiens">
@@ -134,7 +134,7 @@
 <?php endif ?>
 
 	<div class="auteur-bio">
-    <h1>Auteur.e.s</h1>
+    <h2>Auteur.e.s</h2>
       <aside><?= $page->bioauthor()->kt() ?></aside>
 	</div>
 

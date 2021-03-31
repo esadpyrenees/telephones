@@ -947,6 +947,7 @@ body.raymond-delambre .content > h2 {
 .credits em,
 .raymond-delambre em {
   color: var(--color-grey-light);
+  opacity: 90%;
 }
 
 hr {
@@ -1083,10 +1084,11 @@ select option {
   z-index: 8;
 }
 
-.sommaire-bas h1,
-.bibliographie-article h1,
-.auteur-bio h1,
+.sommaire-bas h2,
+.bibliographie-article h2,
+.auteur-bio h2,
 .credits h1,
+.credits h2,
 .error h1,
 .bibliographie-generale h1 {
   margin: 0;
@@ -1096,7 +1098,12 @@ select option {
   color: var(--color-grey-light);
 }
 
-.sommaire-bas h1 {
+.credits h2 {
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+
+.sommaire-bas h2 {
   margin-bottom: 20px;
 }
 
@@ -1189,7 +1196,7 @@ select option {
   line-height: 1.4em;
 }
 
-.sommaire-credits h2 {
+.sommaire-credits h3 {
   font-family: var(--text-family);
   font-size: calc(0.6vw + 1.1em);
   grid-column: 1/3;
