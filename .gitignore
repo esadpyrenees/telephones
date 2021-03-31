@@ -9,6 +9,7 @@ Icon
 
 /media/*
 !/media/index.html
+*.mp4
 
 # Lock files
 # ---------------
