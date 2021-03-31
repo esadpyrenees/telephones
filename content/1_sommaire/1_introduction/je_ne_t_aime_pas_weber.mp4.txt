@@ -2,11 +2,11 @@ Media-type: vid-file
 
 ----
 
-Alt: Je ne t'aime pas
+Alt: Extrait vidéo du film *Je ne t'aime pas* réalisé par Tommy Weber en 2018
 
 ----
 
-Caption: Je ne t'aime pas
+Caption: *Je ne t'aime pas*, film réalisé par Tommy Weber en 2018
 
 ----
 
