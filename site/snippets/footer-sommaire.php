@@ -5,15 +5,19 @@
                 <h3>I – Le téléphone connecté : acteur du cinéma contemporain</h3>
 
                 <?php foreach($pages->first()->children()->filterBy('partie', 'partieune') as $article) :?>
-                  <p <?php e($article->isActive(), ' class="active"') ?>><?= html($article->author()) ?></p>
-                  <a <?php e($article->isActive(), ' class="active"') ?> href="<?= $article->url() ?>"><em><?= html($article->title()) ?></em></a>
+                  <div class="element-sommaire">
+                    <p <?php e($article->isActive(), ' class="active"') ?>><?= html($article->author()) ?></p>
+                    <a <?php e($article->isActive(), ' class="active"') ?> href="<?= $article->url() ?>"><em><?= html($article->title()) ?></em></a>
+                  </div>
                 <?php endforeach ?>
 
                 <h3>II – La caméra-stylo-connectée</h3>
 
               <?php foreach($pages->first()->children()->filterBy('partie', 'partiedeux') as $article) :?>
-                <p <?php e($article->isActive(), ' class="active"') ?>><?= html($article->author()) ?></p>
-                  <a <?php e($article->isActive(), ' class="active"') ?> href="<?= $article->url() ?>"><em><?= html($article->title()) ?></em></a>
+                <div class="element-sommaire">
+                    <p <?php e($article->isActive(), ' class="active"') ?>><?= html($article->author()) ?></p>
+                    <a <?php e($article->isActive(), ' class="active"') ?> href="<?= $article->url() ?>"><em><?= html($article->title()) ?></em></a>
+                  </div>
               <?php endforeach ?>
             </div>
           </footer>
