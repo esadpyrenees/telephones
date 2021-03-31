@@ -97,3 +97,6 @@ columns:
             template: entretien
             query: site.find("entretiens-notices").children
             sortBy: title asc
+      filez:
+        type: files
+        headline: Tous les fichiers
