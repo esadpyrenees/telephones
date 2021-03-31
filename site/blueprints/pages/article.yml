@@ -76,9 +76,6 @@ columns:
               - pagelink
               - file
               - footnote
-          gallery:
-            label: Gallerie
-            type: files  
           bibliography:
             label: Bibliographie
             type: pages
