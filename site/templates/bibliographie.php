@@ -4,6 +4,13 @@
   <div class="bibliographie-generale">
     <h1><?= $page->title()->html() ?></h1>
 
+    <?php if ($page->information()->isNotEmpty()): ?>
+      <div class="information-biblio">
+        <?=  $page->information()->kt() ?>
+      </div>
+    <?php endif ?>
+
+
     <section class="filtre">
       <select class="filters-select">
         <option value="*">Tout</option>

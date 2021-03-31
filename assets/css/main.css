@@ -918,6 +918,7 @@ body.raymond-delambre .content > h2 {
 /* --------------------------------------------- Page Crédits & Bibliographie générale --------------------------------------------- */
 
 .credits p,
+.bibliographie-generale .information-biblio,
 .error p,
 .credits blockquote p,
 #logos {
@@ -926,6 +927,12 @@ body.raymond-delambre .content > h2 {
   line-height: 1.5;
   margin-left: auto;
   margin-right: auto;
+}
+
+.bibliographie-generale .information-biblio {
+  line-height: 1.5;
+  font-size: calc(0.675vw + 1rem);
+  margin-bottom: 30px;
 }
 
 .credits p,

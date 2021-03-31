@@ -3,6 +3,12 @@ title: Bibliographie
 unlisted: true
 
 sections:
+  presentation:
+    type: fields
+    fields:
+      information:
+        label: Texte informatif
+        type: markdown
   authors:
     headline: Bibliographie
     type: pages
