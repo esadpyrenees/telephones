@@ -277,7 +277,6 @@ window.addEventListener("load", function(){
 })
 
 
-
 // -------------------------------------------------------- Filtre bibliographie --------------------------------------------------------
 
 // init Isotope
@@ -300,3 +299,14 @@ if($biblio.length){
 		});
 	})
 }
+
+// -------------------------------------------------------- Scroll Bouton Accueil --------------------------------------------------------
+
+const IntroAccueomHeight = document.getElementById('intro-accueil');
+
+$(document).ready(function() {
+	$('#ScrollBtnHome').on('click', function() {
+		$("html, body").animate({ scrollTop: $('#intro-accueil').position().top }, 1200);
+	});
+});
+ 

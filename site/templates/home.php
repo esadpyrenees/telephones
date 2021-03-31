@@ -14,7 +14,11 @@
   </div>
 </section>
 
-<div class="intro-accueil">
+<div class="ScrollBtn">
+  <btn id="ScrollBtnHome">🠗</btn>
+</div>
+
+<div id="intro-accueil" class="intro-accueil">
   <?= $page->text()->kirbytext() ?>
 </div>
 

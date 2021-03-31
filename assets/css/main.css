@@ -611,6 +611,7 @@ display: block!important;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  margin-bottom: 30%;
 }
 
 .scene-ouverture video {
@@ -666,14 +667,27 @@ display: block!important;
   opacity: 0!important;
 }
 
+.ScrollBtn {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#ScrollBtnHome {
+  cursor: pointer;
+}
+
 .intro-accueil {
   display: -webkit-flex;
   -webkit-flex-direction: column;
   align-items: center;
-  align-content: center;
+  justify-content: center;
+  height: 100vh;
   min-height: 100%;
-  padding: 30% 0;
   color: pink;
+  margin-bottom: 30%;
 }
 
 .intro-accueil p {
@@ -754,6 +768,7 @@ display: block!important;
 .body-display-menu main,
 .body-display-menu #fond-ecran,
 .body-display-menu #accueil,
+.body-display-menu .ScrollBtn,
 .body-display-menu .intro-accueil,
 .body-display-menu .sommaire-bas,
 .body-display-menu .credits,
