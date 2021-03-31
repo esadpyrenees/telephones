@@ -33,26 +33,6 @@ columns:
         label: Texte
         type: markdown
         help: Contenu de l'article
-        buttons:
-          - headlines
-              - h1
-              - h2
-              - h3
-              - h4
-              - h5
-              - h6
-          - bold
-          - italic
-          - ul
-          - ol
-          - link
-          - email
-          - blockquote
-          - horizontal-rule
-          - strikethrough
-          - pagelink
-          - file
-          - footnote
   sidebar:
     width: 1/3
     sections:
@@ -62,20 +42,14 @@ columns:
           bioauthor:
             label: Biographie de l'auteur.rice
             type: markdown
-            size: medium
-            buttons:
-              - headlines
-                  - h1
-              - bold
-              - italic
-              - link
-              - email
-              - blockquote
-              - horizontal-rule
-              - strikethrough
-              - pagelink
-              - file
-              - footnote
+
+      files:
+        type: files
+        headline: Tous les fichiers
+
+      badaboum :
+        type: fields
+        fields:
           bibliography:
             label: Bibliographie
             type: pages
@@ -94,6 +68,3 @@ columns:
             template: entretien
             query: site.find("entretiens-notices").children
             sortBy: title asc
-      filez:
-        type: files
-        headline: Tous les fichiers
