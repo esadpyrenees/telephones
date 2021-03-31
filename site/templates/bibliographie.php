@@ -7,7 +7,9 @@
     <section class="filtre">
       <select class="filters-select">
         <option value="*">Tout</option>
-        <?php foreach(page('sommaire')->children()->listed() as $article) :?>
+        <?php foreach(page('sommaire')->children()->listed()->filter(function($child){
+          return $child->bibliography()->toPages()->count() > 0;
+        }) as $article) :?>
           <option value=".<?= $article->author()->slug() ?>"><?= $article->author() ?> - <?= $article->title() ?></option>
         <?php endforeach ?>
       </select>
