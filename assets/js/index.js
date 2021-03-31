@@ -55,14 +55,6 @@ $(function(){
 	    const playersnew = Plyr.setup('.js-player', {
 	                controls:['play-large','progress', 'volume', 'fullscreen', 'poster']
 	    });
-
-	    $('.plyr__sr-only').empty();
-	    $('.plyr__control--overlaid').empty();
-
-	    const playTitle = `
-	        <span class="play">PLAY</span>
-	    `;
-	    $('.plyr__control--overlaid').append(playTitle);
     }
 
     $(window).scroll(function() {
@@ -254,13 +246,36 @@ $( "#EntBtn" ).click(function() {
 
 // -------------------------------------------------------- Timer --------------------------------------------------------
 
-var timerInstance = new easytimer.Timer();
+// si pas de dernière visite, 
+my_start = 0;
+	
+window.addEventListener("load", function(){
+	
+	var s = localStorage.getItem('start');
+	if(s){
+		// convertir 01:06:42 en “heures”
+		var split = s.split(':');
+		var hours_in_seconds = parseInt(split[0]) * 60 * 60;
+		var minutes_in_seconds = parseInt(split[1]) * 60;
+		var seconds = parseInt(split[2]) + minutes_in_seconds + hours_in_seconds;		
+		my_start = seconds;
+	}
+	var timerInstance = new easytimer.Timer();
 
-timerInstance.start();
+	timerInstance.start({precision: 'seconds', startValues: {seconds: my_start}});
 
-timerInstance.addEventListener('secondsUpdated', function (e) {
-    $('#basicUsage').html(timerInstance.getTimeValues().toString());
-});
+	timerInstance.addEventListener('secondsUpdated', function (e) {
+		$('#basicUsage').html(timerInstance.getTimeValues().toString());
+	});
+
+	// quand on quitte la page
+	window.onbeforeunload = function(){	
+		// stockage de la valeur du timerInstance : cookie / localStorage
+		localStorage.setItem('start', timerInstance.getTimeValues().toString() );
+	};
+
+})
+
 
 
 // -------------------------------------------------------- Filtre bibliographie --------------------------------------------------------
@@ -269,16 +284,19 @@ timerInstance.addEventListener('secondsUpdated', function (e) {
 var $biblio = $('.biblio-generale-content');
 
 if($biblio.length){
-	// isotope init
-	var $grid = $biblio.isotope({
-		itemSelector: '.element-item'
-	});
-		
-  // bind filter on select change
-  $('.filters-select').on( 'change', function() {
-		// get filter value from option value
-		var filterValue = this.value;
-		// use filterFn if matches value
-		$grid.isotope({ filter: filterValue });
-  });
+
+	window.addEventListener("load", function(){
+		// isotope init
+		var $grid = $biblio.isotope({
+			itemSelector: '.element-item'
+		});
+			
+		// bind filter on select change
+		$('.filters-select').on( 'change', function() {
+			// get filter value from option value
+			var filterValue = this.value;
+			// use filterFn if matches value
+			$grid.isotope({ filter: filterValue });
+		});
+	})
 }
