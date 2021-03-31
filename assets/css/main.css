@@ -1388,9 +1388,10 @@ main h2 {
   max-height: 80%!important;
   max-width: 80%!important;
 }
-
+.left-column-biblio { text-align: left;}
+.left-column-biblio br{ display: none;}
 .element-item {
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
 }
 
 }
