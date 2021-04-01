@@ -112,16 +112,16 @@ h1, h2 {
 h3 {
   font-family: var(--text-family);
   font-weight: 900;
-  margin: 60px 0;
-  font-size: calc(2vw + 1rem);
+  margin: 1.7em 0 1em 0;
+  font-size: calc(1.2vw + 1rem);
 }
 
 main h2 {
   color: var(--color-grey-light);
   text-shadow: -1px -1px 0 var(--color-grey-body), 1px -1px 0 var(--color-grey-body), -1px 1px 0 var(--color-grey-body), 1px 1px 0 var(--color-grey-body);
-  font-size: calc(4vw + 1em);
+  font-size: calc(2vw + 1em);
   letter-spacing: .03em;
-  margin: 100px auto;
+  margin: 1.4em 0 1.4em 0;
 }
 
 em {
