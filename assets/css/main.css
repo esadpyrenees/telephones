@@ -122,6 +122,7 @@ main h2 {
   font-size: calc(2vw + 1em);
   letter-spacing: .03em;
   margin: 1.4em 0 1.4em 0;
+  word-break: break-word;
 }
 
 em {
