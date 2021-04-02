@@ -848,6 +848,7 @@ body.raymond-delambre .content > p {
 body.raymond-delambre .content > h2 {
   display: -webkit-flex;
   align-items: center;
+  justify-content: center;
   min-height: 100vh;
   color: inherit;
   transition-duration: 1s;
