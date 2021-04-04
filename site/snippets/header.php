@@ -6,14 +6,14 @@
         <title><?= $site->title() ?> | <?= $page->title() ?></title>
         <meta property="og:title" content="<?= $site->title() ?> | <?= $page->title() ?>" />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="<?= $site->description() ?> | <?= $page->description() ?>" />
+        <meta property="og:description" content="<?= $site->seoDescription() ?>" />
         <meta property="og:image" content="<?= url('assets/statics/') ?>" />
 
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="">
         <meta name="twitter:creator" content="">
         <meta name="twitter:title" content="<?= $site->title() ?> | <?= $page->title() ?>">
-        <meta name="twitter:description" content="<?= $site->description() ?> | <?= $page->description() ?>">
+        <meta name="twitter:description" content="<?= $site->seoDescription() ?>">
         <meta name="twitter:image" content="<?= url('assets/statics/') ?>">
 
         <?php // lien vers plusieurs fichiers CSS ?>
