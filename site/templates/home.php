@@ -15,7 +15,21 @@
 </section>
 
 <div class="ScrollBtn">
-  <btn id="ScrollBtnHome">&#129043</btn>
+  <btn id="ScrollBtnHome">
+    <!-- Generator: Adobe Illustrator 24.1.3, SVG Export Plug-In  -->
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.8px"
+      height="24px" viewBox="0 0 21.8 24" style="overflow:visible;enable-background:new 0 0 21.8 24;" xml:space="preserve">
+      <style type="text/css">
+        .st0{fill:#e1e1e1;}
+      </style>
+      <defs>
+      </defs>
+      <g>
+        <path class="st0" d="M0,13.7V8.3h0.7l5.9,6.1l2.7,3.2L8.7,8.7V0h4.4v8.7l-0.5,8.9l2.7-3.2l5.9-6.1h0.7v5.5L11.6,24h-1.3L0,13.7z"/>
+      </g>
+    </svg>
+
+  </btn>
 </div>
 
 <div id="intro-accueil" class="intro-accueil">
