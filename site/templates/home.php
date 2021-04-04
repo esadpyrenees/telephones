@@ -15,7 +15,7 @@
 </section>
 
 <div class="ScrollBtn">
-  <btn id="ScrollBtnHome">🠗</btn>
+  <btn id="ScrollBtnHome">&#129043</btn>
 </div>
 
 <div id="intro-accueil" class="intro-accueil">

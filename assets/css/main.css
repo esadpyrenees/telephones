@@ -116,13 +116,18 @@ h3 {
   font-size: calc(1.2vw + 1rem);
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 main h2 {
   color: var(--color-grey-light);
   text-shadow: -1px -1px 0 var(--color-grey-body), 1px -1px 0 var(--color-grey-body), -1px 1px 0 var(--color-grey-body), 1px 1px 0 var(--color-grey-body);
   font-size: calc(2vw + 1em);
   letter-spacing: .03em;
   margin: 1.4em 0 1.4em 0;
-  word-break: break-word;
+  word-break: keep-all;
 }
 
 em {
@@ -337,8 +342,8 @@ main p + p {
 }
 
 main li {
-  margin: 2rem 0;
-  margin-left: 2em;
+  margin: 2rem auto;
+  width: 80%;
 }
 
 main li:before {
@@ -963,6 +968,7 @@ body.raymond-delambre .content > h2 {
 }
 
 .bibliographie-generale .information-biblio {
+  width: 80%;
   line-height: 1.5;
   font-size: calc(0.675vw + 1rem);
   margin-bottom: 30px;
@@ -1441,6 +1447,7 @@ main blockquote p {
 main h2 {
   font-size: calc(1vw + 1em);
   letter-spacing: .0975em;
+  word-break: break-word;
 }
 
 .mentions-article {
@@ -1458,8 +1465,14 @@ main h2 {
   max-height: 80%!important;
   max-width: 80%!important;
 }
-.left-column-biblio { text-align: left;}
-.left-column-biblio br{ display: none;}
+.element-item .left-column-biblio { 
+  text-align: left;
+}
+
+.element-item .left-column-biblio br{ 
+  display: none;
+}
+
 .element-item {
   grid-template-columns: 1fr;
 }
