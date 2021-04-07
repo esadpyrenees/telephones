@@ -12,8 +12,10 @@
         <!-- Open Graph / Facebook  -->
         <meta property="og:title" content="<?= $site->title() ?> | <?= $page->title() ?>" />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="<?= $site->url() ?>" />
         <meta property="og:description" content="<?= $site->seoDescription() ?>" />
         <meta property="og:image" content="<?= url('assets/statics/image-card.jpg') ?>" />
+        <meta property="og:image:alt" content="Image de couverture du site Quand le téléphone connecté se fait des films" />
 
         <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image">
