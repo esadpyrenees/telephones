@@ -1453,7 +1453,12 @@ main blockquote p {
 main h2 {
   font-size: calc(1vw + 1em);
   letter-spacing: .0975em;
-  word-break: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
 .mentions-article {
