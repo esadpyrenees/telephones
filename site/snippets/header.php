@@ -3,18 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
         <title><?= $site->title() ?> | <?= $page->title() ?></title>
+
         <meta property="og:title" content="<?= $site->title() ?> | <?= $page->title() ?>" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="<?= $site->seoDescription() ?>" />
-        <meta property="og:image" content="<?= url('assets/statics/') ?>" />
+        <meta property="og:image" content="<?= url('assets/statics/image-card.jpg') ?>" />
 
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="">
         <meta name="twitter:creator" content="">
         <meta name="twitter:title" content="<?= $site->title() ?> | <?= $page->title() ?>">
         <meta name="twitter:description" content="<?= $site->seoDescription() ?>">
-        <meta name="twitter:image" content="<?= url('assets/statics/') ?>">
+        <meta name="twitter:image" content="<?= url('assets/statics/image-card.jpg') ?>">
+        <meta name="twitter:image:alt" content="Image de couverture du site Quand le téléphone connecté se fait des films">
 
         <?php // lien vers plusieurs fichiers CSS ?>
         <?= css(["assets/css/plyr.css", "assets/css/reset.css", "assets/css/main.css"]) ?>
