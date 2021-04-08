@@ -1309,6 +1309,23 @@ select option {
   Comportements responsive
 */
 @media screen and (max-width: 1024px) {
+
+#accueil {
+  top: 24px;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--color-main-red);
+}
+
+#accueil:before {
+  content: "";
+}
+
+#accueil:after {
+  margin: auto;
+  top: -0.3em;
+}
+
 .bloc-auteur {
   align-items: center;
 }
@@ -1339,21 +1356,6 @@ select option {
 
 main {
   width: 95%;
-}
-
-#accueil {
-  width: 25px;
-  height: 25px;
-  border-left: 1px solid var(--color-main-red);
-}
-
-#accueil:before {
-  content: "";
-}
-
-#accueil:after {
-  margin: auto;
-  top: -0.3em;
 }
 
 .intro-accueil p,
@@ -1402,6 +1404,7 @@ main {
 .droite {
   width: calc( (100% - var(--wv)) / 2)!important;
 }
+
 #accueil:after {
   top: -0.3em;
 }
