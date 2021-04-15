@@ -876,11 +876,6 @@ body.raymond-delambre .content > h2 {
   /* object-fit: cover; */
 }
 
-.plyr--video,
-.plyr__video-wrapper {
-  background: none!important;
-}
-
 .plyr__control {
   color: var(--color-main-red) !important;
 }
