@@ -27,7 +27,7 @@
         <meta name="twitter:image:alt" content="Image de couverture du site Quand le téléphone connecté se fait des films">
 
         <?php // lien vers plusieurs fichiers CSS ?>
-        <?= css(["assets/css/plyr.css", "assets/css/reset.css", "assets/css/main.css"]) ?>
+        <?= css(["assets/css/plyr.css", "assets/css/reset.css", "assets/css/main.css?v3"]) ?>
 
     </head>
 
