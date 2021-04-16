@@ -31,7 +31,11 @@
 
     </head>
 
-    <body class="<?php if($page->author() == "Raymond Delambre") :?><?= $page->author()->slug() ?><?php endif ?>">
+    <body 
+        class="<?php if($page->author() == "Raymond Delambre") :?><?= $page->author()->slug() ?><?php endif ?>"
+        data-login="<?php e($kirby->user(),'true', 'false') ?>"
+        data-template="<?php echo $page->template() ?>"
+        data-intended-template="<?php echo $page->intendedTemplate() ?>" >
             <div id="progressBarContainer">
                 <div id="progressBar"></div>
             </div>

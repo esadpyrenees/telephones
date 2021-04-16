@@ -30,6 +30,15 @@
   transition-duration: 0.3s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 html,
 body {
   margin: 0;
@@ -173,7 +182,7 @@ span.note-icon:hover {
 }
 
 #accueil {
-  display: -webkit-flex;
+  display: flex;
   top: 20px;
   left: 20px;
 }
@@ -404,7 +413,7 @@ main blockquote p {
   transform: translateX(-50%);
   background: linear-gradient(90deg, rgba(15,15,15,1) 0%, rgba(50,50,50,1) 1%, rgba(130,130,130,1) 5%, rgba(193,193,193,1) 10%, rgba(239,239,239,1) 20%, rgba(225,225,225,1) 50%, rgba(225,225,225,1) 80%, rgba(193,193,193,1) 90%, rgba(130,130,130,1) 95%, rgba(50,50,50,1) 99%, rgba(15,15,15,1) 100%);
   opacity: 0;
-  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 .read-on {
@@ -435,7 +444,7 @@ main blockquote p {
 }
 
 .bloc-auteur {
-  display: -webkit-flex;
+  display: flex;
   align-items: top;
 }
 
@@ -529,10 +538,7 @@ main blockquote p {
 }
 
 .image-texte::before {
-  -webkit-animation: clignote 1.5s ease infinite;
-  -moz-animation: clignote 1.5s ease infinite;
   animation: clignote 1.5s ease infinite;
-
   animation-direction: alternate;
 }
 
@@ -603,7 +609,7 @@ bottom: 20px!important;
 }
 
 .display-media-icons {
-display: -webkit-flex!important;
+display: flex !important;
 }
 
 .display-media-content {
@@ -615,8 +621,8 @@ display: block!important;
 */
 .accueil {
 /*  overflow: hidden;
-*/  display: -webkit-flex;
-  -webkit-flex-direction: column;
+*/  display: flex;
+  flex-direction: column;
 }
 
 .accueil #timer,
@@ -644,8 +650,8 @@ display: block!important;
 
 #titre-accueil-container {
   position: absolute;
-  display: -webkit-flex;
-  -webkit-flex-direction: row;
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 100%;
   top: 0;
@@ -661,7 +667,7 @@ display: block!important;
   min-height: 100%;
   width: calc( (100vw - var(--w)) / 2);
   background-color: var(--color-grey-body);
-  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
 }
 
 .gauche {
@@ -702,14 +708,15 @@ display: block!important;
 }
 
 .intro-accueil {
-  display: -webkit-flex;
-  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  min-height: 100%;
+  /* height: 100vh; */
+  min-height: 100vh;
   color: pink;
   margin-bottom: 30%;
+  scroll-margin-top: 40px;
 }
 
 .intro-accueil p {
@@ -748,8 +755,8 @@ display: block!important;
 
 .body-display-media .media-contener{
   position: fixed;
-  display: -webkit-flex;
-  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   right: 0;
   top: 0!important;
   bottom: 0!important;
@@ -769,6 +776,7 @@ display: block!important;
 
 .body-display-media .media-contener img,
 .body-display-media .media-contener .plyr {
+  height: auto;
   margin-top: auto;
   margin-bottom: 20px;
 }
@@ -839,6 +847,8 @@ display: block!important;
 }
 
 /* --------------------------------------------- Delambre --------------------------------------------- */
+
+
 body.raymond-delambre #fond-ecran {
   display: none;
 }
@@ -851,7 +861,7 @@ body.raymond-delambre .content > p {
 }
 
 body.raymond-delambre .content > h2 {
-  display: -webkit-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -878,7 +888,8 @@ body.raymond-delambre .content > h2 {
 
 .plyr--video,
 .plyr__video-wrapper {
-  background: none!important;
+  /* background: none!important; */
+  background: #000;
 }
 
 .plyr__control {
@@ -926,23 +937,6 @@ body.raymond-delambre .content > h2 {
   Animations CSS
 */
 
-@-webkit-keyframes clignote {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 50;
-  }
-}
-
-@-moz-keyframes clignote {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 50;
-  }
-}
 
 @keyframes clignote {
   0% {
@@ -1005,8 +999,8 @@ hr {
 }
 
 #logos {
-  display: -webkit-flex;
-  -webkit-flex-direction: row;
+  display: flex;
+  flex-direction: row;
   height: 80px;
   margin-top: 80px;
   justify-content: space-around;
@@ -1021,8 +1015,8 @@ hr {
 /* --------------------------------------------- Page Bibliographie générale --------------------------------------------- */
 
 .bibliographie-generale {
-  display: -webkit-flex;
-  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   position: relative;
   min-height: 100%;
   width: 100%;
@@ -1108,8 +1102,8 @@ select option {
 
 .credits,
 .error {
-  display: -webkit-flex;
-  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   position: relative;
   color: pink;
   min-height: 100%;
@@ -1122,8 +1116,8 @@ select option {
 .bibliographie-article,
 .auteur-bio,
 .sommaire-bas {
-  display: -webkit-flex;
-  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   position: relative;
   min-height: 100%;
   width: 100%;

@@ -98,7 +98,7 @@ $(function(){
 	$images_link.on("click", function(e){
 		e.preventDefault();
 
-		console.log($(this).data("media"));
+		// console.log($(this).data("media"));
 		const media = $(this).data("media");
 		const media_source = $(this).data("url");
 		const media_legende = $(this).next();
@@ -125,8 +125,8 @@ $(function(){
 		if(media=="vid-file") {
 			content = `
 				<video id="player" class="js-player" playsinline controls data-poster="">
-		        	<source src="${media_source}" type="video/mp4" />
-		      	</video>
+					<source src="${media_source}" type="video/mp4" />
+				</video>
 			`;
 			$media_cont.append(content);
 			InitPlyr();
@@ -305,8 +305,8 @@ if($biblio.length){
 const IntroAccueomHeight = document.getElementById('intro-accueil');
 
 $(document).ready(function() {
-	$('#ScrollBtnHome').on('click', function() {
-		$("html, body").animate({ scrollTop: $('#intro-accueil').position().top }, 1200);
-	});
+	// $('#ScrollBtnHome').on('click', function() {
+	// 	$("html, body").animate({ scrollTop: $('#intro-accueil').position().top }, 1200);
+	// });
 });
  
