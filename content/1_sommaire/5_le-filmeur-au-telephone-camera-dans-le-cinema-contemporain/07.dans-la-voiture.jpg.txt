@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: 
+Alt: Vue d'un téléphone sur un trépied
 
 ----
 

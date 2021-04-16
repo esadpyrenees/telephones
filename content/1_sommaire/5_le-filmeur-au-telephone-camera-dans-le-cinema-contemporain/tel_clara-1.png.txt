@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: 
+Alt: Interface d'un téléphone en plein appel. Un numéro est inscrit en haut, et en bas le bouton pour raccrocher, plusieurs boutons sont alignés entre les deux
 
 ----
 

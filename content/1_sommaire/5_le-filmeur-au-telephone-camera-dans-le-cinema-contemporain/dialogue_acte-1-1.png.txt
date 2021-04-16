@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: 
+Alt: Interface de chat par message sur un téléphone
 
 ----
 

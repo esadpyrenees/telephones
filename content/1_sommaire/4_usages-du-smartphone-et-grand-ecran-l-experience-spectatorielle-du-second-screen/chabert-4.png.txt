@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 Media-type: img
 
 ----
 
-Alt: Textualités
+Alt: Scan d'une page d'un livre
 
 ----
 
@@ -11,7 +10,12 @@ Caption: Textualités, source : https://textualites.wordpress.com/2016/03/15/esp
 
 ----
 
-Yt-url: 
+Yt-url:
+
 =======
 Caption: 
 >>>>>>> a5fd060b6c858d6e2cf67665d80f0e182edace89
+
+----
+
+Head-media-type: img

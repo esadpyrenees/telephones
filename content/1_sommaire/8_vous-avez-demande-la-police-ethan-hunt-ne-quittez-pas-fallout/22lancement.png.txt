@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: 
+Alt: Générique de film avec vue sur l'écran d'un téléphone
 
 ----
 

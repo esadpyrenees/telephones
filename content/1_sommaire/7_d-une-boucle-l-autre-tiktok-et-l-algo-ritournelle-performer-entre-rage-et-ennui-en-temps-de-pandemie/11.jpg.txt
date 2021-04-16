@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: 
+Alt: Capture d'écran d'un tweet du journal Le Monde
 
 ----
 

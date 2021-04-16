@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: Image du film Je ne t'aime pas
+Alt: Miniature du film Je ne t'aime pas. Un fond noir avec le texte à gauche, le logo arte écrit à 90° en orange. à droite une image d'un homme au volant et une femme se prenant en photo
 
 ----
 

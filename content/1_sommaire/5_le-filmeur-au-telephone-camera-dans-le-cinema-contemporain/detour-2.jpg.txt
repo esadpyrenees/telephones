@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: 
+Alt: vue d'un téléphone sur un support tenu à la main par un homme
 
 ----
 

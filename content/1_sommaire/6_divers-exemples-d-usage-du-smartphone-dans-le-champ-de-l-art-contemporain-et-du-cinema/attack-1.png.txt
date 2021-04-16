@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: Image du film Attack The Sun
+Alt: Un homme au volant d'une voiture filme le paysage avec son téléphone
 
 ----
 

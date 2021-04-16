@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: Image du film Détour de Michel Gondry
+Alt: Carte de l'Europe, centrée sur la France, avec écrit dessus : Détour, un film de Michel Gondry, réalisé avec l'iPhone
 
 ----
 

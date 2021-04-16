@@ -2,7 +2,7 @@ Media-type: vid-web
 
 ----
 
-Alt: Bande d'annoncedu film Attack The Sun de Fabien Zocco et Gwendal Sartre
+Alt: Bande d'annonce du film Attack The Sun de Fabien Zocco et Gwendal Sartre
 
 ----
 

@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: 
+Alt: Split screen de quatre miniatures de film possédant respectivement les titres suivants (et de gauche à droite) : L'effet cinéma, l'accléré, l'image par image et le ralenti
 
 ----
 

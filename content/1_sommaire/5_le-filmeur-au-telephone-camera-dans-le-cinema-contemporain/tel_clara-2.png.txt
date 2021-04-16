@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: 
+Alt: Écran de vérouillage d'un téléphone où le message d'une "Marie" est présent. Sur le message est écrit : " Je t'aime"
 
 ----
 

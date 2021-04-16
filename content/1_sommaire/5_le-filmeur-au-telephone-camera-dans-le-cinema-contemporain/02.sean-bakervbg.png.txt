@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: 
+Alt: Vue de deux hommes, caméra téléphone à la main, filmant une femme dans la rue
 
 ----
 

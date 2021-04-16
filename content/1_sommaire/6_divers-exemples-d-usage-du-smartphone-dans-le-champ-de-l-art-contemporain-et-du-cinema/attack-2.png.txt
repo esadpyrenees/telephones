@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: Image du film Attack The Sun
+Alt: Un homme aus cheveux longs au volant de sa voiture filme la route avec son téléphone
 
 ----
 

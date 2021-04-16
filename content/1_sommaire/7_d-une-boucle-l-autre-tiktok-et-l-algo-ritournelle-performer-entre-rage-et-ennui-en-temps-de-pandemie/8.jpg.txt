@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: 
+Alt: Split Screen avec trois écrans. Les trois représentent les miniatures de vidéos associées à un mot clé
 
 ----
 

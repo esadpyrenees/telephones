@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: Grand Palais, Vue de l’installation (E)Motion photographie de l’auteure, avril 2019
+Alt: Vue de l’installation (E)Motion au Grand Palais
 
 ----
 
@@ -11,4 +11,3 @@ Caption: Grand Palais, Vue de l’installation *(E)Motion* photographie de l’a
 ----
 
 Yt-url: 
-

@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: 
+Alt: Capture d'écran d'un tableau de valeur contenu des horraires
 
 ----
 

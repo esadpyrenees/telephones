@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: 
+Alt: Split Screen avec deux interfaces de réseaux sociaux. À gauche un tweet et à droite un TikTok
 
 ----
 

@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: Image du film Attack The Sun
+Alt: Une jeune fille en veste grise prends en photo ce qu'il y a face à elle avec son téléphone
 
 ----
 

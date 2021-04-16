@@ -14,4 +14,4 @@ Titreouvrage: Quand le téléphone portable rencontre le cinéma.
 
 ----
 
-Referencecontent: Dans L. Allard, L. Créton, R.Odin (dir.). Téléphone mobile et création. Paris: Armand Colin.
+Referencecontent: Dans L. Allard, L. Créton, R.Odin (dir.). *Téléphone mobile et création*. Paris: Armand Colin.

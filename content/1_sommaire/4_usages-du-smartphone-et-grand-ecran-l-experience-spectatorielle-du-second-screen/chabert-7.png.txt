@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: Visage d’Iris sur le smartphone
+Alt: Vue de l'écran d'un téléphone où se trouve l'image d'un visage en 3D
 
 ----
 

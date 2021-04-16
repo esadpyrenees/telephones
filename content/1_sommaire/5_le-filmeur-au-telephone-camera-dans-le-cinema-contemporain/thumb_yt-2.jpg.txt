@@ -2,7 +2,7 @@ Media-type: vid-web
 
 ----
 
-Alt: Bande d'annonce du film Détour de Michel Gondry
+Alt: Une petite fille rousse, avec un casque rouge sur la tête, crie dans la rue
 
 ----
 

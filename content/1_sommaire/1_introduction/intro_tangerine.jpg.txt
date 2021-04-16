@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: Photographie du tournage du film Tangerine de Sean Baker
+Alt: Des personnes, portant des caméras, filment dans la rue
 
 ----
 
@@ -11,3 +11,7 @@ Caption: Photographie du tournage du film *Tangerine* de Sean Baker
 ----
 
 Yt-url: 
+
+----
+
+Sort: 4

@@ -10,8 +10,8 @@ Datepublication: 2015
 
 ----
 
-Titreouvrage: Corps/texte : pour une théorie de la lecture empathique.
+Titreouvrage: Corps/texte : pour une théorie de la lecture empathique. Cooper, Danielewski, Frey, Palahniuk
 
 ----
 
-Referencecontent: Cooper, Danielewski, Frey, Palahniuk, Lyon, ENS Éditions, coll. Signes.
+Referencecontent: Lyon, ENS Éditions, coll. Signes.

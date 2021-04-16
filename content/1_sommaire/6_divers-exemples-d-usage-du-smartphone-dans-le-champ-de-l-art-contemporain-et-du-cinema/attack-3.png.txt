@@ -2,7 +2,7 @@ Media-type: img
 
 ----
 
-Alt: Image du film Attack The Sun
+Alt: Un homme en chemise bleue tient son téléphone dans ses mains
 
 ----
 
