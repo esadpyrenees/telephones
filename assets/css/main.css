@@ -981,8 +981,6 @@ body.raymond-delambre .content > h2 {
 .credits blockquote p {
   font-family: "Redaction-35";
   font-size: calc(0.375vw + 1rem);
-  margin-top: 40px;
-  margin-bottom: 0;
   max-width: 65ch;
 }
 
@@ -1142,7 +1140,6 @@ select option {
 
 .credits h2 {
   margin-top: 80px;
-  margin-bottom: 0;
 }
 
 .sommaire-bas h2 {
