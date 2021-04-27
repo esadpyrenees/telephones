@@ -2,18 +2,32 @@ title: Default file
 
 fields: 
   media_type:
+    label: Type de média
     type: select
+    help: Permet de définir le type du média (image, vidéo importée, lien Youtube) 
     required: true
     options:
       img: Image
       vid-file: Vidéo
       vid-web: Youtube
   alt:
+    label: Alt (texte alternatif) 
     type: text
     width: 1/2
+    help: Important ! Description de ce que l'on voit sur l'image, la vidéo, ou autre. Cette indication sert autant, si l'image ne peut s'afficher, ou bien pour les personnes malvoyantes, aveugle, etc...
   caption:
+    label: Légende
     type: markdown
     width: 1/2
+  info:
+    label: Informations & aide
+    type: info
+    theme: info
+    when:
+      media_type: vid-web
+    text: |
+      Attention, ici il ne faut pas intégrer l'entièreté de l'URL mais seulement ce qu'il se trouve après (https://www.youtube.com/watch?v=[chaîne de caractère à insérer]). C'est à dire, les 11 derniers caractères
+      (Exemple: https://www.youtube.com/watch?v=4StZP7BHu4k , intégrer seulement : 4StZP7BHu4k)
   yt_url:
     label: URL Youtube
     type: text

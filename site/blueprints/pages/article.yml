@@ -18,6 +18,7 @@ columns:
     fields:
       partie:
         label: Partie où apparaît l'article
+        width: 1/2
         type: select
         options:
           partieune: Partie 1
@@ -26,9 +27,18 @@ columns:
         label: Auteur
         type: text
         width: 1/2
-      tags:
-        type: tags
-        width: 1/2
+      info:
+        label: Informations & aide
+        type: info
+        theme: info
+        text: |
+          \- Si il y a besoin d'ajouter une image ou une vidéo importée au préalable dans la galerie, utiliser la mention suivante :
+          media: nom_du_fichier.extension -> Attention, cette mention est à mettre entre parenthèses
+
+          \- Pour l'intégration une vidéo YouTube (autre que par un lien dans le texte), il faut utiliser la mention précédente en intégrant une image \(miniature par exemple\), puis définir le type de média sur Youtube, ensuite, suivre les indications présentées.
+
+          \- Pour l'intégration d'un lien qui mène vers l'extérieur du site, il faut rajouter la mention " rel: external " à la fin de l'intégration.
+
       text:
         label: Texte
         type: markdown
