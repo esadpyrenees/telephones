@@ -13,7 +13,7 @@
 
     <section class="filtre">
       <select class="filters-select">
-        <option value="*">Tout</option>
+        <option value="*">Les articles</option>
         <?php foreach(page('sommaire')->children()->listed()->filter(function($child){
           return $child->bibliography()->toPages()->count() > 0;
         }) as $article) :?>
