@@ -382,7 +382,8 @@ main .image-legende a::after,
 .filmographie a[rel=external]::after,
 .entretiens a[rel=external]::after,
 .auteur-bio a[rel=external]::after,
-.credits a[rel=external]::after,
+.credits a[rel=external]::after,,
+.mentions-legales a[rel=external]::after,
 .bibliographie-generale a[rel=external]::after {
   content:" ↗";
   font-weight: 400;
@@ -803,6 +804,8 @@ display: block!important;
 .body-display-menu .intro-accueil,
 .body-display-menu .sommaire-bas,
 .body-display-menu .credits,
+.body-display-menu #mentions-acess,
+.body-display-menu .mentions-legales,
 .body-display-menu .error,
 .body-display-menu .bibliographie-generale,
 .body-display-menu .bibliographie-article,
@@ -954,7 +957,8 @@ body.raymond-delambre .content > h2 {
 .error p,
 .credits blockquote p,
 #logos,
-#mentions-access {
+#mentions-access,
+.mentions-legales {
   width: 60%;
   text-align: center;
   line-height: 1.5;
@@ -973,20 +977,23 @@ body.raymond-delambre .content > h2 {
 }
 
 .credits p,
-.error p {
+.error p,
+.mentions-legales p {
   line-height: 1.5;
   font-size: calc(0.675vw + 1rem);
   color: pink;
   margin-bottom: 30px;
 }
 
-.credits blockquote p {
+.credits blockquote p,
+.mentions-legales blockquote p {
   font-family: "Redaction-35";
   font-size: calc(0.375vw + 1rem);
   max-width: 65ch;
 }
 
-.credits em,
+.credits em,,
+.mentions-legales em,
 .raymond-delambre em {
   color: var(--color-grey-light);
   opacity: 90%;
@@ -1108,7 +1115,8 @@ select option {
 /* --------------------------------------------- Bibliographie & Footer --------------------------------------------- */
 
 .credits,
-.error {
+.error,
+.mentions-legales {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1138,6 +1146,8 @@ select option {
 .auteur-bio h2,
 .credits h1,
 .credits h2,
+.mentions-legales h1,
+.mentions-legales h2,
 .error h1,
 .bibliographie-generale h1 {
   margin: 0;
@@ -1147,7 +1157,8 @@ select option {
   color: var(--color-grey-light);
 }
 
-.credits h2 {
+.credits h2,
+.mentions-legales h2 {
   margin-top: 80px;
 }
 
@@ -1368,8 +1379,11 @@ main {
 .credits p,
 .error p,
 .credits blockquote p,
+.mentions-legales p,
+.mentions-legales blockquote p,
 #logos,
-#mentions-access {
+#mentions-access,
+.mentions-legales {
   width: 80%;
 }
 
@@ -1386,7 +1400,8 @@ main {
 }
 
 .credits,
-.error {
+.error,
+.mentions-legales {
   align-items: center;
 }
 
@@ -1426,10 +1441,12 @@ main {
 .entretiens,
 .biblio-generale-content,
 .credits p,
-.error p,
 .credits aside,
+.error p,
+.mentions-legales p,
 #logos,
-#mentions-access {
+#mentions-access,
+.mentions-legales {
   width: 92%;
 }
 
@@ -1437,7 +1454,8 @@ main {
 .error,
 .bibliographie-article,
 .auteur-bio,
-.sommaire-bas {
+.sommaire-bas,
+.mentions-legales {
   padding: 50px 6% 80px 6%;
 }
 
