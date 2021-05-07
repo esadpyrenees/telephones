@@ -355,7 +355,17 @@ main li {
   width: 80%;
 }
 
-main li:before {
+.mentions-legales li {
+  line-height: 1.5;
+  font-size: calc(0.675vw + 1rem);
+}
+
+.mentions-legales ul {
+  margin-bottom: 30px;
+}
+
+main li:before,
+.mentions-legales li::before {
   position: absolute;
   content: "•";
   margin-left: -20px;
@@ -368,7 +378,8 @@ main a.image-texte {
 
 main a:not(.image-texte)::after,
 .intro-accueil a:not(.image-texte)::after,
-#mentions-access a::after {
+#mentions-access a::after,
+.mentions-legales a::after {
   content:" ↙";
   font-weight: 400;
   color: var(--color-main-red);
@@ -382,7 +393,7 @@ main .image-legende a::after,
 .filmographie a[rel=external]::after,
 .entretiens a[rel=external]::after,
 .auteur-bio a[rel=external]::after,
-.credits a[rel=external]::after,,
+.credits a[rel=external]::after,
 .mentions-legales a[rel=external]::after,
 .bibliographie-generale a[rel=external]::after {
   content:" ↗";
@@ -989,10 +1000,13 @@ body.raymond-delambre .content > h2 {
 .mentions-legales blockquote p {
   font-family: "Redaction-35";
   font-size: calc(0.375vw + 1rem);
+}
+
+.credits blockquote p {
   max-width: 65ch;
 }
 
-.credits em,,
+.credits em,
 .mentions-legales em,
 .raymond-delambre em {
   color: var(--color-grey-light);

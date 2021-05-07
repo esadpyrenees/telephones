@@ -2,4 +2,15 @@ Title: Mentions légales
 
 ----
 
-Text: 
+Text:
+
+Je suis une légende
+
+Non pas une légende mais des mentions légales
+
+- Une liste
+- deux 
+- trois
+- quatre
+
+> blockquote
