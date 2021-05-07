@@ -1,0 +1,5 @@
+Title: Mentions légales
+
+----
+
+Text: Ici se trouve les mentions légales du site

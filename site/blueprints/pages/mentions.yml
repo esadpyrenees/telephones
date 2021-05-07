@@ -1,0 +1,9 @@
+title: Mentions légales
+
+icon: edit
+
+fields:
+  text:
+    label: Text
+    type: markdown
+    size: large

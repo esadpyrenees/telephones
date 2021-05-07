@@ -11,7 +11,11 @@
       <?php endforeach ?>
 		</div>
 
-
-</div>
+    
+    
+  </div>
+  <div id="mentions-access">
+    <a href="<?= $site->find('mentions-legales')->url() ?>"><?= $site->find('mentions-legales')->title() ?></a>
+  </div>
 
 <?php snippet('footer') ?>

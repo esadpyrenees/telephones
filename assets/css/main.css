@@ -367,7 +367,8 @@ main a.image-texte {
 }
 
 main a:not(.image-texte)::after,
-.intro-accueil a:not(.image-texte)::after{
+.intro-accueil a:not(.image-texte)::after,
+#mentions-access a::after {
   content:" ↙";
   font-weight: 400;
   color: var(--color-main-red);
@@ -952,7 +953,8 @@ body.raymond-delambre .content > h2 {
 .credits p,
 .error p,
 .credits blockquote p,
-#logos {
+#logos,
+#mentions-access {
   width: 60%;
   text-align: center;
   line-height: 1.5;
@@ -1008,6 +1010,13 @@ hr {
   height: 100%;
   width: auto;
   margin: auto;
+}
+
+#mentions-access {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: calc(0.4vw + 1rem);
+  color: pink;
 }
 
 /* --------------------------------------------- Page Bibliographie générale --------------------------------------------- */
@@ -1359,7 +1368,8 @@ main {
 .credits p,
 .error p,
 .credits blockquote p,
-#logos {
+#logos,
+#mentions-access {
   width: 80%;
 }
 
@@ -1418,7 +1428,8 @@ main {
 .credits p,
 .error p,
 .credits aside,
-#logos {
+#logos,
+#mentions-access {
   width: 92%;
 }
 
