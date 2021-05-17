@@ -330,7 +330,7 @@ main {
   width: 85%;
   margin: auto;
   padding: 0 10%;
-  margin-bottom: 100vh;
+  margin-bottom: 60vh;
   color: var(--color-grey-body);
   z-index: 10;
 }
@@ -652,7 +652,7 @@ display: block!important;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin-bottom: 30%;
+  margin-bottom: 15%;
 }
 
 .scene-ouverture video {
@@ -728,7 +728,7 @@ display: block!important;
   /* height: 100vh; */
   min-height: 100vh;
   color: pink;
-  margin-bottom: 30%;
+  margin-bottom: 15%;
   scroll-margin-top: 40px;
 }
 
@@ -1148,11 +1148,15 @@ select option {
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 100%;
+  min-height: 40%;
   width: 100%;
   padding-top: 50px;
   padding-bottom: 80px;
   z-index: 8;
+}
+
+.bibliographie-article {
+  padding-bottom: 0px;
 }
 
 .sommaire-bas h2,
