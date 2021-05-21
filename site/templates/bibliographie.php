@@ -40,7 +40,7 @@
         
         <div class="right-column-biblio">
         <?php if ($biblio->titreOuvrage()->isNotEmpty()): ?>
-          <span class="titreOuvrage"><em><?= $biblio->titreOuvrage() ?></em></span><br>
+          <span class="titreOuvrage"><?= $biblio->titreOuvrage() ?></span><br>
         <?php endif ?>
         <?php if ($biblio->referenceContent()->isNotEmpty()): ?>
           <span class="referenceContent"><?= $biblio->referenceContent()->kt() ?></span>
