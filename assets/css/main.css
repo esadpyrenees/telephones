@@ -701,7 +701,16 @@ display: block!important;
   outline: 50px solid var(--color-grey-body);
   overflow: hidden;
 }
-
+#titre-accueil-container::before {
+  content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgb(241, 215, 249);
+mix-blend-mode: overlay;
+}
 .bordure {
   position: absolute;
   bottom: 0;
