@@ -1,6 +1,6 @@
 // -------------------------------------------------------- Scrollfonction --------------------------------------------------------
 
-$(function(){
+$(function () {
 	const $notes = $('.note-icon'),
 		$titres = $('.titre-article'),
 		$autrice = $('.titre-auteur'),
@@ -15,6 +15,7 @@ $(function(){
 		$sommaire = $('#sommaire'),
 		$sommaireBas = $('.sommaire-bas'),
 		$images_link = $('.image-texte'),
+		$medias_link = $('.medias-texte'),
 		$media_cont = $('.media-contener'),
 		$close_icon = $('#close-icon'),
 		$media_close_icon = $(".media-close-icon"),
@@ -33,69 +34,79 @@ $(function(){
 		const options = {
 			root: null,
 			rootMargin: "0px",
-			threshold: [0.01,0.95]
+			threshold: [0.01, 0.95]
 		};
 
-		observer = new window.IntersectionObserver(handleIntersect , options);
+		observer = new window.IntersectionObserver(handleIntersect, options);
 		observer.observe(boxElement);
 	}
 
 	function handleIntersect(entries) {
-		entries.forEach(function(entry) {
-			if (entry.intersectionRatio>=0.01) {
+		entries.forEach(function (entry) {
+			if (entry.intersectionRatio >= 0.01) {
 				$fond.addClass('read-on');
-		} else if (!entry.isIntersecting){
+			} else if (!entry.isIntersecting) {
 				$fond.removeClass('read-on');
-		}
+			}
 		});
 	}
 
 	function InitPlyr() {
-        //PLAYER JS
-	    const playersnew = Plyr.setup('.js-player', {
-	                controls:['play-large','progress', 'volume', 'fullscreen', 'poster']
-	    });
-    }
+		//PLAYER JS
+		const playersnew = Plyr.setup('.js-player', {
+			controls: ['play-large', 'progress', 'volume', 'fullscreen', 'poster']
+		});
+	}
 
-    $(window).scroll(function() {
+	$(window).scroll(function () {
 		let currentScroll = $(window).scrollTop();
 		if (currentScroll == 0) {
-		$('body').removeClass('scroll-up');
-		return;
+			$('body').removeClass('scroll-up');
+			return;
 		}
 
 		if (currentScroll > $lastScroll && !$('body').hasClass('scroll-down')) {
-		// down
-		$('body').removeClass('scroll-up');
-		$('body').addClass('scroll-down');
+			// down
+			$('body').removeClass('scroll-up');
+			$('body').addClass('scroll-down');
 		} else if (currentScroll < $lastScroll && $('body').hasClass('scroll-down')) {
-		// up
-		$('body').removeClass('scroll-down');
-		$('body').addClass('scroll-up');
+			// up
+			$('body').removeClass('scroll-down');
+			$('body').addClass('scroll-up');
 		}
 		$lastScroll = currentScroll;
 	});
 
-	$notes.on("click", function(e){
+	$notes.on("click", function (e) {
 		e.preventDefault();
 		$(this).toggleClass('active');
 		$(this).next().toggleClass('visible');
-		if(typeof(resizeScrollBar) == "function" ){
+		if (typeof (resizeScrollBar) == "function") {
 			resizeScrollBar();
 		}
 	})
 
-	$menu_icon.on("click", function(e){
+	$menu_icon.on("click", function (e) {
 		e.preventDefault();
 		$('body').toggleClass('body-display-menu');
 	})
 
-	$sommaire.on("click", function(e){
+	$sommaire.on("click", function (e) {
 		e.preventDefault();
 		$(this).next().toggle();
 	})
 
-	$images_link.on("click", function(e){
+	$medias_link.on("click", function (e) {
+		e.preventDefault();
+		var script = $(this).data('script');
+		const myGallery = GLightbox({
+			elements: window[script],
+			autoplayVideos: true,
+		});
+		myGallery.open();
+		// console.log(window[script])
+	});
+	$images_link.on("click", function (e) {
 		e.preventDefault();
 
 		// console.log($(this).data("media"));
@@ -106,7 +117,7 @@ $(function(){
 
 		$media_cont.empty();
 
-		if(media=="img") {
+		if (media == "img") {
 			content = `
 				<img src="${media_source}">
 			`;
@@ -114,7 +125,7 @@ $(function(){
 
 		}
 
-		if(media=="vid-web") {
+		if (media == "vid-web") {
 			content = `
 				<div id="player" class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="${media_source}"></div>
 			`;
@@ -122,7 +133,7 @@ $(function(){
 			InitPlyr();
 		}
 
-		if(media=="vid-file") {
+		if (media == "vid-file") {
 			content = `
 				<video id="player" class="js-player" playsinline controls data-poster="">
 					<source src="${media_source}" type="video/mp4" />
@@ -144,19 +155,19 @@ $(function(){
 		cloneCloseMedia.addClass('display-media-icons');
 		cloneSizeMedia.addClass('display-media-icons');
 
-		cloneSizeMedia.on("click", function(e){
+		cloneSizeMedia.on("click", function (e) {
 			e.preventDefault();
 			$('body').addClass('body-display-media');
 		})
 
-		cloneCloseMedia.on("click", function(e){
+		cloneCloseMedia.on("click", function (e) {
 			e.preventDefault();
 			$media_cont.empty();
 			$media_cont.removeClass('image-display');
 		})
 	})
 
-	$close_icon.on("click", function(e){
+	$close_icon.on("click", function (e) {
 		e.preventDefault();
 		$('body').toggleClass('body-display-media');
 	})
@@ -171,8 +182,8 @@ let totalPageHeight = 0;
 let progressBarContainer_size = 0;
 let debounceResize = null;
 
-window.addEventListener("load", function(){
-	
+window.addEventListener("load", function () {
+
 	resizeScrollBar();
 
 	window.addEventListener("scroll", () => {
@@ -192,86 +203,86 @@ window.addEventListener("load", function(){
 
 });
 
-function resizeScrollBar(){
+function resizeScrollBar() {
 	progressBarContainer_size = progressBarContainer.getBoundingClientRect();
 	totalPageHeight = document.body.scrollHeight - window.innerHeight;
 }
 
 progressBarContainer.addEventListener("click", (e) => {
-  let newPageScroll = (e.clientY - progressBarContainer_size.top) / progressBarContainer.offsetHeight * totalPageHeight;
-  window.scrollTo({
-    top: newPageScroll,
-    behavior: 'smooth'
-  });
+	let newPageScroll = (e.clientY - progressBarContainer_size.top) / progressBarContainer.offsetHeight * totalPageHeight;
+	window.scrollTo({
+		top: newPageScroll,
+		behavior: 'smooth'
+	});
 });
 
 
 // -------------------------------------------------------- Afficher/Cacher la bibliographie/Filmographie/Entretiens --------------------------------------------------------
 
-$( "#BiblioBtn" ).click(function() {
-	if(typeof(resizeScrollBar) == "function" ){
+$("#BiblioBtn").click(function () {
+	if (typeof (resizeScrollBar) == "function") {
 		resizeScrollBar();
 	}
-	$( ".bibliographie" ).slideToggle( "slow" );
+	$(".bibliographie").slideToggle("slow");
 	if (this.innerHTML === "Afficher") {
 		this.innerHTML = "Cacher";
-	  } else {
+	} else {
 		this.innerHTML = "Afficher";
-	  }
-  });
-
-$( "#FilmoBtn" ).click(function() {
-	if(typeof(resizeScrollBar) == "function" ){
-		resizeScrollBar();
 	}
-	$( ".filmographie" ).slideToggle( "slow" );
-	if (this.innerHTML === "Afficher") {
-		this.innerHTML = "Cacher";
-		} else {
-		this.innerHTML = "Afficher";
-		}
 });
 
-$( "#EntBtn" ).click(function() {
-	if(typeof(resizeScrollBar) == "function" ){
+$("#FilmoBtn").click(function () {
+	if (typeof (resizeScrollBar) == "function") {
 		resizeScrollBar();
 	}
-	$( ".entretiens" ).slideToggle( "slow" );
+	$(".filmographie").slideToggle("slow");
 	if (this.innerHTML === "Afficher") {
 		this.innerHTML = "Cacher";
-		} else {
+	} else {
 		this.innerHTML = "Afficher";
-		}
+	}
+});
+
+$("#EntBtn").click(function () {
+	if (typeof (resizeScrollBar) == "function") {
+		resizeScrollBar();
+	}
+	$(".entretiens").slideToggle("slow");
+	if (this.innerHTML === "Afficher") {
+		this.innerHTML = "Cacher";
+	} else {
+		this.innerHTML = "Afficher";
+	}
 });
 
 // -------------------------------------------------------- Timer --------------------------------------------------------
 
 // si pas de dernière visite, 
 my_start = 0;
-	
-window.addEventListener("load", function(){
-	
+
+window.addEventListener("load", function () {
+
 	var s = localStorage.getItem('start');
-	if(s){
+	if (s) {
 		// convertir 01:06:42 en “heures”
 		var split = s.split(':');
 		var hours_in_seconds = parseInt(split[0]) * 60 * 60;
 		var minutes_in_seconds = parseInt(split[1]) * 60;
-		var seconds = parseInt(split[2]) + minutes_in_seconds + hours_in_seconds;		
+		var seconds = parseInt(split[2]) + minutes_in_seconds + hours_in_seconds;
 		my_start = seconds;
 	}
 	var timerInstance = new easytimer.Timer();
 
-	timerInstance.start({precision: 'seconds', startValues: {seconds: my_start}});
+	timerInstance.start({ precision: 'seconds', startValues: { seconds: my_start } });
 
 	timerInstance.addEventListener('secondsUpdated', function (e) {
 		$('#basicUsage').html(timerInstance.getTimeValues().toString());
 	});
 
 	// quand on quitte la page
-	window.onbeforeunload = function(){	
+	window.onbeforeunload = function () {
 		// stockage de la valeur du timerInstance : cookie / localStorage
-		localStorage.setItem('start', timerInstance.getTimeValues().toString() );
+		localStorage.setItem('start', timerInstance.getTimeValues().toString());
 	};
 
 })
@@ -282,16 +293,16 @@ window.addEventListener("load", function(){
 // init Isotope
 var $biblio = $('.biblio-generale-content');
 
-if($biblio.length){
+if ($biblio.length) {
 
-	window.addEventListener("load", function(){
+	window.addEventListener("load", function () {
 		// isotope init
 		var $grid = $biblio.isotope({
 			itemSelector: '.element-item'
 		});
-			
+
 		// bind filter on select change
-		$('.filters-select').on( 'change', function() {
+		$('.filters-select').on('change', function () {
 			// get filter value from option value
 			var filterValue = this.value;
 			// use filterFn if matches value
@@ -304,9 +315,8 @@ if($biblio.length){
 
 const IntroAccueomHeight = document.getElementById('intro-accueil');
 
-$(document).ready(function() {
+$(document).ready(function () {
 	// $('#ScrollBtnHome').on('click', function() {
 	// 	$("html, body").animate({ scrollTop: $('#intro-accueil').position().top }, 1200);
 	// });
 });
- 

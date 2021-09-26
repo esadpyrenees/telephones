@@ -344,6 +344,7 @@ main li {
 main p {
   text-indent: 2em;
   max-width: 65ch;
+  margin: 0 auto;
 }
 
 main p + p {
@@ -362,11 +363,14 @@ main li:before {
   font-size: 1em;
 }
 
-main a.image-texte {
+main a.image-texte,
+main a.medias-texte {
   border-bottom: 3.5px dotted var(--color-main-red);
 }
+.medias_desc { display: none; }
 
-main a:not(.image-texte)::after,
+
+main a:not(.image-texte, .medias-texte)::after,
 .intro-accueil a:not(.image-texte)::after{
   content:" ↙";
   font-weight: 400;
@@ -390,7 +394,8 @@ main .image-legende a::after,
   font-size: 0.8em;
 }
 
-.image-texte:hover {
+.image-texte:hover, 
+.medias-texte:hover{
   border-bottom: 3px solid var(--color-main-red);
 }
 
@@ -507,7 +512,8 @@ main blockquote p {
   display: inline;
 }
 
-.image-texte {
+.image-texte ,
+.medias-texte {
   display: inline;
   background-color: var(--color-main-blue);
   color: var(--color-main-red);
@@ -516,11 +522,13 @@ main blockquote p {
   cursor: pointer;
 }
 
-.image-texte::after{
+.image-texte::after,
+.medias-texte::after{
    content:""; 
 }
 
-.image-texte:before {
+.image-texte:before,
+.medias-texte:before {
   vertical-align: middle;
   font-family: var(--text-family);
   font-weight: 900;
@@ -532,12 +540,17 @@ main blockquote p {
   content: "IMAGE";
 }
 
+.medias-texte::before {
+  content: "MEDIAS";
+}
+
 .image-texte[data-media='vid-web']:before, 
 .image-texte[data-media='vid-file']:before {
   content: "VIDEO";
 }
 
-.image-texte::before {
+.image-texte::before,
+.medias-texte::before {
   animation: clignote 1.5s ease infinite;
   animation-direction: alternate;
 }
@@ -569,6 +582,19 @@ main blockquote p {
   margin: 10px auto;
 }
 
+.glightbox-clean .gslide-description{
+  font-family: "Redaction-35";
+  font-size: 1rem;
+  text-indent: 0;
+  padding: 0 .5em;
+  background-color: var(--color-grey-body);
+  color: var(--color-main-blue);
+  border-radius: 10px;
+  margin-top: 1em;
+}
+.glightbox-clean .gdesc-inner {
+  padding: 0;
+}
 .image-legende {
   display: none;
   font-family: "Redaction-35";
@@ -579,7 +605,9 @@ main blockquote p {
   color: var(--color-main-blue);
   border-radius: 10px;
 }
-
+.goverlay{
+  background: var(--color-main-blue);
+}
 .image-legende em {
   color: inherit;
 }
@@ -1162,9 +1190,9 @@ select option {
   border-radius: 5px;
   background-color: var(--color-main-blue);
   color: var(--color-grey-body);
-  width: 70%;
+  /* width: 70%; */
   margin: 0 auto;
-  padding-top: .15em;
+  padding: .15em 2em;
 }
 
 .bibliographie,
@@ -1308,7 +1336,8 @@ select option {
   top: 24px;
   width: 25px;
   height: 25px;
-  border-left: 1px solid var(--color-main-red);
+  transform: scale(1.1);
+  /* border-left: 1px solid var(--color-main-red); */
 }
 
 #accueil:before {
