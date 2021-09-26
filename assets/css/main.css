@@ -703,13 +703,13 @@ display: block!important;
 }
 #titre-accueil-container::before {
   content: "";
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background: rgb(241, 215, 249);
-mix-blend-mode: overlay;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 240, 254, 0.3);
+  mix-blend-mode: hard-light;
 }
 .bordure {
   position: absolute;

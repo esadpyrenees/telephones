@@ -32,12 +32,12 @@ columns:
         type: info
         theme: info
         text: |
-          \- Si il y a besoin d'ajouter une image ou une vidéo importée au préalable dans la galerie, utiliser la mention suivante :
-          media: nom_du_fichier.extension -> Attention, cette mention est à mettre entre parenthèses
-
-          \- Pour l'intégration une vidéo YouTube (autre que par un lien dans le texte), il faut utiliser la mention précédente en intégrant une image \(miniature par exemple\), puis définir le type de média sur Youtube, ensuite, suivre les indications présentées.
-
-          \- Pour l'intégration d'un lien qui mène vers l'extérieur du site, il faut rajouter la mention " rel: external " à la fin de l'intégration.
+          • Si il y a besoin d'ajouter une image ou une vidéo importée au préalable dans la galerie, utiliser la mention suivante – entre parenthèses :
+          *media: nom_du_fichier.extension* 
+          • Si l’on veut ajouter plusieurs médias associés – toujours entre parenthèses :
+          *medias: nom_du_fichier.jpg nom_du_2e_fichier.mp4 nom_du_3e_fichier.jpg*
+          • Pour l'intégration une vidéo YouTube (autre que par un lien dans le texte), il faut utiliser la mention précédente en intégrant une image \(miniature par exemple\), puis définir le type de média sur Youtube, ensuite, suivre les indications présentées.
+          • Pour l'intégration d'un lien qui mène vers l'extérieur du site, il faut rajouter la mention " rel: external " à la fin de l'intégration.
 
       text:
         label: Texte
