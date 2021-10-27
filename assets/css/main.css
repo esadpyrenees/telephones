@@ -579,7 +579,7 @@ main blockquote p {
   fill: deeppink;
   cursor: pointer;
 }
-
+.glightbox-container,
 .media-contener {
   position: fixed;
   right: 40px;
@@ -633,7 +633,9 @@ main blockquote p {
 }
 
 .media-close-icon,
-.media-size-icon {
+.media-size-icon,
+.media-prev-icon,
+.media-next-icon {
   display: none;
   position: absolute;
   top: -1em;
@@ -644,13 +646,10 @@ main blockquote p {
   border-radius: 10px;
 }
 
-.media-close-icon {
-  right: 0;
-}
-
-.media-size-icon {
-right: 32px;
-}
+.media-close-icon { right: 0; }
+.media-size-icon { right: 32px; }
+.media-prev-icon { left: 0px; }
+.media-next-icon { left: 32px; }
 
 .image-display {
 bottom: 20px!important;
