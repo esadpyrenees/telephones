@@ -81,7 +81,7 @@
 
               <div class="right-column-biblio">
                 <?php if ($biblio->titreOuvrage()->isNotEmpty()): ?>
-                  <span class="titreOuvrage"><?= $biblio->titreOuvrage() ?></span><br>
+                  <span class="titreOuvrage"><?= $biblio->titreOuvrage()->kti() ?></span><br>
                 <?php endif ?>
                 <?php if ($biblio->referenceContent()->isNotEmpty()): ?>
                   <span class="referenceContent"><?= $biblio->referenceContent()->kt() ?></span>
@@ -114,7 +114,7 @@
 
               <div class="right-column-biblio">
                 <?php if ($filmo->titreOuvrage()->isNotEmpty()): ?>
-                  <span class="titreOuvrage"><?= $filmo->titreOuvrage() ?></span><br>
+                  <span class="titreOuvrage"><?= $filmo->titreOuvrage()->kti() ?></span><br>
                 <?php endif ?>
                 <?php if ($filmo->referenceContent()->isNotEmpty()): ?>
                   <span class="referenceContent"><?= $filmo->referenceContent()->kt() ?></span>
