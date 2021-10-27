@@ -2,10 +2,6 @@ Title: André. E. & Zabunyan D. (2013). L’Attrait du téléphone. Crisnée : Y
 
 ----
 
-Text: 
-
-----
-
 Auteurref: André. E. & Zabunyan D.
 
 ----
@@ -14,8 +10,12 @@ Datepublication: 2013
 
 ----
 
-Titreouvrage: L’Attrait du téléphone
+Titreouvrage: *L’Attrait du téléphone*
 
 ----
 
 Referencecontent: Crisnée : Yellow Now.
+
+----
+
+Text: 

@@ -2,11 +2,11 @@ Media-type: img
 
 ----
 
-Alt: Une petite fille rousse, avec un casque rouge sur la tête, crie dans la rue
+Alt: Un tricycle rouge aux roues et à la selle blanche le long de la route
 
 ----
 
-Caption: 
+Caption: Capture écran de *Détour* (2017) de Michel Gondry
 
 ----
 
