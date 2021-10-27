@@ -330,11 +330,15 @@ main {
   width: 85%;
   margin: auto;
   padding: 0 10%;
-  margin-bottom: 60vh;
+  margin-bottom: 50px;
   color: var(--color-grey-body);
   z-index: 10;
 }
-
+#article-arrow {
+  display: block;
+  margin: 100px auto 0;
+  width: 22px;
+}
 main p,
 main li {
   line-height: 1.5;
@@ -380,7 +384,7 @@ main a.medias-texte {
 .medias_desc { display: none; }
 
 
-main a:not(.image-texte, .medias-texte)::after,
+main a:not(.image-texte, .medias-texte, #article-arrow)::after,
 .intro-accueil a:not(.image-texte, .medias-texte)::after,
 #mentions-access a::after,
 .mentions-legales a::after {
@@ -436,6 +440,9 @@ main blockquote p {
 
 .read-on {
   opacity: 1!important;
+}
+.read-on ~ .bibliographie-article {
+  opacity: 0;
 }
 
 .titrage {
@@ -765,7 +772,7 @@ display: block!important;
   /* height: 100vh; */
   min-height: 100vh;
   color: pink;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   scroll-margin-top: 40px;
 }
 
