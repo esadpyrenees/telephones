@@ -4,13 +4,16 @@ Title: Mentions légales
 
 Text:
 
-Je suis une légende
+## Co-édition
+Université Savoie Mont Blanc, laboratoire LLSETI + École supérieure d’art et de design des Pyrénées.
+Direction éditoriale : Anaïs Guilet et Corinne Melin
+Copyright : © Université Savoie Mont Blanc, laboratoire LLSETI + École supérieure d’art et de design des Pyrénées
 
-Non pas une légende mais des mentions légales
+## Conception du site
+Christophe Léon et César Hélion-Joly 
 
-- Une liste
-- deux 
-- trois
-- quatre
-
-> blockquote
+## Hébergement
+Cognix Systems
+50 rue Paul Langevin, 35200 Rennes
+Téléphone : (tel: 06 71 62 92 00)
+E-mail: (email: episq303jfit6fmzpljm@k.o-w-o.info text: episq303jfit6fmzpljm@k.o-w-o.info)

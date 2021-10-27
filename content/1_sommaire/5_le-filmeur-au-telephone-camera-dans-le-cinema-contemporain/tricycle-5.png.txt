@@ -2,11 +2,11 @@ Media-type: img
 
 ----
 
-Alt: Vue sur l'arrière d'une voiture ou un tandeur pend
+Alt: Une petite fille rousse, avec un casque rouge sur la tête, crie dans la rue
 
 ----
 
-Caption: 
+Caption: Capture écran de *Détour* (2017) de Michel Gondry
 
 ----
 

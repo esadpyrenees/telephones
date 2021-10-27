@@ -2,11 +2,11 @@ Media-type: img
 
 ----
 
-Alt: Un tricycle rouge aux roues et à la selle blanche le long de la route
+Alt: Un tricycle qui fait un wheeling (sur les roues arrières et la roue avant dans les airs)
 
 ----
 
-Caption: 
+Caption: Capture écran de *Détour* (2017) de Michel Gondry
 
 ----
 

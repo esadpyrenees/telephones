@@ -2,11 +2,11 @@ Media-type: img
 
 ----
 
-Alt: Vue d'un tricycle rouge et à la selle blanche derrière une voiture verte où sont accrochés plusieurs vélos derrière
+Alt: Vue sur l'arrière d'une voiture ou un tandeur pend
 
 ----
 
-Caption: 
+Caption: Capture écran de *Détour* (2017) de Michel Gondry
 
 ----
 
