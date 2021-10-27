@@ -680,7 +680,7 @@ display: block!important;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .scene-ouverture video {
@@ -765,7 +765,7 @@ display: block!important;
   /* height: 100vh; */
   min-height: 100vh;
   color: pink;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   scroll-margin-top: 40px;
 }
 
