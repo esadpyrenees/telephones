@@ -98,6 +98,17 @@ $(function () {
 		$(this).next().toggle();
 	})
 
+	// one media
+	$images_link.on("click", function (e) {
+		e.preventDefault();
+
+		const media_type = $(this).data("media");
+		const media_source = $(this).data("url");
+		const media_legende = $(this).next();
+
+		buildMedia(media_type, media_source, media_legende, false, 0, []);
+	})
+
 	// multiple medias
 	var currentSlide = 0, medias_array = [], medias_length=0;
 	$medias_link.on("click", function (e) {
@@ -112,70 +123,51 @@ $(function () {
 		currentSlide = 0;
 		medias_length=medias_array.length;
 		var first = medias_array[currentSlide];
-		var caption = $('<span class="image-legende">' + first.description + '</span>')
-		buildMedia(first.type, first.href, caption, true, currentSlide, medias_array);
+		
+		buildMedia(first.type, first.href, false, true, currentSlide, medias_array);
 	});
 
-	$images_link.on("click", function (e) {
-		e.preventDefault();
-
-		const media = $(this).data("media");
-		const media_source = $(this).data("url");
-		const media_legende = $(this).next();
-
-		buildMedia(media, media_source, media_legende, false, 0, []);
-	})
-	function buildMediaNav($media_cont){
-		const clonePrevMedia = $media_prev_icon.clone();
-		const cloneNextMedia = $media_next_icon.clone();
-		$media_cont.append(clonePrevMedia);
-		$media_cont.append(cloneNextMedia);
-
-		clonePrevMedia.addClass('display-media-icons');
-		cloneNextMedia.addClass('display-media-icons');
-		clonePrevMedia.on("click", function (e) {
-			e.preventDefault();
-			console.log(prevSlide());
-		})
-		cloneNextMedia.on("click", function (e) {
-			e.preventDefault();
-			console.log(nextSlide());
-		})
-	}
 	function nextSlide() {
-		return (currentSlide + 1) % medias_length;
+		currentSlide = (currentSlide + 1) % medias_length;
+		return currentSlide;
 	}
 	function prevSlide() {
-		return ((currentSlide - 1) % medias_length + medias_length) % medias_length;
+		currentSlide = ((currentSlide - 1) % medias_length + medias_length) % medias_length;
+		return currentSlide;
 	}
 	
-	function buildMedia(media, media_source, media_legende, gallery, index, medias_array){
-		console.log('build Media', media, media_source, media_legende, index, medias_array);
+	function buildMedia(media_type, media_source, media_legende, gallery, index, medias_array){
+		console.log('build Media', media_type, media_source, media_legende, index, medias_array);
 		
 		let content = "";
 
 		$media_cont.empty();
 
-		if (media == "img" || media == "image") {
+		if (media_type == "img" || media_type == "image") {
 			content = `<img src="${media_source}">`;
 			$media_cont.append(content);
 		}
 
-		if (media == "vid-web") {
+		if (media_type == "vid-web" || media_type == "youtube") {
 			content = `<div id="player" class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="${media_source}"></div>`;
 			$media_cont.append(content);
 			InitPlyr();
 		}
 
-		if (media == "vid-file") {
+		if (media_type == "vid-file" || media_type == "video") {
 			content = `<video id="player" class="js-player" playsinline controls data-poster="">
 					<source src="${media_source}" type="video/mp4" />
 				</video>`;
 			$media_cont.append(content);
 			InitPlyr();
 		}
-
-		const cloneLegende = media_legende.clone();
+		if(media_legende != false){
+			var cloneLegende = media_legende.clone();
+		} else {
+			var caption = medias_array[currentSlide].description || "";
+			var cloneLegende = $('<span class="image-legende">' + caption + '</span>')
+		}
+		
 		const cloneCloseMedia = $media_close_icon.clone();
 		const cloneSizeMedia = $media_size_icon.clone();
 		$media_cont.append(cloneLegende);
@@ -199,7 +191,27 @@ $(function () {
 		})
 
 		if(gallery){
-			buildMediaNav($media_cont);
+			const clonePrevMedia = $media_prev_icon.clone();
+			const cloneNextMedia = $media_next_icon.clone();
+			$media_cont.append(clonePrevMedia);
+			$media_cont.append(cloneNextMedia);
+
+			clonePrevMedia.addClass('display-media-icons');
+			cloneNextMedia.addClass('display-media-icons');
+			clonePrevMedia.on("click", function (e) {
+				e.preventDefault();
+				prevSlide();
+				media_type = medias_array[currentSlide].type;
+				media_source = medias_array[currentSlide].href;
+				buildMedia(media_type, media_source, false, gallery, index, medias_array);
+			})
+			cloneNextMedia.on("click", function (e) {
+				e.preventDefault();
+				nextSlide();
+				media_type = medias_array[currentSlide].type;
+				media_source = medias_array[currentSlide].href;
+				buildMedia(media_type, media_source, false, gallery, index, medias_array);
+			})
 		}
 	}
 
