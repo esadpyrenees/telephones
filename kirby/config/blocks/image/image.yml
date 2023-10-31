@@ -13,6 +13,7 @@ fields:
   image:
     label: field.blocks.image.name
     type: files
+    query: model.images
     multiple: false
     image:
       back: black
@@ -21,7 +22,7 @@ fields:
     when:
       location: kirby
   src:
-    label: Image URL
+    label: field.blocks.image.url
     type: url
     when:
       location: web

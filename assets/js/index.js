@@ -114,12 +114,6 @@ $(function () {
 	$medias_link.on("click", function (e) {
 		e.preventDefault();
 		medias_array = window[$(this).data('script')];
-		// const myGallery = GLightbox({
-		// 	elements: window[script],
-		// 	autoplayVideos: true,
-		// });
-		// myGallery.open();
-		console.log(medias_array)
 		currentSlide = 0;
 		medias_length=medias_array.length;
 		var first = medias_array[currentSlide];
@@ -137,8 +131,6 @@ $(function () {
 	}
 	
 	function buildMedia(media_type, media_source, media_legende, gallery, index, medias_array){
-		console.log('build Media', media_type, media_source, media_legende, index, medias_array);
-		
 		let content = "";
 
 		$media_cont.empty();
