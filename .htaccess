@@ -1,5 +1,7 @@
 # Kirby .htaccess
 # revision 2020-06-15
+Header always unset X-Frame-Options
+Header set Content-Security-Policy "frame-ancestors 'self' https://ateliers.esad-pyrenees.fr http://localhost"
 
 # rewrite rules
 <IfModule mod_rewrite.c>
@@ -55,3 +57,5 @@ AddOutputFilterByType DEFLATE application/json
 AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
 </IfModule>
+
+
